@@ -1,0 +1,72 @@
+.main{
+    width:375px;
+    height:812px;
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* logo css */
+
+.bars1{
+    width:77px;
+    height:57px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+.bars2{
+    width:77px;
+    height:57px;
+    display: flex;
+    flex-direction: row;
+}
+.bar{
+    margin-top: 240px;
+    margin-left: 98px;
+    position: absolute;
+}
+.name{
+    color:red;
+    float: right;
+    position: absolute;
+    z-index:2;
+    margin-top: -100px;
+    margin-left: 110%;
+}
+
+.name2{
+    position: absolute;
+    margin-top:40px;
+    color:#EAB2FD
+}
+.name1{
+    position:absolute;
+    margin-top: 14px;
+    color:#EAB2FD
+}
+.name>p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sBar{
+    width: 19px;
+    margin: 0 1% 0 1%;
+    background-color: #EAB2FD;
+    height:57px;
+}
