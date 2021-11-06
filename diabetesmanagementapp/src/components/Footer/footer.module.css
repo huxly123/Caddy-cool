@@ -9,5 +9,14 @@
     
     background: #FAFAFA;
    box-shadow: #0000001A;
-    justify-content: space-evenly;
+    justify-content:space-around
+}
+
+.plus{
+   margin-right: 70%;
+}
+
+.fix{
+
+
 }
