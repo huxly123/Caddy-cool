@@ -8,9 +8,11 @@ function Header() {
     return (
         <div>
             <div className={style.headerbody}>
-            <div><img src={img1} alt="img"></img></div>
-            <div><img src={img2} alt="img"></img></div>
-            <div><img src={img3} alt="img"></img></div>
+            <div className={style.div1}><img src={img1} alt="img"></img></div>
+            <div>
+            <span><img src={img2} alt="img"></img></span>
+            <span><img src={img3} alt="img"></img></span>
+            </div>
         </div>
         </div>
     )

@@ -9,9 +9,17 @@
     
     background: #FAFAFA;
    box-shadow: #0000001A;
-    justify-content:space-around
+    justify-content:space-between
 }
 
 .headerbody img{
     cursor: pointer;
+}
+
+.headerbody span{
+    margin:28px ;
+}
+
+.div1{
+    margin-left:29px ;
 }
