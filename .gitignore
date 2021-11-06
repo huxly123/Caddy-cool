@@ -571,3 +571,6 @@ dist
 .env.development.local
 .env.test.local
 .env.production.local
+
+
+connectionurl=mongodb+srv://seema:caddyproject@cluster0.dlhyh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
