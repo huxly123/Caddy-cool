@@ -12,7 +12,9 @@
     justify-content:space-around
 }
 
-
+.footerbody img{
+    cursor: pointer;
+}
 
 .plus{
   margin-left: -3vw;
