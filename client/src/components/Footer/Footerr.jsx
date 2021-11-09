@@ -5,7 +5,7 @@ import img2 from "./groupimg.svg"
 import img3 from "./VectorTab1.svg"
 import img4 from "./Vector.svg"
 
-function Footer() {
+function Footerr() {
     return (
         <div className={style.footerbody}>
             <div><img src={img1} alt="img"></img></div>
@@ -15,4 +15,4 @@ function Footer() {
     )
 }
 
-export default Footer
+export default Footerr

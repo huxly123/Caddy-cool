@@ -4,7 +4,7 @@ import img1 from "./menu.svg"
 import img2 from "./bell.svg"
 import img3 from "./watch.svg"
 
-function Header() {
+function Headerr() {
     return (
         <div>
             <div className={style.headerbody}>
@@ -18,4 +18,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Headerr
