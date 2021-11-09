@@ -1,4 +1,5 @@
 import "./main.css"
+import "./logoAnimation.css"
 
 export default function logo(){
     return(
