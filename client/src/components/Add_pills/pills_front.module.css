@@ -1,0 +1,52 @@
+.top{
+    height: 138px;
+    background-color: #FFEBEE;
+
+}
+
+.but1{
+    cursor: pointer;
+    border: none;
+
+    position: absolute;
+width: 148px;
+height: 78px;
+left: 32px;
+top: 100px;
+
+   
+    background-color: white;
+    border-radius: 15px;
+}
+
+.but2{
+    cursor: pointer;
+    border: none;
+
+    position: absolute;
+    width: 147px;
+    height: 78px;
+    left: 196px;
+    top: 100px;
+
+
+
+background-color: white;
+border-radius: 15px;
+}
+
+.bottom{
+  
+width: 375px;
+height: 530px;
+left: 0px;
+top: 194px;
+
+background: #FFFFFF;
+border-radius: 40px 40px 0px 0px;
+}
+
+.body{
+    background-color:#FFEBEE ;
+    font-family: 'Roboto', sans-serif;
+}
