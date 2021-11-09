@@ -1,0 +1,168 @@
+/* small Logo */
+.bars1S{
+    width:57px;
+    height:37px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+.bars2S{
+    width:57px;
+    height:37px;
+    display: flex;
+    flex-direction: row;
+}
+.barS{
+    margin-top: 240px;
+    margin-left: 128px;
+    position: absolute;
+}
+.nameS{
+    color:red;
+    float: right;
+    position: absolute;
+    z-index:2;
+    margin-top: -75px;
+    margin-left: 90%;
+}
+
+.name2S{
+    position: absolute;
+    margin-top:35px;
+    color:#EAB2FD
+}
+.name1S{
+    position:absolute;
+    margin-top: 14px;
+    color:#EAB2FD
+}
+.nameS>p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sBarS{
+    width: 9px;
+    margin: 0 1px 0 1px;
+    background-color: #EAB2FD;
+    height:37px;
+}
+
+
+/* Signin */
+
+.signDiv{
+        width:375px;
+        height:812px;
+        margin: auto;
+        border: 2px solid grey;
+        border-radius: 10px;
+}
+.title{
+    margin-top: 400px;
+    margin-left: 32px;
+}
+.titlep1{
+    font-family:'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.titlep2{
+    font-family:'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -25px;
+    font-family: Roboto;
+
+
+}
+.signUpLogin{
+    width:84%;
+    margin: auto;
+}
+.signUp{
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+
+}
+.login{
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    }
+
+.details{
+    width:84%;
+    margin: auto;
+    margin-top: 10%;
+    }
+.email{
+        height:40px;
+        width:97.1%;
+        background-color: transparent;
+        margin-bottom: 15px;
+        border: 2px solid #5C89C7;
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+input:focus{
+    outline: none;
+    border: 4px solid #5C89C7;
+    }
+.password{
+    height:40px;
+    width:97.1%;
+    background-color: transparent;
+    border: 2px solid #5C89C7;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.forget{
+   margin-left: 7%;
+   margin-bottom: 10%;
+   color: #5C89C7;
+   ;
+}
+.signinbtn{
+    width:84%;
+    margin-left:8%;
+    height:48px;
+    margin-bottom: 4%;
+    background: #BE00FF;
+    border-radius: 4px;
+    border: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #fff;
+
+}
+.signupreminder{
+    margin-left: 8%;
+}
+.signupreminder>a{
+    margin-left: 2%;
+    text-decoration: none;
+    color:#5C89C7
+}
