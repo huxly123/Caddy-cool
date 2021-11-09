@@ -83,10 +83,16 @@ border-radius: 12px;
 
 .bottom1{
     position: absolute;
-width: 311px;
-height: 170px;
+
+
 
 top: 50px;
+}
+
+.bottom h4{
+    color: #BD00FD;
+ 
+  padding-left: 20px;
 }
 
 .body{
