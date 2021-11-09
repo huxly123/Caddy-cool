@@ -1,7 +1,7 @@
 import "./main.css"
 import "./logoAnimation.css"
 
-export default function logo(){
+export default function Logo(){
     return(
         <div className="bar">
         <div className="bars1">
