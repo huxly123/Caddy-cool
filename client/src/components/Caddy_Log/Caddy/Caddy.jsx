@@ -14,7 +14,11 @@ function Caddy() {
 <div className={style.caddylog}>My Caddy Log</div>
 
 <div className={style.in}><button className={style.pills}>Add Pills</button></div>
+
          </div> 
+         <div className={style.line}></div>
+         
+
          
            </div>
             <Footerr/>
