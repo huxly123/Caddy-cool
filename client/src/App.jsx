@@ -1,14 +1,11 @@
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header"
-// import Main from "./components/Main"
-// import Signin from "./components/Signin";
+import Pills_front from "./components/Add_pills/Pills_front";
+import Caddy from "./components/Caddy_Log/Caddy/Caddy";
 
 function App ()
 {
   return (
     <>
-   <Header/>
-  <Footer/>
+<Pills_front/>
     </>
   );
 }
