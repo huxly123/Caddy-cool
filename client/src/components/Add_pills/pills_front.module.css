@@ -69,7 +69,7 @@ border-radius: 12px;
     background-color: white;
     cursor: pointer;
     border-radius: 15px;
-
+    
     position: absolute;
 width: 311px;
 height: 73px;
@@ -91,5 +91,5 @@ top: 50px;
 
 .body{
     background-color:#F3E5F5 ;
-    font-family: 'Roboto', sans-serif;
+
 }
