@@ -13,6 +13,10 @@ import
   Link
 } from "react-router-dom";
 import style from "./App.module.css";
+import styles from "./components/Footer/footer.module.css";
+import homeIcon from "./components/Footer/homeimg.svg";
+import communityIcon from "./components/Footer/groupimg.svg";
+import caddyIcon from "./components/Footer/VectorTab1.svg";
 
 
 function App ()
@@ -20,9 +24,14 @@ function App ()
   return (
     <Router>
       <div className={style.appHeight}>
+
+        {/* Header */}
         <Headerr />
+
         <div className={style.appBody}>
+
           <Switch>
+
             <Route path="/Main" exact>
               <Main />
             </Route>
@@ -36,9 +45,18 @@ function App ()
             </Route>
 
             <Route>404 not found</Route>
+
           </Switch>
+
         </div>
-        <Footerr />
+
+        {/* Footer */}
+        <div className={styles.footerbody}>
+          <Link to="/Main"><div><img src={homeIcon} alt="home"></img></div></Link>
+          <Link to="/PeopleConnect"><div><img src={communityIcon} alt="community"></img></div></Link>
+          <Link to="/Caddy"><div><img className={style.fix} src={caddyIcon} alt="caddy"></img></div></Link>
+        </div>
+
       </div>
     </Router>
   );
