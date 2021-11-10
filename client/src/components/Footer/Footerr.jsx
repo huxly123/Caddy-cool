@@ -3,10 +3,6 @@ import style from "./footer.module.css"
 import img1 from "./homeimg.svg"
 import img2 from "./groupimg.svg"
 import img3 from "./VectorTab1.svg"
-import img4 from "./Vector.svg"
-import { PeopleConnect } from "../Community/PeopleConnect";
-import { Main } from "../Main";
-import { Caddy } from "../Caddy_Log/Caddy/Caddy";
 import
 {
     BrowserRouter as Router,
@@ -14,7 +10,6 @@ import
     Route,
     Link
 } from "react-router-dom";
-import styles from "../../App.module.css";
 function Footerr ()
 {
     return (
@@ -24,25 +19,6 @@ function Footerr ()
                 <Link to="/PeopleConnect"><div><img src={img2} alt="community"></img></div></Link>
                 <Link to="/Caddy"><div><img className={style.fix} src={img3} alt="caddy"></img></div></Link>
             </div>
-
-            {/* <div className={styles.appBody}>
-                <Switch>
-                    <Route path="/Main" exact>
-                        <Main />
-                    </Route>
-
-                    <Route path="/PeopleConnect">
-                        <PeopleConnect />
-                    </Route>
-
-                    <Route>404 not found</Route>
-                </Switch>
-                {/* <Pills_front/> */}
-            {/* <Device /> */}
-            {/* <Caddy /> */}
-            {/* <PeopleConnect /> */}
-            {/* <Main /> * /}
-            </div> */}
         </Router>
     )
 }

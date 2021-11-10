@@ -37,20 +37,9 @@ function App ()
 
             <Route>404 not found</Route>
           </Switch>
-          {/* <Pills_front/> */}
-          {/* <Device /> */}
-          {/* <Caddy /> */}
-          {/* <PeopleConnect /> */}
-          {/* <Main /> */}
         </div>
         <Footerr />
       </div>
-      {/* // <>
-
-    //   <Caddy />
-
-
-    // </> */}
     </Router>
   );
 }
