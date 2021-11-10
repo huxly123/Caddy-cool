@@ -1,5 +1,5 @@
 .card{
-    max-width: 22rem;
+    max-width: 23rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -9,4 +9,56 @@
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0.25rem;
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+.card:active,.card:hover{
+    background-color: #FCF2FF;
+    ;
+}
+
+.card_head{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cardText{
+    /* position: absolute; */
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 33.33%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+}
+
+.cardDescription{
+    /* position: absolute; */
+width: 270px;
+height: 48px;
+left: 18px;
+top: 116px;
+}
+
+.iconOutline{
+    /* position: absolute; */
+    width: 32px;
+    height: 32px;
+    left: 16px;
+    top: 40px;
+}
+
+.iconGroup{
+    /* position: absolute;     */
+left: 6.25%;
+right: 3.74%;
+top: 9.38%;
+bottom: 11.87%;
 }

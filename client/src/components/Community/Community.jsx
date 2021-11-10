@@ -7,12 +7,26 @@ function Community ({ img, heading, body })
     return (
         <div className={style.card}>
             <div className="card-body">
-                <h5 className="card-title">
-                    {heading}
-                </h5>
-                <p className="card-text">
-                    {body}
-                </p>
+                {/* <div className="card-title">
+                    <div className="start">
+                        <img src={img} alt="community-logo" className="me-3" />
+                        <h4 >
+                            {heading}
+                        </h4>
+                    </div>
+                    <div className="end">
+
+                    </div>
+                </div> */}
+                <div className={style.iconOutline}>
+                    <img src={img} className={style.iconGroup} alt="" />
+                </div>
+                <div className={style.cardDescription}>
+                    <p className={style.cardText}>
+                        {body}
+                    </p>
+
+                </div>
             </div>
         </div>
     );
