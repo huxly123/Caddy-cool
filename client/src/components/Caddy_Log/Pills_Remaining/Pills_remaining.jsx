@@ -27,6 +27,21 @@ function Pills_taken() {
 <button>Take Pill</button>
 </div>
 
+<div className={style.gridflex}>
+<p>Pill 1 -Glycomet</p>
+<button>Take Pill</button>
+</div>
+
+<div className={style.gridflex}>
+<p>Pill 1 -Glycomet</p>
+<button>Take Pill</button>
+</div>
+
+<div className={style.gridflex}>
+<p>Pill 1 -Glycomet</p>
+<button>Take Pill</button>
+</div>
+
 </div>
         </div>
         </div>
