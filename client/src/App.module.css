@@ -3,7 +3,8 @@
 }
 .appBody{
     height: 668px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     border-left: 2px solid grey;
     border-right: 2px solid grey;
