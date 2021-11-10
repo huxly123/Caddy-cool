@@ -1,5 +1,6 @@
 import style from "./Community.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from "reactstrap";
 
 function Community ({ img, heading, body })
 {
@@ -21,6 +22,11 @@ function Community ({ img, heading, body })
                 <div className={style.iconOutline}>
                     <img src={img} className={style.iconGroup} alt="" />
                 </div>
+
+                <div className={style.buttonLayout}>
+                    <Button>Connect</Button>
+                </div>
+
                 <div className={style.cardDescription}>
                     <p className={style.cardText}>
                         {body}

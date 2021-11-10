@@ -13,6 +13,8 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
+    width: 311px;
+    height: 191px;
 }
 
 .card:active,.card:hover{
@@ -44,7 +46,8 @@ line-height: 16px;
 width: 270px;
 height: 48px;
 left: 18px;
-top: 116px;
+/* margin-top: 116px; */
+margin-top: 90px;
 }
 
 .iconOutline{
@@ -61,4 +64,51 @@ left: 6.25%;
 right: 3.74%;
 top: 9.38%;
 bottom: 11.87%;
+}
+
+.buttonLayout{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 12px;
+
+position: absolute;
+width: 71px;
+height: 22px;
+left: 233px;
+top: 45px;
+
+background: #FFFFFF;
+border: 0.5px solid #BD00FD;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.buttonLayout>Button{
+
+position: static;
+width: 47px;
+height: 14px;
+left: 12px;
+top: 4px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height, or 117% */
+
+letter-spacing: 0.02em;
+
+color: #BD00FD;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px;
+
 }
