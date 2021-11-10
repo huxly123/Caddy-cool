@@ -1,7 +1,6 @@
-import "./main.css"
-import "./logoAnimation.css"
+import "./home.css"
 
-export default function Logo(){
+export default function logo(){
     return(
         <div className="bar">
         <div className="bars1">
@@ -11,7 +10,7 @@ export default function Logo(){
             <div className="sBar"></div>
         </div>
         <div className="bars2">
-            <div className="sBar"></div>
+            <div className="sBar" style={{backgroundColor:"#D865FF"}}></div>
             <div className="sBar"></div>
             <div className="sBar"></div>
             <div className="sBar"></div>

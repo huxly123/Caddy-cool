@@ -1,0 +1,36 @@
+.caddy{
+    border: 1px solid black;
+    width: 88%;
+    margin: auto;
+    height: 78vh;
+overflow: scroll;
+}
+
+.caddylog{
+    font-weight: bold;
+    
+    cursor: pointer;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pills{
+    background-color: #BD00FD;
+    border-radius: 4px;
+    border: none;
+    padding: 4px 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.line{
+    width: 30%;
+height: 0px;
+
+
+
+border: 2px solid #1A1B41;
+}
