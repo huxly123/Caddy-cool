@@ -1,0 +1,33 @@
+.top{
+    /* position: relative; */
+    width: 375px;
+    height: 188px;
+    background: #FCF2FF;
+}
+#name{
+    position: absolute;
+width: 77px;
+height: 28px;
+left: 32px;
+top: 83px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+}
+#para{
+    position: absolute;
+    width: 179px;
+    height: 12px;
+    left: 32px;
+    top: 115px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}

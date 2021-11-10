@@ -1,0 +1,32 @@
+.head_card{
+position: absolute;
+width: 311px;
+height: 205px;
+left: calc(50% - 311px/2);
+top: calc(50% - 205px/2 - 1.5px);
+
+background: #FFFFFF;
+box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+border-radius: 14px;
+}
+
+.head_img{
+    position: absolute;
+    width: 136px;
+    height: 136px;
+    left: calc(50% - 136px/2 - 79.5px);
+    top: calc(50% - 136px/2 - 2px);
+    border: 1px solid black;
+    display: flex;
+    margin: auto;
+
+}
+.head_text{
+    position: absolute;
+    width: 138px;
+    height: 70px;
+    left: calc(50% - 138px/2 + 74.5px);
+    top: calc(50% - 70px/2 + 5px);
+    border: 1px solid black;
+
+}

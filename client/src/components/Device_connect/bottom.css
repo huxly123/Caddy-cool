@@ -1,0 +1,9 @@
+.bottom{
+    /* position: relative; */
+    width: 375px;
+    height: 496px;
+
+    background: #FFFFFF;
+    /* background: black; */
+    border-radius: 40px 40px 0px 0px;
+}
