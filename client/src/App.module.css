@@ -1,0 +1,7 @@
+.appHeight{
+    height: 100vh;
+}
+.appBody{
+    height: 668px;
+    overflow-y: scroll;
+}
