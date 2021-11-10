@@ -1,6 +1,6 @@
 import React from 'react'
-import Footerr from '../../Footer/Footerr'
-import Headerr from '../../Header/Headerr'
+// import Footerr from '../../Footer/Footerr'
+// import Headerr from '../../Header/Headerr'
 import style from "./caddy.module.css"
 
 
@@ -8,7 +8,7 @@ function Caddy ()
 {
     return (
         <div className={style.body}>
-            <Headerr />
+            {/* <Headerr /> */}
             <div className={style.caddy}>
 
                 <div className={style.top}>
@@ -22,7 +22,7 @@ function Caddy ()
 
 
             </div>
-            <Footerr />
+            {/* <Footerr /> */}
         </div>
     )
 }

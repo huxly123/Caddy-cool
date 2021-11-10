@@ -1,8 +1,9 @@
 .main{
     width:375px;
-    height:812px;
+    /* height:812px; */
+    height:668px;
     margin: auto;
-    border: 2px solid grey;
+    /* border: 2px solid grey; */
     border-radius: 10px;
 }
 
