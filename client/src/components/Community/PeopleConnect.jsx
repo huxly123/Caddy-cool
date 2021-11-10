@@ -45,4 +45,5 @@ class PeopleConnect extends Component
     }
 }
 
-export default PeopleConnect;
+// export default PeopleConnect;
+export { PeopleConnect };
