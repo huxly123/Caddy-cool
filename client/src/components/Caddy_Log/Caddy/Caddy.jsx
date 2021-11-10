@@ -27,4 +27,5 @@ function Caddy ()
     )
 }
 
-export default Caddy
+// export default Caddy
+export { Caddy }
