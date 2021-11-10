@@ -2,7 +2,7 @@ import React from 'react'
 // import Footerr from '../../Footer/Footerr'
 // import Headerr from '../../Header/Headerr'
 import style from "./caddy.module.css"
-import Pills_taken from "../Pills_Taken/Pills_taken"
+import Pills_taken from "../Pills_Remaining/Pills_remaining"
 
 function Caddy ()
 {
