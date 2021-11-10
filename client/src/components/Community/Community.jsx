@@ -19,12 +19,19 @@ function Community ({ img, heading, body })
 
                     </div>
                 </div> */}
-                <div className={style.iconOutline}>
-                    <img src={img} className={style.iconGroup} alt="" />
-                </div>
+                <div className={style.card_head}>
+                    <div className={style.iconOutline}>
+                        <img src={img} className={style.iconGroup} alt="" />
+                        <span className={style.headingLayout}>
+                            <p className={style.heading}>
+                                {heading}
+                            </p>
+                        </span>
+                    </div>
 
-                <div className={style.buttonLayout}>
-                    <Button>Connect</Button>
+                    <div className={style.buttonLayout}>
+                        <button>Connect</button>
+                    </div>
                 </div>
 
                 <div className={style.cardDescription}>

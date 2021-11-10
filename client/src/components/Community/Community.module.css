@@ -70,12 +70,14 @@ bottom: 11.87%;
     display: flex;
 flex-direction: row;
 align-items: flex-start;
-padding: 4px 12px;
+/* padding: 4px 12px; */
+padding: 4px;
 
 position: absolute;
 width: 71px;
 height: 22px;
-left: 233px;
+/* left: 233px; */
+left: 225px;
 top: 45px;
 
 background: #FFFFFF;
@@ -84,10 +86,10 @@ box-sizing: border-box;
 border-radius: 4px;
 }
 
-.buttonLayout>Button{
+.buttonLayout>button{
 
 position: static;
-width: 47px;
+/* width: 47px; */
 height: 14px;
 left: 12px;
 top: 4px;
@@ -109,6 +111,47 @@ color: #BD00FD;
 flex: none;
 order: 0;
 flex-grow: 0;
-margin: 0px 10px;
+/* margin: 0px 10px; */
+border: none;
+background: transparent;
 
+}
+
+.headingLayout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    
+    position: absolute;
+    width: 99px;
+    height: 30px;
+    left: 48px;
+    top: 41px;
+}
+
+.heading{
+    position: static ;
+/* width: 83px; */
+height: 14px;
+left: 8px;
+top: 8px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 14px;
+/* identical to box height, or 87% */
+
+
+color: #5A5B76;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px;
 }
