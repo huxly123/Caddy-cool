@@ -8,17 +8,6 @@ function Community ({ img, heading, body })
     return (
         <div className={style.card}>
             <div className="card-body">
-                {/* <div className="card-title">
-                    <div className="start">
-                        <img src={img} alt="community-logo" className="me-3" />
-                        <h4 >
-                            {heading}
-                        </h4>
-                    </div>
-                    <div className="end">
-
-                    </div>
-                </div> */}
                 <div className={style.card_head}>
                     <div className={style.iconOutline}>
                         <img src={img} className={style.iconGroup} alt="" />
