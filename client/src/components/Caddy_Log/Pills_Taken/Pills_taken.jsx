@@ -12,7 +12,20 @@ function Pills_taken() {
         <div className={style.remain}>
             <div className={style.grid}>
 
-<div>Pill 1 </div>
+<div className={style.gridflex}>
+<p>Pill 1 -Glycomet</p>
+<button>Take Pill</button>
+</div>
+
+<div className={style.gridflex}>
+<p>Pill 1 -Glycomet</p>
+<button>Take Pill</button>
+</div>
+
+<div className={style.gridflex}>
+<p>Pill 1 -Glycomet</p>
+<button>Take Pill</button>
+</div>
 
 </div>
         </div>
