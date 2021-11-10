@@ -16,12 +16,12 @@ function Pills_taken() {
 
 <div className={style.gridflex}>
 <p>Pill 1 -Glycomet</p>
-<button>Take Pill</button>
+<button>Pills Taken</button>
 </div>
 
 <div className={style.gridflex}>
 <p>Pill 1 -Glycomet</p>
-<button>Take Pill</button>
+<button>Pills Taken</button>
 </div>
 
 

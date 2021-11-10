@@ -12,14 +12,14 @@
     width: 311px;
     height: 8px;
     left: 32px;
-    top: 532px;
+    top: 535px;
     
     background: #00CB9A;
     border-radius: 12px 12px 0px 0px;
 }
 
 .remain{
-    border: 1px solid black;
+   
     position: absolute;
     width: 311px;
 height: 180px;
@@ -46,10 +46,10 @@ border-bottom-right-radius: 12px;
 .gridflex button{
    
     border: none;
-    background-color: #00E676;
+    background-color: #9C27B0;
     padding: 0px 12px;
     font-size: 12px;
-    
+   
     height: 20px;
     }
 
