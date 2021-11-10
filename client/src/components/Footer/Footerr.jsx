@@ -6,6 +6,7 @@ import img3 from "./VectorTab1.svg"
 import img4 from "./Vector.svg"
 import { PeopleConnect } from "../Community/PeopleConnect";
 import { Main } from "../Main";
+import { Caddy } from "../Caddy_Log/Caddy/Caddy";
 import
 {
     BrowserRouter as Router,

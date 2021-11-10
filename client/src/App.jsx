@@ -32,7 +32,7 @@ function App ()
             </Route>
 
             <Route path="/Caddy" exact>
-              <PeopleConnect />
+              <Caddy />
             </Route>
 
             <Route>404 not found</Route>
