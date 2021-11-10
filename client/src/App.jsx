@@ -18,23 +18,37 @@ import style from "./App.module.css";
 function App ()
 {
   return (
+    <Router>
     <div className={style.appHeight}>
       <Headerr />
       <div className={style.appBody}>
+        <Switch>
+          <Route path="/Main" exact>
+            <Main />
+          </Route>
+
+          <Route path="/PeopleConnect" exact>
+            <PeopleConnect />
+          </Route>
+
+          <Route path="/Caddy" exact>
+            <Caddy />
+          </Route>
+
+          <Route>404 not found</Route>
+        </Switch>
         {/* <Pills_front/> */}
         {/* <Device /> */}
         {/* <Caddy /> */}
-        <PeopleConnect />
+        {/* <PeopleConnect /> */}
         {/* <Main /> */}
       </div>
       <Footerr />
     </div>
-    // <>
-
-    //   <Caddy />
-
-
-    // </>
+    {/* // <>
+  //   <Caddy />
+  // </> */}
+  </Router>
   );
 }
 
