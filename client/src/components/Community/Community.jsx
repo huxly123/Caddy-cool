@@ -22,12 +22,12 @@ function Community ({ img, heading, body })
                 <div className={style.card_head}>
                     <div className={style.iconOutline}>
                         <img src={img} className={style.iconGroup} alt="" />
-                        <span className={style.headingLayout}>
-                            <p className={style.heading}>
-                                {heading}
-                            </p>
-                        </span>
                     </div>
+                    <span className={style.headingLayout}>
+                        <p className={style.heading}>
+                            {heading}
+                        </p>
+                    </span>
 
                     <div className={style.buttonLayout}>
                         <button>Connect</button>

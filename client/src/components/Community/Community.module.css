@@ -32,7 +32,8 @@
 left: 0%;
 right: 0%;
 top: 0%;
-bottom: 33.33%;
+/* bottom: 33.33%; */
+bottom: 35.33%;
 
 font-family: Roboto;
 font-style: normal;
@@ -47,7 +48,7 @@ width: 270px;
 height: 48px;
 left: 18px;
 /* margin-top: 116px; */
-margin-top: 90px;
+margin-top: 80px;
 }
 
 .iconOutline{
@@ -59,10 +60,11 @@ margin-top: 90px;
 }
 
 .iconGroup{
-    /* position: absolute;     */
+    position: absolute;    
 left: 6.25%;
 right: 3.74%;
-top: 9.38%;
+/* top: 9.38%; */
+top: 21.38%;
 bottom: 11.87%;
 }
 
@@ -80,7 +82,7 @@ height: 22px;
 left: 225px;
 top: 45px;
 
-background: #FFFFFF;
+/* background: #FFFFFF; */
 border: 0.5px solid #BD00FD;
 box-sizing: border-box;
 border-radius: 4px;
