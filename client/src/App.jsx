@@ -23,12 +23,18 @@ function App ()
       <div className={style.appBody}>
         {/* <Pills_front/> */}
         {/* <Device /> */}
-        {/* <Caddy/> */}
+        {/* <Caddy /> */}
         <PeopleConnect />
         {/* <Main /> */}
       </div>
       <Footerr />
     </div>
+    // <>
+
+    //   <Caddy />
+
+
+    // </>
   );
 }
 

@@ -7,7 +7,7 @@ import style from "./caddy.module.css"
 function Caddy ()
 {
     return (
-        <div>
+        <div className={style.body}>
             <Headerr />
             <div className={style.caddy}>
 
