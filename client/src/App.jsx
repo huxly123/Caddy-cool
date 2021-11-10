@@ -31,6 +31,10 @@ function App ()
               <PeopleConnect />
             </Route>
 
+            <Route path="/Caddy" exact>
+              <PeopleConnect />
+            </Route>
+
             <Route>404 not found</Route>
           </Switch>
           {/* <Pills_front/> */}
