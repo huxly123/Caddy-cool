@@ -22,7 +22,7 @@ function App ()
       <div className={style.appHeight}>
         <Headerr />
         <div className={style.appBody}>
-          {/* <Switch>
+          <Switch>
             <Route path="/Main" exact>
               <Main />
             </Route>
@@ -32,7 +32,7 @@ function App ()
             </Route>
 
             <Route>404 not found</Route>
-          </Switch> */}
+          </Switch>
           {/* <Pills_front/> */}
           {/* <Device /> */}
           {/* <Caddy /> */}

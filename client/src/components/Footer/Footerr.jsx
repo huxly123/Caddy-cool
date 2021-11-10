@@ -24,7 +24,7 @@ function Footerr ()
                 <div><img className={style.fix} src={img3} alt="caddy"></img></div>
             </div>
 
-            <div className={styles.appBody}>
+            {/* <div className={styles.appBody}>
                 <Switch>
                     <Route path="/Main" exact>
                         <Main />
@@ -37,11 +37,11 @@ function Footerr ()
                     <Route>404 not found</Route>
                 </Switch>
                 {/* <Pills_front/> */}
-                {/* <Device /> */}
-                {/* <Caddy /> */}
-                {/* <PeopleConnect /> */}
-                {/* <Main /> */}
-            </div>
+            {/* <Device /> */}
+            {/* <Caddy /> */}
+            {/* <PeopleConnect /> */}
+            {/* <Main /> * /}
+            </div> */}
         </Router>
     )
 }
