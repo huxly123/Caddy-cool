@@ -21,7 +21,7 @@ function Footerr ()
             <div className={style.footerbody}>
                 <Link to="/Main"><div><img src={img1} alt="home"></img></div></Link>
                 <Link to="/PeopleConnect"><div><img src={img2} alt="community"></img></div></Link>
-                <div><img className={style.fix} src={img3} alt="caddy"></img></div>
+                <Link to="/Caddy"><div><img className={style.fix} src={img3} alt="caddy"></img></div></Link>
             </div>
 
             {/* <div className={styles.appBody}>
