@@ -2,7 +2,9 @@ import React from 'react'
 // import Footerr from '../../Footer/Footerr'
 // import Headerr from '../../Header/Headerr'
 import style from "./caddy.module.css"
-import Pills_taken from "../Pills_Taken/Pills_taken"
+import Pills_remaining from '../Pills_Remaining/Pills_remaining'
+import Pills_taken from '../Pills_Taken/Pills_taken'
+
 
 function Caddy ()
 {
@@ -19,8 +21,12 @@ function Caddy ()
                 </div>
                 <div className={style.line}></div>
 
+
+<Pills_remaining/>
+<div className={style.wrapper}>
 <Pills_taken/>
 
+</div>
             </div>
             {/* <Footerr /> */}
         </div>
