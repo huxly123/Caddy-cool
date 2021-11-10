@@ -1,7 +1,8 @@
 //Main home sceen we can add multiple components here
 import "./main.css"
 import Logo from "./Logo"
-export default function App ()
+// export default function App ()
+function Main ()
 {
     return (
         <div className="main">
@@ -9,3 +10,5 @@ export default function App ()
         </div>
     )
 };
+
+export { Main }
