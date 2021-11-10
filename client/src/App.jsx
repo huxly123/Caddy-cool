@@ -10,13 +10,10 @@ function App ()
 {
   return (
     <>
-      <Headerr />
-      {/* <Pills_front/> */}
-      <Device />
-      <Footerr />
-      {/* <Caddy/> */}
-
-      {/* <PeopleConnect /> */}
+  
+     <Caddy/>
+   
+     
     </>
   );
 }

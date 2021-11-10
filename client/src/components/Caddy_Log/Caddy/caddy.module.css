@@ -1,9 +1,12 @@
+.body{
+    background-color:#F5F5F5 ;
+}
 .caddy{
     border: 1px solid black;
     width: 88%;
     margin: auto;
-    height: 78vh;
-overflow: scroll;
+    height: 82vh;
+overflow: auto;
 }
 
 .caddylog{
@@ -27,7 +30,7 @@ overflow: scroll;
 }
 
 .line{
-    width: 30%;
+    width: 33%;
 height: 0px;
 
 
