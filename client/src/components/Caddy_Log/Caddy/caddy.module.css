@@ -1,6 +1,6 @@
 
 .caddy{
-    border: 1px solid black;
+ 
     width: 88%;
     margin: auto;
     height: 82vh;
@@ -34,4 +34,8 @@ height: 0px;
 
 
 border: 2px solid #1A1B41;
+}
+
+.wrapper{
+    margin-top: 40vh;
 }

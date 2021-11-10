@@ -37,7 +37,7 @@ border-radius: 12px 12px 0px 0px;
 
 .grid{
     display: grid;
-    margin-top: 5vh;
+    margin-top: 3vh;
     grid-template-columns: 90%;
     grid-gap: 5%;
 }

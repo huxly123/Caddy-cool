@@ -1,7 +1,7 @@
 import React from 'react'
 import style from "./pills_remaining.module.css"
 
-function Pills_taken() {
+function Pills_remining() {
     return (
         <div className={style.body}>
         <div className={style.flexx}>
@@ -48,4 +48,4 @@ function Pills_taken() {
     )
 }
 
-export default Pills_taken
+export default Pills_remining
