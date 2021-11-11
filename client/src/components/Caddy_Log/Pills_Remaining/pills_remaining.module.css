@@ -10,11 +10,12 @@
 }
 
 .remain{
-    position: absolute;
+    
 
-width: 311px;
+width: 100%;
 height: 257px;
 left: 32px;
+
 top: 190px;
 overflow-y: auto;
 overflow-x: hidden;
@@ -25,8 +26,8 @@ border-bottom-right-radius: 12px;
 }
 
 .redline{
-    position: absolute;
-width: 311px;
+  margin-top: 20px;
+width: 100%;
 height: 8px;
 left: 32px;
 top: 182px;
