@@ -58,11 +58,29 @@ font-size: 12px;
 }
 
 .gridflex button{
-   
+   cursor: pointer;
 border: none;
 background-color: #00E676;
 padding: 0px 12px;
 font-size: 12px;
-
+border-radius: 12px;
 height: 20px;
+}
+
+.search{
+    border: none;
+    background-color: #29B6F6;
+    border-radius: 10px;
+margin-left: 3vw;
+font-size: smaller;
+}
+
+.date{
+    display: inline;
+    font-size: smaller;
+    color: #90A4AE;
+}
+
+.pillsfont{
+    font-weight: bolder;
 }

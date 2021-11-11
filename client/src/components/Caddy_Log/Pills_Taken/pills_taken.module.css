@@ -46,10 +46,10 @@ border-bottom-right-radius: 12px;
 .gridflex button{
    
     border: none;
-    background-color: #9C27B0;
+    background-color: #FFCCBC;
     padding: 0px 12px;
     font-size: 12px;
-   
+   border-radius: 12px;
     height: 20px;
     }
 
