@@ -13,6 +13,10 @@ function Caddy ()
 {
 
     const [btnpop,setbtnpopup]=useState(false)
+
+    const [remainingpop,setremainingpop]=useState(false)
+
+    const [takenpop,settakenpop]=useState(false)
     
 
     return (
