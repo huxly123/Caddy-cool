@@ -39,8 +39,8 @@ border-bottom-right-radius: 12px;
 
 .gridflex{
     display: flex;
-   
-    justify-content: space-around;
+    margin-left: 4vw;
+    justify-content: space-between;
 }
 
 .gridflex button{
@@ -59,7 +59,7 @@ border-bottom-right-radius: 12px;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    
+    display: inline;
     }
 
     .grid{

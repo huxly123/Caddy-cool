@@ -14,32 +14,10 @@ function Pills_remining() {
             <div className={style.grid}>
 
 <div className={style.gridflex}>
-<p>Pill 1 -Glycomet</p>
-<button>Take Pill</button>
+    <div>
+<p>Pill 1-Glycomet - </p>
+<p>9.07 pm</p>
 </div>
-
-<div className={style.gridflex}>
-<p>Pill 1 -Glycomet</p>
-<button>Take Pill</button>
-</div>
-
-<div className={style.gridflex}>
-<p>Pill 1 -Glycomet</p>
-<button>Take Pill</button>
-</div>
-
-<div className={style.gridflex}>
-<p>Pill 1 -Glycomet</p>
-<button>Take Pill</button>
-</div>
-
-<div className={style.gridflex}>
-<p>Pill 1 -Glycomet</p>
-<button>Take Pill</button>
-</div>
-
-<div className={style.gridflex}>
-<p>Pill 1 -Glycomet</p>
 <button>Take Pill</button>
 </div>
 

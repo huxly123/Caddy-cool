@@ -44,17 +44,17 @@ border-radius: 12px 12px 0px 0px;
 
 .gridflex{
     display: flex;
-   
-    justify-content: space-around;
+  margin-left: 4vw;
+    justify-content: space-between;
 }
 
 .gridflex p{
     color: #767676;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
-
+display: inline;
 }
 
 .gridflex button{
