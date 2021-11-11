@@ -1,4 +1,27 @@
 .popupbody{
     border: 1px solid black;
     font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    position: absolute;
+  left: 0px;
+  top: 100px;
+  
+}
+
+.flexwrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexwrap>h5{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.flexwrap >button{
+border: none;
+
+  position: relative;
+  margin-left: 18vw;
+    
 }

@@ -7,12 +7,16 @@ function Popup_addpill({setbtn,btn}) {
        <>
      <div className={style.popupbody}>
         
-
+<div className={style.flexwrap}>
+    <h5>Name of the pill</h5>
          <button onClick={()=>{
              setbtn(false)
          }}>close</button>
 
-       
+</div>
+
+<input placeholder="Pill Name"></input>
+
      </div>
 
 
