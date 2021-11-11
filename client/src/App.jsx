@@ -15,7 +15,7 @@ import style from "./App.module.css";
 import homeIcon from "./components/Footer/homeimg.svg";
 import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
-import Iframe_addpill from "./components/Caddy_Log/Iframe_addpill/Iframe_addpill";
+
 
 
 function App ()
@@ -47,10 +47,7 @@ function App ()
               <Caddy />
             </Route>
 
-            <Route path="/add_pill" exact>
-<Iframe_addpill/>
-              </Route>
-
+         
   
 
             <Route>404 not found</Route>

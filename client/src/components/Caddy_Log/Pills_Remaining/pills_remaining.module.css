@@ -70,7 +70,8 @@ height: 20px;
 .search{
     border: none;
     background-color: #FF9D9D;
-    border-radius: 10px;
+    border-radius: 4px;
+    color: white;
 margin-left: 3vw;
 font-size: smaller;
 }

@@ -82,7 +82,8 @@ border-bottom-right-radius: 12px;
     .search{
         border: none;
         background-color: #00CB9A;
-        border-radius: 10px;
+        border-radius: 4px;
+        color: white;
     margin-left: 3vw;
     font-size: smaller;
     }
