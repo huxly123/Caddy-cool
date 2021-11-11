@@ -3,7 +3,7 @@
     background-color: #F3E5F5;
 }
 
-.but1{
+.btn1{
     cursor: pointer;
     border: none;
 
@@ -17,7 +17,7 @@
     border-radius: 15px;
 }
 
-.but2{
+.btn2{
     cursor: pointer;
     border: none;
 
@@ -42,7 +42,7 @@
     border-radius: 40px 40px 0px 0px;
 }
 
-.but3{
+.btn3{
     border: none;
     background-color: white;
     cursor: pointer;
@@ -62,7 +62,7 @@
     align-items: center;    
 }
 
-.but4{
+.btn4{
     border: none;
     background-color: white;
     cursor: pointer;
@@ -82,7 +82,7 @@
     align-items: center;
 }
 
-.but5{
+.btn5{
     border: none;
     background-color: white;
     cursor: pointer;

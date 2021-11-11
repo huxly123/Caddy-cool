@@ -40,6 +40,10 @@ function App ()
               <Main />
             </Route>
 
+            <Route path="/CommunityGroups" exact>
+              <CommunityGroups />
+            </Route>
+
             <Route path="/PeopleConnect" exact>
               <PeopleConnect />
             </Route>
@@ -50,10 +54,6 @@ function App ()
 
             <Route path="/Caddy" exact>
               <Caddy />
-            </Route>
-
-            <Route path="/CommunityGroups" exact>
-              <CommunityGroups />
             </Route>
 
             {/* <Route path="/add_pill" exact>
