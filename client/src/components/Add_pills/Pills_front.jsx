@@ -1,6 +1,5 @@
 import React from 'react'
-// import Footerr from '../Footer/Footerr'
-import Headerr from '../Header/Headerr'
+import { Link } from 'react-router-dom'
 import style from "./pills_front.module.css"
 
 function Pills_front ()
@@ -15,7 +14,7 @@ function Pills_front ()
             </div>
             <div className={style.bottom}>
                 <div className={style.bottom1}>
-                    <div className={style.but3}><h4>Add Pills</h4></div>
+                   <Link to="/Caddy"><div className={style.but3}><h4>Add Pills</h4></div></Link>
 
                     <div className={style.but4}><h4>Add Peers</h4></div>
                 </div>

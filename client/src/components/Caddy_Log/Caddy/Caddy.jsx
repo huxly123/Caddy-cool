@@ -1,6 +1,5 @@
 import React from 'react'
-// import Footerr from '../../Footer/Footerr'
-// import Headerr from '../../Header/Headerr'
+import { Link } from 'react-router-dom'
 import style from "./caddy.module.css"
 import Pills_remaining from '../Pills_Remaining/Pills_remaining'
 import Pills_taken from '../Pills_Taken/Pills_taken'
@@ -16,7 +15,7 @@ function Caddy ()
                 <div className={style.top}>
                     <div className={style.caddylog}>My Caddy Log</div>
 
-                    <div className={style.in}><button className={style.pills}>Add Pills</button></div>
+                <div className={style.in}><Link to="/add_pill"><button className={style.pills}>Add Pills</button></Link></div>
 
                 </div>
                 <div className={style.line}></div>
