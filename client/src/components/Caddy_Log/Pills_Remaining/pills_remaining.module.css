@@ -60,7 +60,7 @@ display: inline;
 .gridflex button{
    cursor: pointer;
 border: none;
-background-color: #00E676;
+background-color: #00CB9A;
 padding: 0px 12px;
 font-size: 12px;
 border-radius: 12px;
@@ -69,7 +69,7 @@ height: 20px;
 
 .search{
     border: none;
-    background-color: #29B6F6;
+    background-color: #FF9D9D;
     border-radius: 10px;
 margin-left: 3vw;
 font-size: smaller;

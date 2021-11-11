@@ -68,3 +68,21 @@ border-bottom-right-radius: 12px;
         grid-template-columns: 90%;
         grid-gap: 5%;
     }
+
+    .pillsfont{
+        font-weight: bolder;
+    }
+
+    .date{
+        display: inline;
+        font-size: smaller;
+        color: #90A4AE;
+    }
+
+    .search{
+        border: none;
+        background-color: #00CB9A;
+        border-radius: 10px;
+    margin-left: 3vw;
+    font-size: smaller;
+    }
