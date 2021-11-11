@@ -1,11 +1,33 @@
-.appHeight{
-    height: 100vh;
-}
 .appBody{
     height: 668px;
     overflow-y: auto;
     overflow-x: hidden;
-
+    z-index: 1;
     border-left: 2px solid grey;
     border-right: 2px solid grey;
+    margin-top: 72px;
+}
+
+.footerbody{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 72px;
+    border: 2px solid grey;
+    border-top: none;
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 1000;
+    background: #FAFAFA;
+    justify-content:space-around
+}
+
+.footerbody img{
+    cursor: pointer;
+}
+
+.plus{
+  margin-left: -3vw;
+  margin-bottom: 5px;
 }

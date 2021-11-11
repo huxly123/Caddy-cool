@@ -22,7 +22,7 @@ function App ()
 {
   return (
     <Router>
-      <div className={style.appHeight}>
+      <div>
 
         {/* Header */}
         <Headerr />
@@ -50,7 +50,7 @@ function App ()
         </div>
 
         {/* Footer */}
-        <div className={styles.footerbody}>
+        <div className={style.footerbody}>
           <Link to="/Main"><div><img src={homeIcon} alt="home"></img></div></Link>
           <Link to="/PeopleConnect"><div><img src={communityIcon} alt="community"></img></div></Link>
           <Link to="/Caddy"><div><img className={styles.fix} src={caddyIcon} alt="caddy"></img></div></Link>

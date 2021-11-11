@@ -3,14 +3,15 @@
     align-items: center;
     width: 100vw;
     height: 72px;
-   border: 2px solid grey;
-   border-bottom: none;
+    border: 2px solid grey;
+    border-bottom: none;
     border-radius: 16px 16px 0px 0px;
     box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1);
-    
+    position: fixed;
+    z-index: 1000;
     background: #FAFAFA;
-   box-shadow: #0000001A;
-    justify-content:space-between
+    justify-content:space-between;
+    top: 0;
 }
 
 .headerbody img{
