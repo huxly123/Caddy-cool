@@ -51,9 +51,9 @@ function App ()
               <Caddy />
             </Route> */}
 
-            <Route path="/add_pill" exact>
+            {/* <Route path="/add_pill" exact>
               <Iframe_addpill />
-            </Route>
+            </Route> */}
 
             <Route>
               {/* 404 not found */}

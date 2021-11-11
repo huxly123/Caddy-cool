@@ -6,17 +6,17 @@ import MedicalEducatorsIcon from "./svg/MedicalEducators.svg";
 import MedicalProfessionalIcon from "./svg/MedicalProfessional.svg";
 import PersonalTrainerIcon from "./svg/PersonalTrainer.svg";
 
-import homeIconInactive from "../Footer/homeimginactive.svg";
-import groupIconActive from "../Footer/groupimg.svg";
-import caddyIconInactive from "../Footer/Vector.svg";
+// import homeIconInactive from "../Footer/homeimginactive.svg";
+// import groupIconActive from "../Footer/groupimg.svg";
+// import caddyIconInactive from "../Footer/Vector.svg";
 
 class PeopleConnect extends Component
 {
     render ()
     {
-        document.getElementById("homeicon").src = `${ homeIconInactive }`;
-        document.getElementById("communityicon").src = `${ groupIconActive }`;
-        document.getElementById("caddyicon").src = `${ caddyIconInactive }`;
+        // document.getElementById("homeicon").src = `${ homeIconInactive }`;
+        // document.getElementById("communityicon").src = `${ groupIconActive }`;
+        // document.getElementById("caddyicon").src = `${ caddyIconInactive }`;
 
 
         return (
