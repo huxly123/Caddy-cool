@@ -19,7 +19,6 @@
 
 .card:active,.card:hover{
     background-color: #FCF2FF;
-    ;
 }
 
 .card_head{
@@ -156,4 +155,9 @@ flex: none;
 order: 0;
 flex-grow: 0;
 margin: 0px 10px;
+}
+
+.linkStyle{
+    text-decoration: none;
+    color: #212529;
 }

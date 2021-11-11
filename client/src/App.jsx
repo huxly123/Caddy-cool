@@ -5,6 +5,7 @@ import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
 import { Main } from "./components/Main";
 import SignUp from "./components/SignUp/Signup";
+import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
 
 import
 {
@@ -51,9 +52,9 @@ function App ()
               <Caddy />
             </Route>
 
-            {/* <Route path="/Caddy" exact>
-              <Caddy />
-            </Route> */}
+            <Route path="/CommunityGroups" exact>
+              <CommunityGroups />
+            </Route>
 
             {/* <Route path="/add_pill" exact>
               <Iframe_addpill />

@@ -5,6 +5,8 @@ import CommunityIcon from "./svg/Community.svg";
 import MedicalEducatorsIcon from "./svg/MedicalEducators.svg";
 import MedicalProfessionalIcon from "./svg/MedicalProfessional.svg";
 import PersonalTrainerIcon from "./svg/PersonalTrainer.svg";
+import { Link } from 'react-router-dom'
+import style from "./Community.module.css";
 
 // import homeIconInactive from "../Footer/homeimginactive.svg";
 // import groupIconActive from "../Footer/groupimg.svg";
@@ -21,13 +23,15 @@ class PeopleConnect extends Component
 
         return (
             <div className="container d-flex align-items-center flex-wrap mt-3 flex-column">
-                <div className="row mb-3">
-                    <Community
-                        img={CommunityIcon}
-                        heading='Community'
-                        body='Connect with people who are in the same boat as you and build a community!'
-                    />
-                </div>
+                <Link to="/CommunityGroups" className={style.linkStyle}>
+                    <div className="row mb-3">
+                        <Community
+                            img={CommunityIcon}
+                            heading='Community'
+                            body='Connect with people who are in the same boat as you and build a community!'
+                        />
+                    </div>
+                </Link>
                 <div className="row mb-3">
                     <Community
                         img={MedicalEducatorsIcon}
