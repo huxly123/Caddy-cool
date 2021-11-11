@@ -62,7 +62,7 @@ export default function Signin(){
         <input className="email" type="text" name="email" value={user.email} onChange={handleChange}/>
         <br/>
         <label><p style={{color:"lightgrey"}}>Password</p></label>
-        <input className="password" type="text" name="password" value={user.password} onChange={handleChange}/>
+        <input className="password" type="password" name="password" value={user.password} onChange={handleChange}/>
         </div>
         <p className="forget">Forgot you password?</p>
         {eState?<div className="errorDiv"><div className="allErr">{error.map((e)=><p key={e}>{e}</p>)}</div> <button onClick={()=>setEstate(false)}>x</button></div>:""}
