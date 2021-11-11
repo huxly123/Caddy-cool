@@ -12,7 +12,6 @@ import
   Link
 } from "react-router-dom";
 import style from "./App.module.css";
-import styles from "./components/Footer/footer.module.css";
 import homeIcon from "./components/Footer/homeimg.svg";
 import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
@@ -53,7 +52,7 @@ function App ()
         <div className={style.footerbody}>
           <Link to="/Main"><div><img src={homeIcon} alt="home"></img></div></Link>
           <Link to="/PeopleConnect"><div><img src={communityIcon} alt="community"></img></div></Link>
-          <Link to="/Caddy"><div><img className={styles.fix} src={caddyIcon} alt="caddy"></img></div></Link>
+          <Link to="/Caddy"><div><img className={style.fix} src={caddyIcon} alt="caddy"></img></div></Link>
         </div>
 
       </div>
