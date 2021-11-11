@@ -44,12 +44,12 @@ router.get("/:id",async(req,res)=>{
     res.send(data);
 })
 
-router.get("/:id",async(req,res)=>{
+router.patch("/:id",async(req,res)=>{
     const data = await User.findByIdAndUpdate(req.params.id,req.body);
     res.send(data);
 })
 
-router.get("/:id",async(req,res)=>{
+router.delete("/:id",async(req,res)=>{
     const data = await User.findByIdAndDelete(req.params.id);
     res.send(data);
 })
