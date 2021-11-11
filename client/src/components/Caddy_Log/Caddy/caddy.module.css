@@ -39,3 +39,7 @@ border: 2px solid #1A1B41;
 .wrapper{
     margin-top: 40vh;
 }
+
+.iframee{
+    position: absolute;
+}
