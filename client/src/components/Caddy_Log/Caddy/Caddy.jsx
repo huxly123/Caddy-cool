@@ -5,9 +5,18 @@ import style from "./caddy.module.css"
 import Pills_remaining from '../Pills_Remaining/Pills_remaining'
 import Pills_taken from '../Pills_Taken/Pills_taken'
 
+import homeIconInactive from "../../Footer/homeimginactive.svg";
+import groupIconInactive from "../../Footer/groupimginactive.svg";
+import caddyIconActive from "../../Footer/VectorTab1.svg";
+
 
 function Caddy ()
 {
+
+    // document.getElementById("homeicon").src = `${ homeIconInactive }`;
+    // document.getElementById("communityicon").src = `${ groupIconInactive }`;
+    // document.getElementById("caddyicon").src = `${ caddyIconActive }`;
+
     return (
         <div className={style.body}>
             {/* <Headerr /> */}
