@@ -44,25 +44,43 @@ border-radius: 12px 12px 0px 0px;
 
 .gridflex{
     display: flex;
-   
-    justify-content: space-around;
+  margin-left: 4vw;
+    justify-content: space-between;
 }
 
 .gridflex p{
     color: #767676;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
-
+display: inline;
 }
 
 .gridflex button{
-   
+   cursor: pointer;
 border: none;
-background-color: #00E676;
+background-color: #00CB9A;
 padding: 0px 12px;
 font-size: 12px;
-
+border-radius: 12px;
 height: 20px;
+}
+
+.search{
+    border: none;
+    background-color: #FF9D9D;
+    border-radius: 10px;
+margin-left: 3vw;
+font-size: smaller;
+}
+
+.date{
+    display: inline;
+    font-size: smaller;
+    color: #90A4AE;
+}
+
+.pillsfont{
+    font-weight: bolder;
 }

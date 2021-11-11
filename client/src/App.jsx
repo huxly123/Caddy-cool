@@ -19,6 +19,7 @@ import style from "./App.module.css";
 import homeIconActive from "./components/Footer/homeimgactive.svg";
 import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
+import Iframe_addpill from "./components/Caddy_Log/Iframe_addpill/Iframe_addpill";
 
 
 function App ()
@@ -42,8 +43,16 @@ function App ()
               <PeopleConnect />
             </Route>
 
-            <Route path="/Caddy" exact>
+            <Route path="/Pills_front">
+              <Pills_front />
+            </Route>
+
+            {/* <Route path="/Caddy" exact>
               <Caddy />
+            </Route> */}
+
+            <Route path="/add_pill" exact>
+              <Iframe_addpill />
             </Route>
 
             <Route>
@@ -67,15 +76,15 @@ function App ()
               <img src={communityIcon} id="communityicon" alt="community"></img>
             </div>
           </Link>
-          <Link to="/Caddy">
+          <Link to="/Pills_front">
             <div>
               <img className={style.fix} src={caddyIcon} id="caddyicon" alt="caddy"></img>
             </div>
           </Link>
-        </div>
+        </div >
 
-      </div>
-    </Router>
+      </div >
+    </Router >
   );
 }
 

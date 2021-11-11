@@ -6,8 +6,9 @@ function Pills_taken() {
     return (
        <div className={style.body}>
             <div className={style.flexx}>
-            <div style={{fontWeight:"bolder"}}>Pills Taken</div>
-            <div><h6>Date -</h6></div>
+            <div className={style.pillsfont}>Pills Taken</div>
+            <div><h6 className={style.date}>Date-25/02/98</h6>
+           <button className={style.search}>Search</button></div>
         </div>
 
         <div className={style.greenline}></div>
@@ -15,14 +16,14 @@ function Pills_taken() {
             <div className={style.grid}>
 
 <div className={style.gridflex}>
-<p>Pill 1 -Glycomet</p>
+    <div>
+<p>Pill 1-Glycomet - </p>
+<p>9.07 pm</p>
+</div>
 <button>Pills Taken</button>
 </div>
 
-<div className={style.gridflex}>
-<p>Pill 1 -Glycomet</p>
-<button>Pills Taken</button>
-</div>
+
 
 
 

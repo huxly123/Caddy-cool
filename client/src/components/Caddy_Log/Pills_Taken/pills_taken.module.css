@@ -39,17 +39,17 @@ border-bottom-right-radius: 12px;
 
 .gridflex{
     display: flex;
-   
-    justify-content: space-around;
+    margin-left: 4vw;
+    justify-content: space-between;
 }
 
 .gridflex button{
    
     border: none;
-    background-color: #9C27B0;
+    background-color: #FFCCBC;
     padding: 0px 12px;
     font-size: 12px;
-   
+   border-radius: 12px;
     height: 20px;
     }
 
@@ -59,7 +59,7 @@ border-bottom-right-radius: 12px;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    
+    display: inline;
     }
 
     .grid{
@@ -67,4 +67,22 @@ border-bottom-right-radius: 12px;
         margin-top: 3vh;
         grid-template-columns: 90%;
         grid-gap: 5%;
+    }
+
+    .pillsfont{
+        font-weight: bolder;
+    }
+
+    .date{
+        display: inline;
+        font-size: smaller;
+        color: #90A4AE;
+    }
+
+    .search{
+        border: none;
+        background-color: #00CB9A;
+        border-radius: 10px;
+    margin-left: 3vw;
+    font-size: smaller;
     }
