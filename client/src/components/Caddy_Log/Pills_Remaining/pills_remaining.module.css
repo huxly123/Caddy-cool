@@ -21,6 +21,8 @@ overflow-y: auto;
 overflow-x: hidden;
 background: #FFFFFF;
 box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.18);
+
+
 border-bottom-left-radius: 12px;
 border-bottom-right-radius: 12px;
 }

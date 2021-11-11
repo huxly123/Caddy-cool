@@ -18,7 +18,22 @@ function Popup_addpill({setbtn,btn}) {
 
 <input className={style.pillinput} placeholder="Pill Name"></input>
 
+<h5 className={style.startdate}>Start Date</h5>
 
+<input className={style.dateinput} placeholder="Enter Date"></input>
+
+<h5 className={style.duetime}>Due Time for Consumption</h5>
+
+<div className={style.consumeflex}>
+<input className={style.consumeinput} placeholder="Enter Time"></input>
+
+<select>
+    <option>AM</option>
+    <option>PM</option>
+</select>
+</div>
+
+<button className={style.finishbut}>Add</button>
      </div>
 
 
