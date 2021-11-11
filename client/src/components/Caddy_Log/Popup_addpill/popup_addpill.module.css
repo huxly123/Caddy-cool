@@ -1,16 +1,20 @@
 .popupbody{
     border: 1px solid black;
     font-family: 'Roboto', sans-serif;
-    background-color: whitesmoke;
+    background: #FFFFFF;
     position: absolute;
   left: 0px;
-  top: 100px;
+  top: 120px;
+  width: 95%;
+  margin-left: 2%;
+  border-radius: 14px;
   
 }
 
 .flexwrap{
     display: flex;
     justify-content: space-around;
+   margin-top: 20px;
 }
 
 .flexwrap>h5{
@@ -20,8 +24,16 @@
 
 .flexwrap >button{
 border: none;
-
+height: 22px;
   position: relative;
   margin-left: 18vw;
-    
+  background: #00CB9A;
+color: white;
+border-radius: 4px;
+}
+
+.pillinput{
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 10px;
 }

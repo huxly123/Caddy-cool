@@ -1,5 +1,6 @@
 import React from 'react'
 import style from "./popup_addpill.module.css"
+import close from "./close.svg"
 
 
 function Popup_addpill({setbtn,btn}) {
@@ -15,7 +16,8 @@ function Popup_addpill({setbtn,btn}) {
 
 </div>
 
-<input placeholder="Pill Name"></input>
+<input className={style.pillinput} placeholder="Pill Name"></input>
+
 
      </div>
 
