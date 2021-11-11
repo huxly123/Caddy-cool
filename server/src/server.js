@@ -14,6 +14,6 @@ app.use("/user",userCotroller)
 
 
 app.listen(3001,(req,res)=>{
-    connect()
-    console.log("Server started on port 3001")
+    connect();
+    console.log("Server Started on port 3001")
 })
