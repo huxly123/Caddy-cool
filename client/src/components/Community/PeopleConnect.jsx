@@ -6,10 +6,13 @@ import MedicalEducatorsIcon from "./svg/MedicalEducators.svg";
 import MedicalProfessionalIcon from "./svg/MedicalProfessional.svg";
 import PersonalTrainerIcon from "./svg/PersonalTrainer.svg";
 
+import homeIconInactive from "../Footer/homeimginactive.svg";
+
 class PeopleConnect extends Component
 {
     render ()
     {
+        document.getElementById("homeicon").src = `${ homeIconInactive }`;
         return (
             <div className="container d-flex align-items-center flex-wrap mt-3 flex-column">
                 <div className="row mb-3">

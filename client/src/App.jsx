@@ -4,6 +4,8 @@ import Headerr from "./components/Header/Headerr";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
 import { Main } from "./components/Main";
+import SignUp from "./components/SignUp/Signup";
+
 import
 {
   BrowserRouter as Router,
@@ -11,8 +13,10 @@ import
   Route,
   Link
 } from "react-router-dom";
+
 import style from "./App.module.css";
-import homeIcon from "./components/Footer/homeimg.svg";
+
+import homeIconActive from "./components/Footer/homeimgactive.svg";
 import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
 
@@ -42,7 +46,10 @@ function App ()
               <Caddy />
             </Route>
 
-            <Route>404 not found</Route>
+            <Route>
+              {/* 404 not found */}
+              <SignUp />
+            </Route>
 
           </Switch>
 
@@ -50,9 +57,21 @@ function App ()
 
         {/* Footer */}
         <div className={style.footerbody}>
-          <Link to="/Main"><div><img src={homeIcon} alt="home"></img></div></Link>
-          <Link to="/PeopleConnect"><div><img src={communityIcon} alt="community"></img></div></Link>
-          <Link to="/Caddy"><div><img className={style.fix} src={caddyIcon} alt="caddy"></img></div></Link>
+          <Link to="/Main">
+            <div>
+              <img src={homeIconActive} id="homeicon" alt="home"></img>
+            </div>
+          </Link>
+          <Link to="/PeopleConnect">
+            <div>
+              <img src={communityIcon} id="communityicon" alt="community"></img>
+            </div>
+          </Link>
+          <Link to="/Caddy">
+            <div>
+              <img className={style.fix} src={caddyIcon} id="caddyicon" alt="caddy"></img>
+            </div>
+          </Link>
         </div>
 
       </div>

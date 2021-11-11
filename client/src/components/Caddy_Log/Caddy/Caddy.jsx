@@ -22,11 +22,11 @@ function Caddy ()
                 <div className={style.line}></div>
 
 
-<Pills_remaining/>
-<div className={style.wrapper}>
-<Pills_taken/>
+                <Pills_remaining />
+                <div className={style.wrapper}>
+                    <Pills_taken />
 
-</div>
+                </div>
             </div>
             {/* <Footerr /> */}
         </div>
