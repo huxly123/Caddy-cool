@@ -123,10 +123,14 @@
         box-sizing: border-box;
         border-radius: 6px;
     }
-input:focus{
-    outline: none;
-    border: 4px solid #5C89C7;
-    }
+input:focus {
+        outline:none;
+        border: 3px solid #BE00FF;
+      }
+input:hover {
+        outline:none;
+        border: 3px solid #BE00FF;
+      }
 .password{
     height:40px;
     width:97.1%;

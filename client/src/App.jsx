@@ -47,6 +47,10 @@ function App ()
               <Pills_front />
             </Route>
 
+            <Route path="/Caddy" exact>
+              <Caddy />
+            </Route>
+
             {/* <Route path="/Caddy" exact>
               <Caddy />
             </Route> */}

@@ -15,12 +15,23 @@ export default function SignUp(){
         setUser({...user,[name]:value});
     }
 
+    const [error,setError] = useState([]);
+    const [eState,setEstate] = useState(false);
+
      function submit(){
          try{
-           axios.post("http://localhost:3001/user",user)
+           axios.post("http://localhost:3001/register",user)
            .then((res)=>{
                if(res.data.status===400){
-               }
+                   setError(["email is already taken."]);
+                   setEstate(true);
+               }if(res.data.status===422){
+                setError(res.data.error);
+                setEstate(true);
+            }else{
+                setError([res.data.message]);
+                setEstate(true);
+            }
            })
            .catch((err)=>{
                console.log(err)
@@ -43,7 +54,7 @@ export default function SignUp(){
         <SmallLogo />
         </div>
         <div className="title">
-            <p className="titlep1">Welcome!</p>
+            <p className="titlep1">Welcome !</p>
             <p className="titlep2">To a manageable diabetic life !</p>
         </div>
 
@@ -59,8 +70,9 @@ export default function SignUp(){
         <input className="email" value={user.email} type="text" name="email" onChange={handleChange}/>
         <br/>
         <label><p style={{color:"lightgrey"}}>Password</p></label>
-        <input className="password"  value={user.password} type="text" name="password" onChange={handleChange}/>
+        <input className="password"  value={user.password} type="password" name="password" onChange={handleChange}/>
         </div>
+        {eState?<div className="errorDiv"><div className="allErr">{error.map((e)=><p key={e}>{e}</p>)}</div> <button onClick={()=>setEstate(false)}>x</button></div>:""}
         <button className="signinbtn" onClick={submit}>Sign Up</button>
         </div>
         
