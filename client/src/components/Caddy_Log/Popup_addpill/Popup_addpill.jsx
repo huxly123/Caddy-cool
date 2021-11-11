@@ -10,9 +10,9 @@ function Popup_addpill({setbtn,btn}) {
         
 <div className={style.flexwrap}>
     <h5>Name of the pill</h5>
-         <button onClick={()=>{
+         <img src={close} onClick={()=>{
              setbtn(false)
-         }}>close</button>
+         }}></img>
 
 </div>
 
@@ -33,7 +33,9 @@ function Popup_addpill({setbtn,btn}) {
 </select>
 </div>
 
-<button className={style.finishbut}>Add</button>
+<button className={style.finishbut} onClick={()=>{
+    setbtn(false)
+}}>Add</button>
      </div>
 
 
