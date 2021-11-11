@@ -171,3 +171,41 @@ input:focus{
     text-decoration: none;
     color:#5C89C7
 }
+
+.errorDiv{
+    background-color: #FFD5D5;
+    width: 311px;
+    height: 50px;
+    margin-left: 32px;
+    margin-top: 25px;
+    position: absolute;
+    z-index: 5;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+    /* color: #FF656E; */
+    color:black;
+    display: flex;
+    flex-direction: column;
+}
+.allErr{
+    width:85%;
+    height: 100%;
+    line-height: 5px;
+    color: #FF656E; 
+}
+.allErr>p{
+    margin-left: 5%;
+    color: #FF656E; 
+}
+.errorDiv>button{
+    position:absolute;
+    z-index: 12;
+    width:15%;
+    margin-top: 5%;
+    margin-left: 85%;
+    background: none;
+    border: none;
+    background-color: #FFD5D5;
+     color: #FF656E; 
+} 
