@@ -57,7 +57,9 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
-    
+
+    display: flex;
+    align-items: center;    
 }
 
 .but4{
@@ -75,6 +77,29 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+}
+
+.but5{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    
+    position: absolute;
+    width: 311px;
+    height: 73px;
+    left: 32px;
+    top: 420px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
 }
 
 .bottom1{
@@ -83,7 +108,7 @@
     top: 50px;
 }
 
-.bottom h4{
+.bottom h5{
     color: #BD00FD;
     
     padding-left: 20px;
@@ -93,6 +118,7 @@
     background-color:#F3E5F5 ;
 }
 
-.addpillss{
-    margin-top: 20px;
+.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover,.btn5:hover,.btn1:active,.btn2:active,.btn3:active,.btn4:active,.btn5:active{
+    background-color: #BD00FD;
+    color:#FFFFFF;
 }

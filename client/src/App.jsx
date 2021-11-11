@@ -4,6 +4,9 @@ import Headerr from "./components/Header/Headerr";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
 import { Main } from "./components/Main";
+import SignUp from "./components/SignUp/Signup";
+import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
+
 import
 {
   BrowserRouter as Router,
@@ -11,8 +14,10 @@ import
   Route,
   Link
 } from "react-router-dom";
+
 import style from "./App.module.css";
-import homeIcon from "./components/Footer/homeimg.svg";
+
+import homeIconActive from "./components/Footer/homeimgactive.svg";
 import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
 
@@ -40,17 +45,25 @@ function App ()
             </Route>
 
             <Route path="/Pills_front">
-<Pills_front/>
-                </Route>
+              <Pills_front />
+            </Route>
 
-                <Route path="/Caddy" exact>
+            <Route path="/Caddy" exact>
               <Caddy />
             </Route>
 
-         
-  
+            <Route path="/CommunityGroups" exact>
+              <CommunityGroups />
+            </Route>
 
-            <Route>404 not found</Route>
+            {/* <Route path="/add_pill" exact>
+              <Iframe_addpill />
+            </Route> */}
+
+            <Route>
+              {/* 404 not found */}
+              <SignUp />
+            </Route>
 
           </Switch>
 
@@ -58,13 +71,25 @@ function App ()
 
         {/* Footer */}
         <div className={style.footerbody}>
-          <Link to="/Main"><div><img src={homeIcon} alt="home"></img></div></Link>
-          <Link to="/PeopleConnect"><div><img src={communityIcon} alt="community"></img></div></Link>
-          <Link to="/Pills_front"><div><img className={style.fix} src={caddyIcon} alt="caddy"></img></div></Link>
-        </div>
+          <Link to="/Main">
+            <div>
+              <img src={homeIconActive} id="homeicon" alt="home"></img>
+            </div>
+          </Link>
+          <Link to="/PeopleConnect">
+            <div>
+              <img src={communityIcon} id="communityicon" alt="community"></img>
+            </div>
+          </Link>
+          <Link to="/Pills_front">
+            <div>
+              <img className={style.fix} src={caddyIcon} id="caddyicon" alt="caddy"></img>
+            </div>
+          </Link>
+        </div >
 
-      </div>
-    </Router>
+      </div >
+    </Router >
   );
 }
 
