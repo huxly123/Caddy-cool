@@ -14,9 +14,9 @@ function Pills_front ()
             </div>
             <div className={style.bottom}>
                 <div className={style.bottom1}>
-                   <Link to="/Caddy"><div className={style.but3}><h4>Add Pills</h4></div></Link>
+                   <Link to="/Caddy"><div className={style.but3}><h4 className={style.addpillss}>Add Pills</h4></div></Link>
 
-                    <div className={style.but4}><h4>Add Peers</h4></div>
+                    <div className={style.but4}><h4 className={style.addpillss}>Add Peers</h4></div>
                 </div>
             </div>
             {/* <Footerr/> */}
