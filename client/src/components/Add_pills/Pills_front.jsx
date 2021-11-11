@@ -8,7 +8,7 @@ function Pills_front ()
         <div className={style.body}>
             {/* <Headerr/> */}
             <div className={style.top}>
-                <button className={style.but1}>Caddy Log</button>
+               <Link to="/Caddy"><button className={style.but1}>Caddy Log</button></Link>
 
                 <button className={style.but2}>My Peers</button>
             </div>
