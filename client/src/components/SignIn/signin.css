@@ -70,6 +70,7 @@
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
+    margin-bottom: 8%;
 
 }
 .titlep2{
@@ -165,8 +166,48 @@ input:hover {
 .signupreminder{
     margin-left: 8%;
 }
-.signupreminder>a{
+.signupreminder>button{
     margin-left: 2%;
+    background-color: transparent;
+    border: none;
+    outline: none;
     text-decoration: none;
     color:#5C89C7
 }
+.errorDivSI{
+    background-color: #FFD5D5;
+    width: 311px;
+    height: 50px;
+    margin-left: 32px;
+    margin-top: 25px;
+    position: absolute;
+    z-index: 5;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+    color: #FF656E;
+    display: flex;
+    flex-direction: column;
+}
+.allErrSI{
+    width:85%;
+    height: 100%;
+    line-height: 5px;
+    color: #FF656E; 
+}
+.allErrSI>p{
+    margin-left: 5%;
+    color: #FF656E;
+    margin-top: 6%; 
+}
+.errorDivSI>button{
+    position:absolute;
+    z-index: 12;
+    width:15%;
+    margin-top: 5%;
+    margin-left: 85%;
+    background: none;
+    border: none;
+    background-color: #FFD5D5;
+     color: #FF656E; 
+} 
