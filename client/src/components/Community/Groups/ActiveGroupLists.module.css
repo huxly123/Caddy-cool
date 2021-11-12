@@ -155,11 +155,38 @@
     width: 225px;
     height: 36px;
     left: 15px;
-    top: 43px;
-
+    
     /* Layout */
     background: #FCF2FF;
     border-radius: 6px;
+}
+
+.msgDemoLayout:nth-child(1){
+    top: 43px;    
+}
+
+.msgDemoLayout:nth-child(1) .msgSenderName{
+    color: #FFB1B1;    
+}
+.test{
+    top:40px;
+    color: #FFB1B1;    
+}
+
+.msgDemoLayout:nth-child(2){
+    top: 87px;    
+}
+
+.msgDemoLayout:nth-child(2) .msgSenderName{
+    color: #AAFF65;   
+}
+
+.msgDemoLayout:nth-child(3){
+    top: 131px;    
+}
+
+.msgDemoLayout:nth-child(3) .msgSenderName{
+    color: #FF9D33;
 }
 
 .msgSender{
@@ -190,7 +217,7 @@
     /* identical to box height, or 150% */
 
 
-    color: #FFB1B1;
+    /* color: #FFB1B1; */
 
 
     /* Inside Auto Layout */
@@ -200,6 +227,7 @@
     flex-grow: 0;
     margin: 10px 0px;
 }
+
 
 .msgContainer{
     display: flex;
