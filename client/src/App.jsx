@@ -1,9 +1,12 @@
+import { useState,useEffect } from "react";
 import Pills_front from "./components/Add_pills/Pills_front";
 import { Device } from "./components/Device_connect/main";
 import Headerr from "./components/Header/Headerr";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
 import { Main } from "./components/Main";
+import Signin from "./components/SignIn/Signin"
+import Signup from "./components/SignUp/Signup"
 import
 {
   BrowserRouter as Router,
@@ -17,24 +20,53 @@ import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
 import Iframe_addpill from "./components/Caddy_Log/Iframe_addpill/Iframe_addpill";
 
+function App (){
+  useEffect(()=>{
+    setTimeout(()=>{
+      setComp("signin")
+    },4000)
+  },[]);
 
-function App ()
-{
+  const [comp,setComp] = useState("main")
+  function changeState(info){
+    setComp(info);
+  }
+
+  
+  if(comp==="main"){
+    return(
+      <Main/>
+    )
+  }
+  if(comp==="signin"){
+    return(
+      <Signin changeState={changeState}/>
+    )
+  }
+  if(comp==="signup"){
+    return(
+      <Signup />
+    )
+  }
+  if(comp==="other"){
   return (
     <Router>
       <div>
 
         {/* Header */}
+            
+          
         <Headerr />
 
         <div className={style.appBody}>
 
           <Switch>
 
-            <Route path="/Main" exact>
+            {/* <Route path="/Main" exact>
               <Main />
-            </Route>
-
+            </Route> */}
+           
+            
             <Route path="/PeopleConnect" exact>
               <PeopleConnect />
             </Route>
@@ -65,10 +97,10 @@ function App ()
           <Link to="/PeopleConnect"><div><img src={communityIcon} alt="community"></img></div></Link>
           <Link to="/Pills_front"><div><img className={style.fix} src={caddyIcon} alt="caddy"></img></div></Link>
         </div>
-
       </div>
     </Router>
-  );
+  )
+  }
 }
 
 export default App;
