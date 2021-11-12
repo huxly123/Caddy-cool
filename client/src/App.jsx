@@ -32,6 +32,7 @@ function App (){
     setTimeout(()=>{
       setComp("signin")
     },4000)
+    return;
   },[]);
 
   const [comp,setComp] = useState("main")
@@ -63,7 +64,14 @@ function App (){
         {/* Header */}
             
           
-        <Headerr />
+        <div className={style.headerbody}>
+          <div className={style.div1}><img src={img1} alt="menu"></img></div>
+          <div>
+            <span><img src={img2} alt="bell"></img></span>
+            {/* <span><img src={img3} alt="deviceConnect"></img></span> */}
+            <span><img src={img4} alt="deviceConnect"></img></span>
+          </div>
+        </div>
 
         {/* Body */}
         <div className={style.appBody}>
@@ -76,7 +84,7 @@ function App (){
             </Route>
            
             
-            <Route path="/PeopleConnect" exact>
+            {/* <Route path="/PeopleConnect" exact> */}
             {/* <Route path="/Main" exact>
               <Main />
             </Route> */}
@@ -100,7 +108,7 @@ function App (){
 
             <Route>
               {/* 404 not found */}
-              <SignUp />
+              <Signup />
             </Route>
 
           </Switch>
@@ -109,7 +117,7 @@ function App (){
 
         {/* Footer */}
         <div className={style.footerbody}>
-          <Link to="/Main"><div><img src={homeIcon} alt="home"></img></div></Link>
+          <Link to="/Main"><div><img src={homeIconActive} alt="home"></img></div></Link>
           <Link to="/PeopleConnect"><div><img src={communityIcon} alt="community"></img></div></Link>
           <Link to="/Pills_front"><div><img className={style.fix} src={caddyIcon} alt="caddy"></img></div></Link>
         </div>
