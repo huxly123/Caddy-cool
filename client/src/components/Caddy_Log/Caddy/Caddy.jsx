@@ -3,6 +3,8 @@ import style from "./caddy.module.css"
 import Pills_remaining from '../Pills_Remaining/Pills_remaining'
 import Pills_taken from '../Pills_Taken/Pills_taken'
 import Popup_addpill from '../Popup_addpill/Popup_addpill'
+import Remain_popup from '../Popup_showpill/Remain_popup/Remain_popup'
+import Taken_popup from '../Popup_showpill/Taken_popup/Taken_popup'
 
 // import homeIconInactive from "../../Footer/homeimginactive.svg";
 // import groupIconInactive from "../../Footer/groupimginactive.svg";
@@ -36,10 +38,10 @@ function Caddy ()
 
 
 
-                <Pills_remaining />
+                <Pills_remaining setremain={setremainingpop} />
             
                 <div className={style.wrapper}>
-                    <Pills_taken />
+                    <Pills_taken settake={settakenpop}/>
 
                 </div>
             </div>
@@ -47,6 +49,14 @@ function Caddy ()
             <Popup_addpill setbtn={setbtnpopup} btn={btnpop}>
 
 </Popup_addpill>
+
+<Remain_popup remainpop={remainingpop} setremainpop={setremainingpop}>
+
+</Remain_popup>
+
+<Taken_popup takepop={takenpop} settakepop={settakenpop}>
+
+</Taken_popup>
         </div >
 
     )
