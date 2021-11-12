@@ -16,7 +16,7 @@ function CommunityGroups ()
 
                     <div className={style.btn4}><h5>Get Added in a group randomly</h5></div>
 
-                    <div className={style.btn4}><h5>Create a group</h5></div>
+                    <div className={style.btn5}><h5>Create a group</h5></div>
                 </div>
             </div>
         </div>
