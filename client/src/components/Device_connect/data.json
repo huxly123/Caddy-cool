@@ -1,0 +1,49 @@
+{
+    "device_data":[
+        {
+            "title":"pulse",
+            "Average":"72 bpm",
+            "detailed":{
+                "Highest":"101 bpm",
+                "Lowest" :"56 bpm",
+                "Average":"72 bpm"
+            }
+        },
+        {
+            "title":"glucose",
+            "Average":"12 mg/dl",
+            "detailed":{
+               "Hydration":"65%",
+               "Alcohol":"150–200 mg/dL",
+                "Average":"12 mg/dl"
+            }
+        },
+        {
+            "title":"steps",
+            "Average":"7500",
+            "detailed":{
+                "CaloriesBurned":"300",
+                "Average":"7500",
+                "DistanceCovered":"7.5 km"
+            }
+        },
+        {
+            "title":"spo2",
+            "Average":"97",
+            "detailed":{
+                "Range":"92% - 97%",
+                "Average":"97"
+            }
+        },
+        {
+            "title":"sleep",
+            "Average":"8 hours",
+            "detailed":{
+                "REM":"20% - 30%",
+                "Deep":"72 mins",
+                "Average":"8 hours"
+            }
+        }
+    ]
+}
+    

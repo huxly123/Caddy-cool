@@ -52,7 +52,8 @@ function App ()
           <Switch>
 
             <Route path="/Main" exact>
-              <Main />
+              {/* <Main /> */}
+              <Device/>
             </Route>
 
             <Route path="/CommunityGroups" exact>
