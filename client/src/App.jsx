@@ -3,7 +3,7 @@ import { Device } from "./components/Device_connect/main";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
 import { Main } from "./components/Main";
-import SignUp from "./components/SignUp/Signup";
+import Signup from "./components/SignUp/Signup";
 import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
 import { ActiveGroups } from "./components/Community/Groups/ActiveGroups";
 import { GroupMembers } from "./components/Community/Groups/GroupMembers.jsx";
@@ -53,7 +53,7 @@ function App ()
 
             <Route path="/Main" exact>
               {/* <Main /> */}
-              <Device/>
+              <Device />
             </Route>
 
             <Route path="/CommunityGroups" exact>
@@ -86,7 +86,7 @@ function App ()
 
             <Route>
               {/* 404 not found */}
-              <SignUp />
+              <Signup />
             </Route>
 
           </Switch>
