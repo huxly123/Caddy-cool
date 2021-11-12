@@ -44,7 +44,7 @@
     /* #GroupName */
     position: static;
     width: 119px;
-    height: 14px;
+    /* height: 14px; */
     left: 8px;
     top: 2px;
 
@@ -73,27 +73,25 @@
     position: absolute;
     width: 66px;
     height: 18px;
-    left: 245px;
-    top: 11px;
+    left: 225px;
+    top: 5px;
 }
 
 .divsHeadRightElement{
     position: static;
-    width: 50px;
+    /* width: 50px; */
     height: 14px;
     left: 8px;
     top: 2px;
 
     font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
-    font-size: 8px;
+    font-weight: 600;
+    font-size: 10px;
     line-height: 14px;
     /* identical to box height, or 175% */
 
-
     color: #1A1B41;
-
 
     /* Inside Auto Layout */
 
@@ -101,4 +99,20 @@
     order: 0;
     flex-grow: 0;
     margin: 0px 10px;
+}
+
+.joinButton{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+
+    position: absolute;
+    width: 66px;
+    height: 22px;
+    left: 237px;
+    top: 161px;
+
+    background: #BD00FD;
+    border-radius: 4px;
 }
