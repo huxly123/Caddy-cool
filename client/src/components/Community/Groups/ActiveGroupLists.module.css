@@ -155,12 +155,23 @@
     width: 225px;
     height: 36px;
     left: 15px;
-    top: 43px;
-
+    
     /* Layout */
     background: #FCF2FF;
     border-radius: 6px;
 }
+
+/* .msgDemoLayout:nth-child(1){
+    top: 43px;    
+} */
+
+/* .test{
+    top:40px; 
+}
+
+.test .msgSenderName{
+    color: #FFB1B1;    
+} */
 
 .msgSender{
     display: flex;
@@ -190,7 +201,7 @@
     /* identical to box height, or 150% */
 
 
-    color: #FFB1B1;
+    /* color: #FFB1B1; */
 
 
     /* Inside Auto Layout */
@@ -200,6 +211,7 @@
     flex-grow: 0;
     margin: 10px 0px;
 }
+
 
 .msgContainer{
     display: flex;
@@ -237,4 +249,25 @@
     order: 0;
     flex-grow: 0;
     margin: 0px 10px;
+}
+
+.msgDemoLayout:nth-child(2){
+    top: 45px;    
+}
+
+.msgDemoLayout:nth-child(2) .msgSenderName{
+    color: #AAFF65;   
+}
+
+.msgDemoLayout:nth-child(3){
+    top: 100px;    
+}
+
+.msgDemoLayout:nth-child(3) .msgSenderName{
+    color: #FF9D33;
+}
+
+.msgDemoLayout:nth-child(3) .msgElement{
+    margin-top: 20px;
+    margin-left: 30px;
 }

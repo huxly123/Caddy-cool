@@ -86,7 +86,7 @@ function App ()
 
             <Route>
               {/* 404 not found */}
-              <SignUp />
+              <Signup />
             </Route>
 
           </Switch>
