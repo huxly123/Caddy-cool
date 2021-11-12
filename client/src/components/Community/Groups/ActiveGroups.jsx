@@ -6,13 +6,13 @@ function ActiveGroups ()
     return (
         <div className={style.body}>
             <div className={style.top}>
-                <Link to="/Caddy"><button className={style.btn1}>My Groups</button></Link>
+                <Link to="/IndividualGroupMembers"><button className={style.btn1}>My Groups</button></Link>
 
                 <button className={style.btn2}>My Activities</button>
             </div>
             <div className={style.bottom}>
                 <div className={style.bottom1}>
-                    <Link to="/Caddy"><div className={style.btn3}><h5>Choose Group Manually</h5></div></Link>
+                    <Link to="/IndividualGroupMembers"><div className={style.btn3}><h5>Choose Group Manually</h5></div></Link>
 
                     <div className={style.btn4}><h5>Get Added in a group randomly</h5></div>
 

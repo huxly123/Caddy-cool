@@ -7,6 +7,7 @@ import { Main } from "./components/Main";
 import SignUp from "./components/SignUp/Signup";
 import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
 import { ActiveGroups } from "./components/Community/Groups/ActiveGroups";
+import { IndividualGroupMembers } from "./components/Community/Groups/IndividualGroupMembers.jsx";
 
 import
 {
@@ -47,6 +48,10 @@ function App ()
 
             <Route path="/ActiveGroups" exact>
               <ActiveGroups />
+            </Route>
+
+            <Route path="/IndividualGroupMembers" exact>
+              <IndividualGroupMembers />
             </Route>
 
             <Route path="/PeopleConnect" exact>
