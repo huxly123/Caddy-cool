@@ -1,4 +1,4 @@
-import style from "./ActiveGroups.module.css";
+import style from "./ActivitiesPlannedLists.module.css";
 // import { Link } from "react-router-dom";
 
 function ActivitiesPlannedLists ()

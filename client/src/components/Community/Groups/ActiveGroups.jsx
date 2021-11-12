@@ -31,16 +31,19 @@ function ActiveGroups ()
                         </span>
                     </Link>
 
-                    {/* <span className={style.btn2}>Activities Planned</span> */}
                 </div>
+
                 <div className={style.bottom}>
                     <Switch>
+
                         <Route path="/ActiveGroupLists" exact>
                             <ActiveGroupLists />
                         </Route>
+
                         <Route path="/ActivitiesPlannedLists" exact>
                             <ActivitiesPlannedLists />
                         </Route>
+
                     </Switch>
                 </div>
             </>
