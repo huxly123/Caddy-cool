@@ -1,16 +1,18 @@
 .divs{
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     width: 311px;
     height: 191px;
     left: 32px;
     /* top: 139px; */
-    
+    margin-top: -170px;
     background: #FFFFFF;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
 }
 
 .divs:nth-child(1){
+    margin-top: -130px;
     top: 139px;
 }
 
@@ -105,6 +107,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
     padding: 4px 12px;
 
     position: absolute;
@@ -115,4 +118,34 @@
 
     background: #BD00FD;
     border-radius: 4px;
+}
+
+.joinButton>span{
+    position: static;
+    width: 42px;
+    height: 14px;
+    /* left: 12px; */
+    top: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 8px;
+    line-height: 14px;
+    /* identical to box height, or 175% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+
+    display: flex;
+    justify-content: center;
 }
