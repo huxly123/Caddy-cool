@@ -67,7 +67,7 @@ function App (){
             </Route> */}
            
             
-            <Route path="/PeopleConnect" exact>
+            <Route path="" exact>
               <PeopleConnect />
             </Route>
 
