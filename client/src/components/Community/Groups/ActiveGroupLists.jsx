@@ -23,6 +23,20 @@ function ActiveGroupLists ()
                         </span>
                     </div>
 
+                    <div className={style.msgDemoLayout}>
+                        <div className={style.msgSender}>
+                            <div className={style.msgSenderName}>
+                                Jai
+                            </div>
+                        </div>
+
+                        <div className={style.msgContainer}>
+                            <div className={style.msgElement}>
+                                Hey! Who is in for a 20 minute workout challenge?
+                            </div>
+                        </div>
+                    </div>
+
                     <div className={style.joinButton}>
                         <span>
                             Join Group

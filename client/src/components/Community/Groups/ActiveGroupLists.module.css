@@ -150,9 +150,9 @@
     justify-content: center;
 }
 
-.msgDemoGrp{
+.msgDemoLayout{
     position: absolute;
-    width: 206px;
+    width: 225px;
     height: 36px;
     left: 15px;
     top: 43px;
@@ -172,7 +172,7 @@
     width: 19.86px;
     height: 16px;
     left: 15px;
-    top: 43px;
+    /* top: 43px; */
 }
 
 .msgSenderName{
@@ -211,7 +211,8 @@
     width: 140.52px;
     height: 18px;
     left: 15px;
-    top: 59px;
+    /* top: 59px; */
+    top: 20px;
 }
 
 .msgElement{
