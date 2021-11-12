@@ -70,6 +70,13 @@ function App (){
 
           <Switch>
 
+
+            <Route path="/Main" exact>
+              <Device />
+            </Route>
+           
+            
+            {/* <Route path="/PeopleConnect" exact> */}
             {/* <Route path="/Main" exact>
               <Main />
             </Route> */}
