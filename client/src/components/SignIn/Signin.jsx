@@ -2,7 +2,7 @@ import SmallLogo from "./SmallLogo"
 import axios from "axios"
 import {useState} from "react";
 import "./signin.css"
-export default function Signin(){
+export default function Signin({changeState}){
     const [user,setUser] = useState({
         email:"",
         password:""
@@ -27,6 +27,7 @@ export default function Signin(){
               }
               if(res.data.status===200){
                setError([res.data.message]);
+               changeState("other")
                setEstate(true);
            }
            if(res.data.status===500){
@@ -65,9 +66,9 @@ export default function Signin(){
         <input className="password" type="password" name="password" value={user.password} onChange={handleChange}/>
         </div>
         <p className="forget">Forgot you password?</p>
-        {eState?<div className="errorDiv"><div className="allErr">{error.map((e)=><p key={e}>{e}</p>)}</div> <button onClick={()=>setEstate(false)}>x</button></div>:""}
+        {eState?<div className="errorDivSI"><div className="allErrSI">{error.map((e)=><p key={e}>{e}</p>)}</div> <button onClick={()=>setEstate(false)}>x</button></div>:""}
         <button className="signinbtn" onClick={submit}>Sign In</button>
-        <p className="signupreminder">Don't have an account?<a href="www">Sign Up</a></p>
+        <p className="signupreminder">Don't have an account?<button onClick={()=>changeState("signup")}>Sign Up</button></p>
         </div>
         
     )
