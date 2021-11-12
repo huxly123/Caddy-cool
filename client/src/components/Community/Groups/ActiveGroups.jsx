@@ -8,6 +8,7 @@ import
 } from "react-router-dom";
 import { ActiveGroupLists } from "./ActiveGroupLists";
 import { ActivitiesPlannedLists } from "./ActivitiesPlannedLists";
+import App from "../../../App"
 
 function ActiveGroups ()
 {
@@ -42,6 +43,10 @@ function ActiveGroups ()
 
                         <Route path="/ActivitiesPlannedLists" exact>
                             <ActivitiesPlannedLists />
+                        </Route>
+
+                        <Route>
+                            <App />
                         </Route>
 
                     </Switch>
