@@ -62,12 +62,12 @@ function App (){
 
           <Switch>
 
-            {/* <Route path="/Main" exact>
-              <Main />
-            </Route> */}
+            <Route path="/Main" exact>
+              <Device />
+            </Route>
            
             
-            <Route path="" exact>
+            <Route path="/PeopleConnect" exact>
               <PeopleConnect />
             </Route>
 
