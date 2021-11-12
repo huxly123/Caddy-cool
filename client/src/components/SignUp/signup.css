@@ -176,7 +176,7 @@ input:focus {
     color:#5C89C7
 }
 
-.errorDiv{
+.errorDivSU{
     background-color: #FFD5D5;
     width: 311px;
     height: 50px;
@@ -192,17 +192,18 @@ input:focus {
     display: flex;
     flex-direction: column;
 }
-.allErr{
+.allErrSU{
     width:85%;
     height: 100%;
     line-height: 5px;
     color: #FF656E; 
 }
-.allErr>p{
+.allErrSU>p{
     margin-left: 5%;
     color: #FF656E; 
+    margin-top: 5%;
 }
-.errorDiv>button{
+.errorDivSU>button{
     position:absolute;
     z-index: 12;
     width:15%;
