@@ -1,13 +1,18 @@
 import React from 'react'
 import style from "./pills_remaining.module.css"
 
-function Pills_remining() {
+function Pills_remining({setremain}) {
+
+   
+
     return (
         <div className={style.body}>
         <div className={style.flexx}>
             <div className={style.pillsfont}>Pills Remaining</div>
             <div><h6 className={style.date}>Date-25/02/98</h6>
-           <button className={style.search}>Search</button></div>
+           <button className={style.search} onClick={()=>{
+setremain(true)
+           }}>Search</button></div>
         </div>
 <div className={style.redline}></div>
         <div className={style.remain}>

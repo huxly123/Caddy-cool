@@ -1,7 +1,6 @@
 import { useState,useEffect } from "react";
 import Pills_front from "./components/Add_pills/Pills_front";
 import { Device } from "./components/Device_connect/main";
-import Headerr from "./components/Header/Headerr";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
 import { Main } from "./components/Main";
@@ -14,11 +13,19 @@ import
   Route,
   Link
 } from "react-router-dom";
+
 import style from "./App.module.css";
-import homeIcon from "./components/Footer/homeimg.svg";
+
+// Header Icons
+import img1 from "./components/Header/menu.svg"
+import img2 from "./components/Header/bell.svg"
+import img3 from "./components/Header/watch.svg"
+import img4 from "./components/Header/watchinactive.svg"
+
+// Footer Icons
+import homeIconActive from "./components/Footer/homeimgactive.svg";
 import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
-import Iframe_addpill from "./components/Caddy_Log/Iframe_addpill/Iframe_addpill";
 
 function App (){
   useEffect(()=>{
@@ -58,9 +65,11 @@ function App (){
           
         <Headerr />
 
+        {/* Body */}
         <div className={style.appBody}>
 
           <Switch>
+
 
             <Route path="/Main" exact>
               <Device />
@@ -68,24 +77,31 @@ function App (){
            
             
             <Route path="/PeopleConnect" exact>
+            {/* <Route path="/Main" exact>
+              <Main />
+            </Route> */}
+           
+            
+            <Route path="" exact>
               <PeopleConnect />
             </Route>
 
-            <Route path="/Pills_front">
-<Pills_front/>
-                </Route>
+            <Route path="/Pills_front" exact>
+              <Pills_front />
+            </Route>
 
-                <Route path="/Caddy" exact>
+            <Route path="/Caddy" exact>
               <Caddy />
             </Route>
 
-            <Route path="/add_pill" exact>
-<Iframe_addpill/>
-              </Route>
+            {/* <Route path="/add_pill" exact>
+              <Iframe_addpill />
+            </Route> */}
 
-  
-
-            <Route>404 not found</Route>
+            <Route>
+              {/* 404 not found */}
+              <SignUp />
+            </Route>
 
           </Switch>
 

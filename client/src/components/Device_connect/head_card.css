@@ -16,7 +16,7 @@ border-radius: 14px;
     height: 136px;
     left: calc(50% - 136px/2 - 79.5px);
     top: calc(50% - 136px/2 - 2px);
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     margin: auto;
 
@@ -27,6 +27,33 @@ border-radius: 14px;
     height: 70px;
     left: calc(50% - 138px/2 + 74.5px);
     top: calc(50% - 70px/2 + 5px);
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
+}
+.heading{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 14px;
+}
+
+.text{
+    height: 12px;
+    left: 23px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 1px;
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6.5px;
 }

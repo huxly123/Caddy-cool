@@ -8,6 +8,7 @@
     margin-top: 72px;
 }
 
+/* Footer CSS */
 .footerbody{
     display: flex;
     align-items: center;
@@ -30,4 +31,34 @@
 .plus{
   margin-left: -3vw;
   margin-bottom: 5px;
+}
+
+
+/* Header CSS */
+.headerbody{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 72px;
+    border: 2px solid grey;
+    border-bottom: none;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 1000;
+    background: #FAFAFA;
+    justify-content:space-between;
+    top: 0;
+}
+
+.headerbody img{
+    cursor: pointer;
+}
+
+.headerbody span{
+    margin:28px ;
+}
+
+.div1{
+    margin-left:29px ;
 }

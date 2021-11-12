@@ -1,0 +1,62 @@
+.btnLayout1{
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2px 0px;
+
+    position: absolute;
+    width: 102px;
+    height: 23px;
+    left: 32px;
+    top: 90px;
+}
+
+.btnLayout2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2px 0px;
+
+    position: absolute;
+    width: 131px;
+    height: 23px;
+    left: 212px;
+    top: 90px;
+}
+
+.headBtn{
+    position: static;
+    /* width: 102px; */
+    height: 19px;
+    left: 0px;
+    top: 2px;
+
+    font-family: Roboto;
+    font-style: normal;
+    /* font-weight: bold; */
+    font-size: 16px;
+    line-height: 19px;
+    color: #1A1B41;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+.headBtn:active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.bottom{
+    /* width: 375px;
+    height: 510px; */
+    left: 0px;
+    margin-top: 61px;
+
+    /* background: #1A1B41;
+    border-radius: 40px 40px 0px 0px; */
+}
