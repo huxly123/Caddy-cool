@@ -70,33 +70,12 @@ function App (){
 
           <Switch>
 
-<<<<<<< HEAD
-            <Route path="/Main" exact>
-              {/* <Main /> */}
-              <Device/>
-            </Route>
-
-            <Route path="/CommunityGroups" exact>
-              <CommunityGroups />
-            </Route>
-
-            <Route path="/ActiveGroups" exact>
-              <ActiveGroups />
-            </Route>
-
-            <Route path="/IndividualGroupMembers" exact>
-              <IndividualGroupMembers />
-            </Route>
-
-            <Route path="/PeopleConnect" exact>
-=======
             {/* <Route path="/Main" exact>
               <Main />
             </Route> */}
            
             
             <Route path="" exact>
->>>>>>> 0faac2a716a48f038ab4bc8f025747f6e3ed5a2f
               <PeopleConnect />
             </Route>
 
@@ -114,7 +93,7 @@ function App (){
 
             <Route>
               {/* 404 not found */}
-              <SignUp />
+              <Signup />
             </Route>
 
           </Switch>
@@ -123,7 +102,7 @@ function App (){
 
         {/* Footer */}
         <div className={style.footerbody}>
-          <Link to="/Main"><div><img src={homeIcon} alt="home"></img></div></Link>
+          <Link to="/Main"><div><img src={homeIconActive} alt="home"></img></div></Link>
           <Link to="/PeopleConnect"><div><img src={communityIcon} alt="community"></img></div></Link>
           <Link to="/Pills_front"><div><img className={style.fix} src={caddyIcon} alt="caddy"></img></div></Link>
         </div>
