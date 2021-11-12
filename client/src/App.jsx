@@ -3,6 +3,7 @@ import { Device } from "./components/Device_connect/main";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
 import { Main } from "./components/Main";
+
 import SignUp from "./components/SignUp/Signup";
 import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
 import { ActiveGroups } from "./components/Community/Groups/ActiveGroups";
