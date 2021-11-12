@@ -1,8 +1,8 @@
 import style from "./ActiveGroupLists.module.css";
 import { Link } from "react-router-dom";
-import sad from "./sadEmoji.svg"
-import smiliEmogi from "./smiliEmogi.svg"
-import loveEmogi from "./loveEmoji.svg"
+import sad from "./Emojis/sadEmoji.svg"
+import smiliEmogi from "./Emojis/smiliEmogi.svg"
+import LikeEmoji from "./Emojis/likeEmoji.svg"
 
 function ActiveGroupLists ()
 {
@@ -26,20 +26,20 @@ function ActiveGroupLists ()
                         </span>
                     </div>
 
-                    <div className={style.msgDemoLayout}>
+                    {/* <div className={style.msgDemoLayout}>
                         <div className={style.msgSender}>
                             <div className={style.msgSenderName}>
                                 Jai
                             </div>
                         </div>
 
-                        <div className={style.msgContainer}>
+                        <div className={style.msgContainer} style={{ marginTop: "40px" }}>
                             <div className={style.msgElement}>
                                 Hey! Who is in for a 20 minute workout challenge?
-                                {/* <img src={loveEmogi} alt="Love Emoji" /> */}
+                                <img src={loveEmogi} alt="Love Emoji" />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={style.msgDemoLayout}>
                         <div className={style.msgSender}>
                             <div className={style.msgSenderName}>
@@ -90,6 +90,35 @@ function ActiveGroupLists ()
                         </span>
                     </div>
 
+                    <div className={style.msgDemoLayout}>
+                        <div className={style.msgSender}>
+                            <div className={style.msgSenderName}>
+                                Kapila
+                            </div>
+                        </div>
+
+                        <div className={style.msgContainer}>
+                            <div className={style.msgElement}>
+                                Let's Do this!
+                                <img src={LikeEmoji} alt="Like" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={style.msgDemoLayout}>
+                        <div className={style.msgSender}>
+                            <div className={style.msgSenderName}>
+                                Dev
+                            </div>
+                        </div>
+
+                        <div className={style.msgContainer, style.test}>
+                            <div className={style.msgElement}>
+                                I only have the evening free.
+                                <img src={sad} alt="sad Emoji" />
+                            </div>
+                        </div>
+                    </div>
+
                     <div className={style.joinButton}>
                         <span>
                             Join Group
@@ -109,6 +138,35 @@ function ActiveGroupLists ()
                                 Members - 18
                             </span>
                         </span>
+                    </div>
+
+                    <div className={style.msgDemoLayout}>
+                        <div className={style.msgSender}>
+                            <div className={style.msgSenderName}>
+                                Ragini
+                            </div>
+                        </div>
+
+                        <div className={style.msgContainer}>
+                            <div className={style.msgElement}>
+                                Let's Do this!
+                                <img src={smiliEmogi} alt="smile" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={style.msgDemoLayout}>
+                        <div className={style.msgSender}>
+                            <div className={style.msgSenderName}>
+                                Dev
+                            </div>
+                        </div>
+
+                        <div className={style.msgContainer, style.test}>
+                            <div className={style.msgElement}>
+                                I only have the evening free.
+                                <img src={sad} alt="sad Emoji" />
+                            </div>
+                        </div>
                     </div>
 
                     <div className={style.joinButton}>
