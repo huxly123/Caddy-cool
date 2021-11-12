@@ -1,3 +1,6 @@
+* button{
+    border: none;
+}
 .sub_card{
     position: absolute;
     width: 148px;
@@ -16,7 +19,7 @@
     height: 40px;
     left: 8.24px;
     top: 22px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 
@@ -36,10 +39,16 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 14px;
 }
 #display{
     display: flex;
-    margin-left: 5px;
+   margin: auto;
+}
+
+.in_sub :nth-child(2){
+    text-align: justify;
+    margin-top: 1px;
+    margin-left: 10px;
 }

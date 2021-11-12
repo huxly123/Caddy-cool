@@ -4,7 +4,7 @@ import "./bottom.css"
 import "./top.css"
 
 export function Device(){
-    return<div style={{height:"684px",backgroundColor:" #FCF2FF"}}>
+    return<div style={{height:"684px",backgroundColor:" #FCF2FF",margin:"auto"}}>
         <div className="top">
         <Top/>
         </div>
