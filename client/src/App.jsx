@@ -60,10 +60,17 @@ function App (){
     <Router>
       <div>
 
-        {/* Header */}
+      <div className={style.headerbody}>
+          <div className={style.div1}><img src={img1} alt="menu"></img></div>
+          <div>
+            <span><img src={img2} alt="bell"></img></span>
+            {/* <span><img src={img3} alt="deviceConnect"></img></span> */}
+            <span><img src={img4} alt="deviceConnect"></img></span>
+          </div>
+        </div>
             
           
-        <Headerr />
+         {/* <Headerr /> */}
 
         {/* Body */}
         <div className={style.appBody}>
