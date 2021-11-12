@@ -4,13 +4,27 @@ import { Link } from 'react-router-dom'
 function ActiveGroups ()
 {
     return (
-        <div className={style.body}>
+        <>
             <div className={style.top}>
-                <Link to="/IndividualGroupMembers"><button className={style.btn1}>My Groups</button></Link>
+                <Link to="/IndividualGroupMembers">
+                    <span className={style.btnLayout1}>
+                        <span className={style.headBtn}>
+                            Active Groups
+                        </span>
+                    </span>
+                </Link>
 
-                <button className={style.btn2}>My Activities</button>
+                {/* <Link to="/IndividualGroupMembers"> */}
+                <span className={style.btnLayout2}>
+                    <span className={style.headBtn}>
+                        Activities Planned
+                    </span>
+                </span>
+                {/* </Link> */}
+
+                {/* <span className={style.btn2}>Activities Planned</span> */}
             </div>
-            <div className={style.bottom}>
+            {/* <div className={style.bottom}>
                 <div className={style.bottom1}>
                     <Link to="/IndividualGroupMembers"><div className={style.btn3}><h5>Choose Group Manually</h5></div></Link>
 
@@ -18,8 +32,8 @@ function ActiveGroups ()
 
                     <div className={style.btn5}><h5>Create a group</h5></div>
                 </div>
-            </div>
-        </div>
+            </div> */}
+        </>
     )
 }
 
