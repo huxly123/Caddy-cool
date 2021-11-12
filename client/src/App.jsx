@@ -6,6 +6,7 @@ import { PeopleConnect } from "./components/Community/PeopleConnect";
 import { Main } from "./components/Main";
 import SignUp from "./components/SignUp/Signup";
 import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
+import { ActiveGroups } from "./components/Community/Groups/ActiveGroups";
 
 import
 {
@@ -44,11 +45,15 @@ function App ()
               <CommunityGroups />
             </Route>
 
+            <Route path="/ActiveGroups" exact>
+              <ActiveGroups />
+            </Route>
+
             <Route path="/PeopleConnect" exact>
               <PeopleConnect />
             </Route>
 
-            <Route path="/Pills_front">
+            <Route path="/Pills_front" exact>
               <Pills_front />
             </Route>
 
