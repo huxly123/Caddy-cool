@@ -1,10 +1,12 @@
 import Pills_front from "./components/Add_pills/Pills_front";
 import { Device } from "./components/Device_connect/main";
-import Headerr from "./components/Header/Headerr";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
 import { Main } from "./components/Main";
 import SignUp from "./components/SignUp/Signup";
+import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
+import { ActiveGroups } from "./components/Community/Groups/ActiveGroups";
+import { IndividualGroupMembers } from "./components/Community/Groups/IndividualGroupMembers.jsx";
 
 import
 {
@@ -16,10 +18,16 @@ import
 
 import style from "./App.module.css";
 
+// Header Icons
+import img1 from "./components/Header/menu.svg"
+import img2 from "./components/Header/bell.svg"
+import img3 from "./components/Header/watch.svg"
+import img4 from "./components/Header/watchinactive.svg"
+
+// Footer Icons
 import homeIconActive from "./components/Footer/homeimgactive.svg";
 import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
-import Iframe_addpill from "./components/Caddy_Log/Iframe_addpill/Iframe_addpill";
 
 
 function App ()
@@ -29,8 +37,16 @@ function App ()
       <div>
 
         {/* Header */}
-        <Headerr />
+        <div className={style.headerbody}>
+          <div className={style.div1}><img src={img1} alt="menu"></img></div>
+          <div>
+            <span><img src={img2} alt="bell"></img></span>
+            {/* <span><img src={img3} alt="deviceConnect"></img></span> */}
+            <span><img src={img4} alt="deviceConnect"></img></span>
+          </div>
+        </div>
 
+        {/* Body */}
         <div className={style.appBody}>
 
           <Switch>
@@ -40,21 +56,29 @@ function App ()
               <Device/>
             </Route>
 
+            <Route path="/CommunityGroups" exact>
+              <CommunityGroups />
+            </Route>
+
+            <Route path="/ActiveGroups" exact>
+              <ActiveGroups />
+            </Route>
+
+            <Route path="/IndividualGroupMembers" exact>
+              <IndividualGroupMembers />
+            </Route>
+
             <Route path="/PeopleConnect" exact>
               <PeopleConnect />
             </Route>
 
-            <Route path="/Pills_front">
+            <Route path="/Pills_front" exact>
               <Pills_front />
             </Route>
 
             <Route path="/Caddy" exact>
               <Caddy />
             </Route>
-
-            {/* <Route path="/Caddy" exact>
-              <Caddy />
-            </Route> */}
 
             {/* <Route path="/add_pill" exact>
               <Iframe_addpill />

@@ -1,0 +1,273 @@
+.divs{
+    /* position: absolute; */
+    position: relative;
+    width: 311px;
+    height: 191px;
+    left: 32px;
+    /* top: 139px; */
+    margin-top: -170px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+.divs:nth-child(1){
+    margin-top: -130px;
+    top: 139px;
+}
+
+.divs:nth-child(2){
+    top: 362px;
+}
+
+.divs:nth-child(3){
+    top: 585px;
+}
+
+.divsHead{
+    position: absolute;
+    width: 311px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+}
+
+.divsHeadLeftLayout{
+    position: absolute;
+    width: 311px;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.divsHeadLeftElement{
+    /* #GroupName */
+    position: static;
+    width: 119px;
+    /* height: 14px; */
+    left: 8px;
+    top: 2px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+    /* identical to box height, or 87% */
+
+    color: #1A1B41;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.divsHeadRightLayout{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px 8px;
+
+    position: absolute;
+    width: 66px;
+    height: 18px;
+    left: 225px;
+    top: 5px;
+}
+
+.divsHeadRightElement{
+    position: static;
+    /* width: 50px; */
+    height: 14px;
+    left: 8px;
+    top: 2px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height, or 175% */
+
+    color: #1A1B41;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.joinButton{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4px 12px;
+
+    position: absolute;
+    width: 66px;
+    height: 22px;
+    left: 237px;
+    top: 161px;
+
+    background: #BD00FD;
+    border-radius: 4px;
+}
+
+.joinButton>span{
+    position: static;
+    width: 42px;
+    height: 14px;
+    /* left: 12px; */
+    top: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 8px;
+    line-height: 14px;
+    /* identical to box height, or 175% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.msgDemoLayout{
+    position: absolute;
+    width: 225px;
+    height: 36px;
+    left: 15px;
+    
+    /* Layout */
+    background: #FCF2FF;
+    border-radius: 6px;
+}
+
+/* .msgDemoLayout:nth-child(1){
+    top: 43px;    
+} */
+
+/* .test{
+    top:40px; 
+}
+
+.test .msgSenderName{
+    color: #FFB1B1;    
+} */
+
+.msgSender{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px 8px;
+
+    position: absolute;
+    width: 19.86px;
+    height: 16px;
+    left: 15px;
+    /* top: 43px; */
+}
+
+.msgSenderName{
+    position: static;
+    width: 14px;
+    height: 12px;
+    left: 8px;
+    top: 2px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 12px;
+    /* identical to box height, or 150% */
+
+
+    /* color: #FFB1B1; */
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+
+.msgContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px 8px;
+
+    position: absolute;
+    width: 140.52px;
+    height: 18px;
+    left: 15px;
+    /* top: 59px; */
+    top: 20px;
+}
+
+.msgElement{
+    position: static;
+    width: 175px;
+    height: 14px;
+    left: 8px;
+    top: 2px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 14px;
+    /* identical to box height, or 175% */
+
+    color: #767676;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.msgDemoLayout:nth-child(2){
+    top: 45px;    
+}
+
+.msgDemoLayout:nth-child(2) .msgSenderName{
+    color: #AAFF65;   
+}
+
+.msgDemoLayout:nth-child(3){
+    top: 100px;    
+}
+
+.msgDemoLayout:nth-child(3) .msgSenderName{
+    color: #FF9D33;
+}
+
+.msgDemoLayout:nth-child(3) .msgElement{
+    margin-top: 20px;
+    margin-left: 30px;
+}

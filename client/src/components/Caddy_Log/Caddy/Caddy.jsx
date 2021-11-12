@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import style from "./caddy.module.css"
 import Pills_remaining from '../Pills_Remaining/Pills_remaining'
 import Pills_taken from '../Pills_Taken/Pills_taken'
+import Popup_addpill from '../Popup_addpill/Popup_addpill'
+import Remain_popup from '../Popup_showpill/Remain_popup/Remain_popup'
+import Taken_popup from '../Popup_showpill/Taken_popup/Taken_popup'
 
 // import homeIconInactive from "../../Footer/homeimginactive.svg";
 // import groupIconInactive from "../../Footer/groupimginactive.svg";
@@ -12,12 +14,12 @@ import Pills_taken from '../Pills_Taken/Pills_taken'
 function Caddy ()
 {
 
-    const [ frame, setframe ] = useState(false)
+    const [btnpop,setbtnpopup]=useState(false)
 
-    const handletrue = () =>
-    {
-        setframe(true)
-    }
+    const [remainingpop,setremainingpop]=useState(false)
+
+    const [takenpop,settakenpop]=useState(false)
+    
 
     return (
         <div className={style.body}>
@@ -27,25 +29,34 @@ function Caddy ()
                 <div className={style.top}>
                     <div className={style.caddylog}>My Caddy Log</div>
 
-                    <div className={style.in}><button onClick={handletrue} className={style.pills}>Add Pills</button></div>
+                    <div className={style.in}><button onClick={()=>{
+                        setbtnpopup(true)
+                    }} className={style.pills}>Add Pills</button></div>
 
                 </div >
                 <div className={style.line}></div>
 
 
 
-                <Pills_remaining />
-                {frame ?
-                    <iframe className={style.iframee} src="/add_pill"></iframe> : null
-
-                }
+                <Pills_remaining setremain={setremainingpop} />
+            
                 <div className={style.wrapper}>
-                    <Pills_taken />
+                    <Pills_taken settake={settakenpop}/>
 
                 </div>
             </div>
             {/* <Footerr /> */}
+            <Popup_addpill setbtn={setbtnpopup} btn={btnpop}>
 
+</Popup_addpill>
+
+<Remain_popup remainpop={remainingpop} setremainpop={setremainingpop}>
+
+</Remain_popup>
+
+<Taken_popup takepop={takenpop} settakepop={settakenpop}>
+
+</Taken_popup>
         </div >
 
     )
