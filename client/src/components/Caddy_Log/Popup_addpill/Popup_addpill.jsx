@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import style from "./popup_addpill.module.css"
-import close from "./close.svg"
+import close from "./close.svg";
+import axios from 'axios';
 
 
 function Popup_addpill({setbtn,btn}) {
@@ -9,15 +10,15 @@ function Popup_addpill({setbtn,btn}) {
 
     const [formData,setFormData]=useState({
         pill_name:"",
-        id:"",
+        date:"",
         time:"",
        when:""
     })
 
-const handleSubmit=(e)=>{
+const handleSubmit=async (e)=>{
 e.preventDefault();
-console.log(formData);
-
+await axios.post("http://localhost:3002/remaining",formData)
+alert("added successfull")
 }
 
 const handleChange=(e)=>{
@@ -27,6 +28,8 @@ setFormData({
     [name]:value
 })
 }
+
+
 
     return (btn)?(
        <>
@@ -44,7 +47,7 @@ setFormData({
 
 <h5 className={style.startdate}>Start Date</h5>
 
-<input type="text" className={style.dateinput} name="id" onChange={handleChange} placeholder="Enter Date"></input>
+<input type="text" className={style.dateinput} name="date" onChange={handleChange} placeholder="Enter Date"></input>
 
 <h5 className={style.duetime}>Due Time for Consumption</h5>
 
