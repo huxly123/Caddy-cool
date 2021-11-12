@@ -7,6 +7,7 @@ import
     Link
 } from "react-router-dom";
 import { ActiveGroupLists } from "./ActiveGroupLists";
+import { ActivitiesPlannedLists } from "./ActivitiesPlannedLists";
 
 function ActiveGroups ()
 {
@@ -22,13 +23,13 @@ function ActiveGroups ()
                         </span>
                     </Link>
 
-                    {/* <Link to="/IndividualGroupMembers"> */}
-                    <span className={style.btnLayout2}>
-                        <span className={style.headBtn}>
-                            Activities Planned
+                    <Link to="/ActivitiesPlannedLists">
+                        <span className={style.btnLayout2}>
+                            <span className={style.headBtn}>
+                                Activities Planned
+                            </span>
                         </span>
-                    </span>
-                    {/* </Link> */}
+                    </Link>
 
                     {/* <span className={style.btn2}>Activities Planned</span> */}
                 </div>
@@ -37,14 +38,10 @@ function ActiveGroups ()
                         <Route path="/ActiveGroupLists" exact>
                             <ActiveGroupLists />
                         </Route>
+                        <Route path="/ActivitiesPlannedLists" exact>
+                            <ActivitiesPlannedLists />
+                        </Route>
                     </Switch>
-                    {/* <div className={style.bottom1}>
-                    <Link to="/IndividualGroupMembers"><div className={style.btn3}><h5>Choose Group Manually</h5></div></Link>
-
-                    <div className={style.btn4}><h5>Get Added in a group randomly</h5></div>
-
-                    <div className={style.btn5}><h5>Create a group</h5></div>
-                </div> */}
                 </div>
             </>
         </Router>

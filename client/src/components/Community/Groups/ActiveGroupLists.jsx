@@ -5,7 +5,7 @@ function ActiveGroupLists ()
 {
     return (
         <div>
-            This is list
+            This is ActiveGroupList Page
         </div>
     )
 }
