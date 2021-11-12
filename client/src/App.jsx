@@ -34,10 +34,7 @@ function App ()
 {
   return (
     <Router>
-      {/* <div> */}
-
       <div className={style.headerbody}>
-        {/* Header */}
         <div className={style.headerbody}>
           <div className={style.div1}><img src={img1} alt="menu"></img></div>
           <div>
@@ -46,7 +43,8 @@ function App ()
             <span><img src={img4} alt="deviceConnect"></img></span>
           </div>
         </div>
-            
+        </div>
+      <div>      
           
          {/* <Headerr /> */}
 
