@@ -1,0 +1,35 @@
+.remainbody{
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    position: absolute;
+  left: 0px;
+  top: 160px;
+  width: 95%;
+  margin-left: 2%;
+  border-radius: 14px;
+  min-height: 100px;
+}
+
+.wrappper{
+margin-left: 10%;
+margin-top: 2vh;
+}
+
+.remaininput{
+width: 60%;
+}
+
+.remainbutton{
+    cursor: pointer;
+border: none;
+margin-left: 7%;
+width: 25%;
+color: white;
+background: #EAB2FD;
+border-radius: 4px;
+}
+
+.remainbody img{
+   margin-left: 90%;
+}
