@@ -6,7 +6,7 @@ import { Main } from "./components/Main";
 import Signup from "./components/SignUp/Signup";
 import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
 import { ActiveGroups } from "./components/Community/Groups/ActiveGroups";
-// import { GroupMembers } from "./components/Community/Groups/GroupMembers.jsx";
+import { GroupMembers } from "./components/Community/Groups/GroupMembers.jsx";
 
 import
 {
@@ -57,7 +57,7 @@ function App ()
 
             <Route path="/Main" exact>
               {/* <Main /> */}
-              <Device/>
+              <Device />
             </Route>
 
             <Route path="/CommunityGroups" exact>
@@ -68,9 +68,9 @@ function App ()
               <ActiveGroups />
             </Route>
 
-            {/* <Route path="/GroupMembers" exact>
+            <Route path="/GroupMembers" exact>
               <GroupMembers />
-            </Route> */}
+            </Route>
 
             <Route path="/PeopleConnect" exact>
               <PeopleConnect />
