@@ -1,11 +1,13 @@
-import { useState,useEffect } from "react";
 import Pills_front from "./components/Add_pills/Pills_front";
 import { Device } from "./components/Device_connect/main";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
 import { Main } from "./components/Main";
-import Signin from "./components/SignIn/Signin"
-import Signup from "./components/SignUp/Signup"
+import Signup from "./components/SignUp/Signup";
+import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
+import { ActiveGroups } from "./components/Community/Groups/ActiveGroups";
+// import { GroupMembers } from "./components/Community/Groups/GroupMembers.jsx";
+
 import
 {
   BrowserRouter as Router,
@@ -27,40 +29,16 @@ import homeIconActive from "./components/Footer/homeimgactive.svg";
 import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
 
-function App (){
-  useEffect(()=>{
-    setTimeout(()=>{
-      setComp("signin")
-    },4000)
-  },[]);
 
-  const [comp,setComp] = useState("main")
-  function changeState(info){
-    setComp(info);
-  }
-
-  
-  if(comp==="main"){
-    return(
-      <Main/>
-    )
-  }
-  if(comp==="signin"){
-    return(
-      <Signin changeState={changeState}/>
-    )
-  }
-  if(comp==="signup"){
-    return(
-      <Signup />
-    )
-  }
-  if(comp==="other"){
+function App ()
+{
   return (
     <Router>
-      <div>
+      {/* <div> */}
 
       <div className={style.headerbody}>
+        {/* Header */}
+        <div className={style.headerbody}>
           <div className={style.div1}><img src={img1} alt="menu"></img></div>
           <div>
             <span><img src={img2} alt="bell"></img></span>
@@ -77,19 +55,24 @@ function App (){
 
           <Switch>
 
-
             <Route path="/Main" exact>
-              <Device />
+              {/* <Main /> */}
+              <Device/>
             </Route>
-           
-            
-            {/* <Route path="/PeopleConnect" exact> */}
-            {/* <Route path="/Main" exact>
-              <Main />
+
+            <Route path="/CommunityGroups" exact>
+              <CommunityGroups />
+            </Route>
+
+            <Route path="/ActiveGroups" exact>
+              <ActiveGroups />
+            </Route>
+
+            {/* <Route path="/GroupMembers" exact>
+              <GroupMembers />
             </Route> */}
-           
-            
-            <Route path="" exact>
+
+            <Route path="/PeopleConnect" exact>
               <PeopleConnect />
             </Route>
 
@@ -116,14 +99,26 @@ function App (){
 
         {/* Footer */}
         <div className={style.footerbody}>
-          <Link to="/Main"><div><img src={homeIconActive} alt="home"></img></div></Link>
-          <Link to="/PeopleConnect"><div><img src={communityIcon} alt="community"></img></div></Link>
-          <Link to="/Pills_front"><div><img className={style.fix} src={caddyIcon} alt="caddy"></img></div></Link>
-        </div>
-      </div>
-    </Router>
-  )
-  }
+          <Link to="/Main">
+            <div>
+              <img src={homeIconActive} id="homeicon" alt="home"></img>
+            </div>
+          </Link>
+          <Link to="/PeopleConnect">
+            <div>
+              <img src={communityIcon} id="communityicon" alt="community"></img>
+            </div>
+          </Link>
+          <Link to="/Pills_front">
+            <div>
+              <img className={style.fix} src={caddyIcon} id="caddyicon" alt="caddy"></img>
+            </div>
+          </Link>
+        </div >
+
+      </div >
+    </Router >
+  );
 }
 
 export default App;
