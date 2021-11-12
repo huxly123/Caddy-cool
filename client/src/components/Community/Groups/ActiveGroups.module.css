@@ -10,7 +10,7 @@
     width: 102px;
     height: 23px;
     left: 32px;
-    top: 84px;
+    top: 90px;
 }
 
 .btnLayout2{
@@ -24,7 +24,7 @@
     width: 131px;
     height: 23px;
     left: 212px;
-    top: 84px;
+    top: 90px;
 }
 
 .headBtn{
@@ -49,4 +49,14 @@
 .headBtn:active{
     font-weight: bold;
     text-decoration: underline;
+}
+
+.bottom{
+    /* width: 375px;
+    height: 510px; */
+    left: 0px;
+    margin-top: 61px;
+
+    /* background: #1A1B41;
+    border-radius: 40px 40px 0px 0px; */
 }
