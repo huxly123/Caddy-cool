@@ -2,6 +2,8 @@ import icon1 from "./linkdevicons/ion_watch-outline 2.png";
 import icon2 from "./linkdevicons/ion_watch-outline.png";
 import icon3 from "./linkdevicons/ion_watch-outline.svg";
 
+import './loading.css'
+
 const ConnectDevice = ({
   Before,
   caddy,
@@ -14,7 +16,7 @@ const ConnectDevice = ({
   return (
     <div className="Linkconnect">
       <div className="LinkloadingDiv">
-        <div className="Linktop">
+        <div className="Linktop2">
           <div className="Linkleft">
             <img src={icon3} alt="fitbit" className="Linklinkicons" />
             <span className="Linkcenteredtext">Fit Bit</span>
