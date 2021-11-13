@@ -2,13 +2,10 @@ import { Bottom } from "./Bottom";
 import { Top } from "./Top";
 import axios from "axios";
 import "./bottom.css"
-<<<<<<< HEAD
 import "./top.css";
 
-=======
 import "./top.css"
 import { useEffect, useState } from "react";
->>>>>>> f371d55d69114823a175335b616435c55cfd7a37
 
 export function Device(){
 

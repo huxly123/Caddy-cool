@@ -16,7 +16,7 @@ const ConnectDevice = ({
   return (
     <div className="Linkconnect">
       <div className="LinkloadingDiv">
-        <div className="Linktop2">
+        <div className="Linktop">
           <div className="Linkleft">
             <img src={icon3} alt="fitbit" className="Linklinkicons" />
             <span className="Linkcenteredtext">Fit Bit</span>
