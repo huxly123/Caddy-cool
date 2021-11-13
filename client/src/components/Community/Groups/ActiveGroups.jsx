@@ -46,7 +46,8 @@ function ActiveGroups ()
                         </Route>
 
                         <Route>
-                            <App />
+                            {/* <App /> */}
+                            <ActiveGroupLists />
                         </Route>
 
                     </Switch>
