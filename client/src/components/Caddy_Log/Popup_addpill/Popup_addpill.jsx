@@ -4,7 +4,7 @@ import close from "./close.svg";
 import axios from 'axios';
 
 
-function Popup_addpill({setbtn,btn}) {
+function Popup_addpill({setbtn,btn,setadd}) {
 
     
 
@@ -18,7 +18,9 @@ function Popup_addpill({setbtn,btn}) {
 const handleSubmit=async (e)=>{
 e.preventDefault();
 await axios.post("http://localhost:3002/remaining",formData)
-alert("added successfull")
+alert("added successfull");
+setbtn(false)
+setadd(0)
 }
 
 const handleChange=(e)=>{
