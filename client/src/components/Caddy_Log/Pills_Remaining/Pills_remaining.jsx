@@ -35,7 +35,9 @@ dataa.map(item=>(
 <p>Pill {item.id}-{item.pill_name} - </p>
 <p>{item.time} {item.when}</p>
 </div>
-<button>Take Pill</button>
+<button onClick={()=>{
+    console.log(item.id);
+}}>Take Pill</button>
 </div>
 ))
 }
