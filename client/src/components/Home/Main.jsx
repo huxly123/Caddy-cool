@@ -1,5 +1,5 @@
 import "./main.css"
-import Logo from "./Logo"
+import Logo from "./logo"
 
 // import homeIconActive from "./Footer/homeimgactive.svg";
 // import groupIconInactive from "./Footer/groupimginactive.svg";
