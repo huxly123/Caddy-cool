@@ -15,11 +15,9 @@ function Caddy ()
 {
 
     const [neww,setnew]=useState(0);
-    const [pilladd,setpilladd]=useState(neww)
+   
 
-    function sett(cc){
-cc(pilladd)
-    }
+   
 
 function add(count){
 setnew(count)
@@ -49,7 +47,7 @@ setnew(count)
 
 
 
-                <Pills_remaining setremain={setremainingpop} add={add} sett={sett}/>
+                <Pills_remaining setremain={setremainingpop} add={add} />
             
                 <div className={style.wrapper}>
                     <Pills_taken settake={settakenpop} neww={neww}/>
@@ -57,7 +55,7 @@ setnew(count)
                 </div>
             </div>
             {/* <Footerr /> */}
-            <Popup_addpill setbtn={setbtnpopup} btn={btnpop} setadd={setpilladd}>
+            <Popup_addpill setbtn={setbtnpopup} btn={btnpop} >
 
 </Popup_addpill>
 

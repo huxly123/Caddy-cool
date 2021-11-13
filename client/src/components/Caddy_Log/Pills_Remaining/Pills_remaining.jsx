@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import style from "./pills_remaining.module.css";
 import axios from 'axios';
 
-function Pills_remining({setremain,add,sett}) {
+function Pills_remining({setremain,add}) {
 
    const [dataa,setData]=useState([])
 

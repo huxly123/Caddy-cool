@@ -9,21 +9,21 @@
 }
 
 
-.bars1{
+.Linkbars1{
   width:57px;
   height:37px;
   display: flex;
   flex-direction: row;
   margin-bottom: 2%;
 }
-.bars2{
+.Linkbars2{
   width:57px;
   height:37px;
   display: flex;
   flex-direction: row;
 }
 
-.name{
+.Linkname{
   color:red;
   /* float: right; */
   /* position: absolute; */
@@ -31,21 +31,21 @@
   margin-top: -75px;
   margin-left:3rem;
 }
-.name2{
+.Linkname2{
   position: absolute;
   margin-top:35px;
   color:#EAB2FD;
 }
-.name1{
+.Linkname1{
   position:absolute;
   margin-top: 14px;
   color:#EAB2FD
 }
-.name>p{
+.Linkname>p{
     font-size: 25px;
 }
 
-.sBar{
+.LinksBar{
   width: 9px;
   margin: 0 1px 0 1px;
   background-color: #EAB2FD;
@@ -53,7 +53,7 @@
 }
 
 
-.bar{
+.Linkbar{
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -63,56 +63,56 @@
   margin-top:3.2rem;
 }
 
-.bars1>.sBar:nth-child(1) {
+.Linkbars1>.LinksBar:nth-child(1) {
     animation-name: anim;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 0s;
   }
 
-  .bars1>.sBar:nth-child(2) {
+  .Linkbars1>.LinksBar:nth-child(2) {
     animation-name: anim;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 0.5s;
   }
 
-  .bars1>.sBar:nth-child(3) {
+  .Linkbars1>.LinksBar:nth-child(3) {
     animation-name: anim;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
   }
 
-  .bars1>.sBar:nth-child(4) {
+  .Linkbars1>.LinksBar:nth-child(4) {
     animation-name: anim;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 1.5s;
   }
 
-  .bars2>.sBar:nth-child(4) {
+  .Linkbars2>.LinksBar:nth-child(4) {
     animation-name: anim;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
   }
 
-  .bars2>.sBar:nth-child(3) {
+  .Linkbars2>.LinksBar:nth-child(3) {
     animation-name: anim;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 2.5s;
   }
 
-  .bars2>.sBar:nth-child(2) {
+  .Linkbars2>.LinksBar:nth-child(2) {
     animation-name: anim;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 3s;
   }
 
-  .bars2>.sBar:nth-child(1) {
+  .Linkbars2>.LinksBar:nth-child(1) {
     animation-name: anim;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -131,7 +131,7 @@
     }
   }
 
-  .loadingDiv{
+  .LinkloadingDiv{
       height:16rem;
       width: 80%;
       background-color:white;
@@ -146,16 +146,16 @@
       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   }
 
-  .loadingDiv:hover{
+  .LinkloadingDiv:hover{
       border:3px solid #BD00FD;
       background: #FCF2FF;
   }
 
-  .connect{
+  .Linkconnect{
     margin-bottom: 2rem;
   }
 
-  .setup{
+  .Linksetup{
       color: #BD00FD;
       background-color: white;
       border-radius: 0.30rem;
@@ -165,26 +165,26 @@
       font-weight:900;
   }
 
-  .top{
+  .Linktop{
     display: flex;
     justify-content:space-between;
     margin:2.2rem 0rem ;
     font-weight: bold;
   }
 
-  .left{
+  .Linkleft{
     margin-left: 1rem;
     color: #5A5B76;
   }
-  .right{
+  .Linkright{
     margin-right: 1rem;
   }
-  .bottom{
+  .Linkbottom{
     margin:3rem 1.4rem ;
     text-align: left;
   }
   
-  .top1{
+  .Linktop1{
     display: flex;
     width: 80%;
     margin: auto;
@@ -195,27 +195,27 @@
       font-weight: bold;
   }
 
-  .left1{
+  .Linkleft1{
     margin-left: 1rem;
   }
-  .right1{
+  .Linkright1{
     margin-right: 1rem;
     color: #959595;
     font-size: large;
   }
    
-  .left1 a{
+  .Linkleft1 a{
     color: #1A1B41;
     font-size: large;
   }
 
 
   
-.linkicons{
+.Linklinkicons{
   height:3.1rem;
 }
 
-.centeredtext{
+.Linkcenteredtext{
   vertical-align:top;
   margin-top: 1rem;
   display:inline-block;
@@ -224,7 +224,7 @@
 
 
 
-.top2{
+.Linktop2{
   display: flex;
   width: 80%;
     justify-content:space-between;
@@ -235,17 +235,17 @@
 }
 
 
-.bottom2{
+.Linkbottom2{
   text-align:left;
  font-size:smaller;
 }
-.bottom2>p{
+.Linkbottom2>p{
   font-weight:bold;
   margin-top: 1rem;
   font-size:larger;
 }
 
-.bottom2>ul>li{
+.Linkbottom2>ul>li{
   margin-top: 1rem;
   margin-left:1.5rem;
   font-size:smaller;
@@ -253,7 +253,7 @@
 }
 
 
-.cancel{
+.Linkcancel{
   color: #BD00FD;
   background-color: white;
   border-radius: 0.30rem;
@@ -264,7 +264,7 @@
   margin-left: 0.5rem;;
 }
 
-.search{
+.Linksearch{
 color: white;
 background-color: #BD00FD;
 border-radius: 0.30rem;
@@ -275,23 +275,23 @@ font-weight:900;
 margin-left: 1.5rem;;
 }
 
-.pd{
+.Linkpd{
   text-align: left;
   padding-top:0.1rem;
 }
 
-.pd>.namePD1{
+.Linkpd>.LinknamePD1{
   margin-top: -47px;
   font-size: 20px;
 }
-.pd > .top2{
+.Linkpd > .Linktop2{
   margin-top: 47px;
 }
-.pd > .pdbar{
+.Linkpd > .Linkpdbar{
   margin-left:1rem;
 }
 
-.paired{
+.Linkpaired{
   background-color:#00CB9A;
   color:white;
   border-radius: 0.30rem;
@@ -314,7 +314,7 @@ margin-left: 1.5rem;;
   margin: auto;
 }
 
-#overlay > .loadingDiv2{
+#overlay > .LinkloadingDiv2{
   position:relative;
   height:13rem;
   top:26rem;
@@ -334,7 +334,7 @@ margin-left: 1.5rem;;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-.bar2{
+.LinkLinkbar2{
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -344,6 +344,6 @@ margin-left: 1.5rem;;
   margin-top:3.2rem;
 }
 
-.bar2>.icn{
+.Linkbar2>.Linkicn{
   height:3.1rem;
 }

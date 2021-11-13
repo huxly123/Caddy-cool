@@ -9,6 +9,7 @@ import Signup from "./components/SignUp/Signup";
 import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
 import { ActiveGroups } from "./components/Community/Groups/ActiveGroups";
 import { GroupMembers } from "./components/Community/Groups/GroupMembers.jsx";
+import LinkDevice from './components/linkdevices/LinkDevice'
 
 import
 {
@@ -92,6 +93,10 @@ function App ()
 
               <Route path="/Caddy" exact>
                 <Caddy />
+              </Route>
+
+              <Route path="/linkdevice" exact>
+                <LinkDevice />
               </Route>
 
               
