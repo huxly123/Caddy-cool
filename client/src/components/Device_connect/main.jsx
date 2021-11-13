@@ -4,6 +4,9 @@ import axios from "axios";
 import "./bottom.css"
 import "./top.css";
 
+import homeIconActive from "../Footer/homeimgactive.svg";
+import groupIconInactive from "../Footer/groupimginactive.svg";
+import caddyIconInactive from "../Footer/Vector.svg";
 
 // import { useEffect, useState } from "react";
 // import Headerrr from "../Header/Header";
@@ -35,7 +38,12 @@ export function Device() {
 
 
     name = name.charAt(0).toUpperCase() + name.slice(1);
-    name = name.split(" ")[0]
+    name = name.split(" ")[0];
+
+    document.getElementById("homeicon").src = `${ homeIconActive }`;
+    document.getElementById("communityicon").src = `${ groupIconInactive }`;
+    document.getElementById("caddyicon").src = `${ caddyIconInactive }`;
+
     return <div>
 
         <div style={{ height: "684px", backgroundColor: " #FCF2FF", margin: "auto" }}>

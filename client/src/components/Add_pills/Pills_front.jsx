@@ -1,9 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import style from "./pills_front.module.css"
+import homeIconInactive from "../Footer/homeimginactive.svg";
+import groupIconInactive from "../Footer/groupimginactive.svg";
+import caddyIconActive from "../Footer/VectorTab1.svg";
 
 function Pills_front ()
 {
+
+    document.getElementById("homeicon").src = `${ homeIconInactive }`;
+    document.getElementById("communityicon").src = `${ groupIconInactive }`;
+    document.getElementById("caddyicon").src = `${ caddyIconActive }`;
+
+
+
     return (
         <div className={style.body}>
             {/* <Headerr/> */}
