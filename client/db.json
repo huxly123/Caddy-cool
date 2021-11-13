@@ -8,11 +8,18 @@
       "id": 1
     },
     {
-      "pill_name": "Amoxil",
+      "pill_name": "covaccine",
       "date": "13-11-21",
-      "time": "05.66",
+      "time": "09.07",
       "when": "PM",
-      "id": 2
+      "id": 4
+    },
+    {
+      "pill_name": "covidshield",
+      "date": "13-11-21",
+      "time": "08.45",
+      "when": "PM",
+      "id": 7
     },
     {
       "pill_name": "Glucophage",
@@ -22,11 +29,27 @@
       "id": 3
     },
     {
-      "pill_name": "covaccine",
+      "pill_name": "Amoxil",
+      "date": "13-11-21",
+      "time": "05.66",
+      "when": "PM",
+      "id": 2
+    },
+    {
+      "pill_name": "asa",
       "date": "13-11-21",
       "time": "09.07",
       "when": "PM",
-      "id": 4
+      "id": 8
+    }
+  ],
+  "taken": [
+    {
+      "pill_name": "Paracetamol",
+      "date": "13-11-21",
+      "time": "08.44",
+      "when": "AM",
+      "id": 6
     },
     {
       "pill_name": "Glycotin",
@@ -34,15 +57,6 @@
       "time": "09.55",
       "when": "PM",
       "id": 5
-    }
-  ],
-  "taken": [
-    {
-      "pill_name": "covidshield",
-      "date": "13-11-21",
-      "time": "08.45",
-      "when": "PM",
-      "id": 7
     }
   ]
 }
