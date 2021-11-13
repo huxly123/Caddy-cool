@@ -47,7 +47,7 @@ function App ()
             <div>
               <span><img src={img2} alt="bell"></img></span>
               {/* <span><img src={img3} alt="deviceConnect"></img></span> */}
-              <span><img src={img4} alt="deviceConnect"></img></span>
+              <Link to="/linkdevice"><span><img src={img4} alt="deviceConnect"></img></span></Link>
             </div>
           </div>
 
