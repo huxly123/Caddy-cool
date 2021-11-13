@@ -2,7 +2,7 @@ import SmallLogo from "./SmallLogo"
 import { useState } from "react"
 import axios from "axios";
 import "./signup.css"
-export default function SignUp(){
+export default function SignUp({changeState}){
     const [user,setUser] = useState({
         name:"",
         email:"",
@@ -31,6 +31,9 @@ export default function SignUp(){
             }else{
                 setError([res.data.message]);
                 setEstate(true);
+                setTimeout(()=>{
+                    changeState("signin")
+                },1000)
             }
            })
            .catch((err)=>{

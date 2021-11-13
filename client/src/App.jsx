@@ -3,7 +3,7 @@ import Pills_front from "./components/Add_pills/Pills_front";
 import { Device } from "./components/Device_connect/main";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
-import { Main } from "./components/Main";
+import { Main } from "./components/Home/Main";
 import Signin from "./components/SignIn/Signin"
 import Signup from "./components/SignUp/Signup";
 import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
@@ -39,14 +39,8 @@ function App ()
     setTimeout(() =>
     {
       setComp("signin")
-<<<<<<< HEAD
-    },4000)
-    return;
-  },[]);
-=======
     }, 4000)
   }, []);
->>>>>>> d82096a2b2a19223a319c0fc55ef44a4c412fec7
 
   const [ comp, setComp ] = useState("main")
   function changeState (info)
@@ -70,79 +64,9 @@ function App ()
   if (comp === "signup")
   {
     return (
-      <Signup />
+      <Signup changeState={changeState}/>
     )
   }
-<<<<<<< HEAD
-  if(comp==="other"){
-  return (
-    <Router>
-      <div>
-
-        {/* Header */}
-            
-          
-        <div className={style.headerbody}>
-          <div className={style.div1}><img src={img1} alt="menu"></img></div>
-          <div>
-            <span><img src={img2} alt="bell"></img></span>
-            {/* <span><img src={img3} alt="deviceConnect"></img></span> */}
-            <span><img src={img4} alt="deviceConnect"></img></span>
-          </div>
-        </div>
-
-        {/* Body */}
-        <div className={style.appBody}>
-
-          <Switch>
-
-
-            <Route path="/Main" exact>
-              <Device />
-            </Route>
-           
-            
-            {/* <Route path="/PeopleConnect" exact> */}
-            {/* <Route path="/Main" exact>
-              <Main />
-            </Route> */}
-           
-            
-            <Route path="" exact>
-              <PeopleConnect />
-            </Route>
-
-            <Route path="/Pills_front" exact>
-              <Pills_front />
-            </Route>
-
-            <Route path="/Caddy" exact>
-              <Caddy />
-            </Route>
-
-            {/* <Route path="/add_pill" exact>
-              <Iframe_addpill />
-            </Route> */}
-
-            <Route>
-              {/* 404 not found */}
-              <Signup />
-            </Route>
-
-          </Switch>
-
-        </div>
-
-        {/* Footer */}
-        <div className={style.footerbody}>
-          <Link to="/Main"><div><img src={homeIconActive} alt="home"></img></div></Link>
-          <Link to="/PeopleConnect"><div><img src={communityIcon} alt="community"></img></div></Link>
-          <Link to="/Pills_front"><div><img className={style.fix} src={caddyIcon} alt="caddy"></img></div></Link>
-        </div>
-      </div>
-    </Router>
-  )
-=======
   if (comp === "other")
   {
     return (
@@ -164,13 +88,9 @@ function App ()
 
             <Switch>
 
-              <Route path="/Home" exact>
+              <Route path="/Main" exact>
                 {/* <Main /> */}
                 <Device />
-              </Route>
-
-              <Route path="/PeopleConnect" exact>
-                <PeopleConnect />
               </Route>
 
               <Route path="/CommunityGroups" exact>
@@ -183,6 +103,10 @@ function App ()
 
               <Route path="/GroupMembers" exact>
                 <GroupMembers />
+              </Route>
+
+              <Route path="/PeopleConnect" exact>
+                <PeopleConnect />
               </Route>
 
               <Route path="/Pills_front" exact>
@@ -208,7 +132,7 @@ function App ()
 
           {/* Footer */}
           <div className={style.footerbody}>
-            <Link to="/Home">
+            <Link to="/Main">
               <div>
                 <img src={homeIconActive} id="homeicon" alt="home"></img>
               </div>
@@ -228,7 +152,6 @@ function App ()
         </div >
       </Router >
     );
->>>>>>> d82096a2b2a19223a319c0fc55ef44a4c412fec7
   }
 }
 

@@ -1,10 +1,22 @@
-//Main home sceen we can add multiple components here
-import "./home.css"
-import Logo from "./logo"
-export default function App(){
-return(
-    <div className="main">
-        <Logo />
-    </div>
-)
+import "./main.css"
+import Logo from "./Logo"
+
+// import homeIconActive from "./Footer/homeimgactive.svg";
+// import groupIconInactive from "./Footer/groupimginactive.svg";
+// import caddyIconInactive from "./Footer/Vector.svg";
+
+// export default function App ()
+function Main ()
+{
+    // document.getElementById("homeicon").src = `${ homeIconActive }`;
+    // document.getElementById("communityicon").src = `${ groupIconInactive }`;
+    // document.getElementById("caddyicon").src = `${ caddyIconInactive }`;
+
+    return (
+        <div className="main">
+            <Logo />
+        </div>
+    )
 };
+
+export { Main }
