@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import style from "./pills_remaining.module.css";
 import axios from 'axios';
 
-function Pills_remining({setremain,add}) {
+function Pills_remining({setremain,add,sett}) {
 
    const [dataa,setData]=useState([])
 
    const [count,setCount]=useState(1)
 
 add(count)
+
+// sett(setCount)
 
    useEffect(()=>{
 detremain();
@@ -34,7 +36,7 @@ setremain(true)
             <div className={style.grid}>
 {
 dataa.map(item=>(
-<div className={style.gridflex}>
+<div className={style.gridflex} key={item.id}>
     <div>
 <p>Pill {item.id}-{item.pill_name} - </p>
 <p>{item.time} {item.when}</p>

@@ -30,7 +30,7 @@ setRemainData(data)
         <div className={style.remain}>
             <div className={style.grid}>
 {remainData.map((item)=>(
-<div className={style.gridflex}>
+<div className={style.gridflex} key={item.id}>
     <div>
 <p>Pill {item.id}-{item.pill_name} - </p>
 <p>{item.time} {item.when}</p>
