@@ -25,7 +25,7 @@ export default function SignUp(){
            axios.post("http://localhost:3001/register",user)
            .then((res)=>{
                if(res.data.status===400){
-                   setError(["email is already taken."]);
+                   setError([res.data.message]);
                    setEstate(true);
                }if(res.data.status===422){
                 setError(res.data.error);

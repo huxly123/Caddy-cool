@@ -39,7 +39,7 @@ const login = async(req,res)=>{
     let match = user.checkPassword(req.body.password);
     if(!match) return res.send({status:400,message:"Please check the email and password",headers:"none"})
 
-    res.send({status:200,message:"Log In Successful."});
+    res.send({status:200,message:"Log In Successful.",name:user.name});
     }catch(err){
         res.send({status:500,message:"Sorry for the inconvinience plaese try again later"})
     }

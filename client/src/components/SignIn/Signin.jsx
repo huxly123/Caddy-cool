@@ -4,7 +4,7 @@ import {useState} from "react";
 import "./signin.css";
 import { Link,useHistory } from "react-router-dom";
 
-export default function Signin(){
+export default function Signin({handle_user_name}){
 
     const [auth,setAuth]=useState(false)
     const [user,setUser] = useState({
@@ -43,6 +43,7 @@ export default function Signin(){
               }
               if(res.data.status===200){
                setError([res.data.message]);
+               handle_user_name(res.data.name)
             //    changeState("other")
             history.push('/Home');
             setAuth(true)
