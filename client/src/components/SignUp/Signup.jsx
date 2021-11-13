@@ -64,11 +64,11 @@ export default function SignUp(){
         </div>
 
         <div className="signUpLogin">
-        <p className="login"><Link to="/signin">Sign In</Link></p>
-        <p className="signUp"><Link to="/signup">Sign Up</Link></p>
+        <p  className="login"><Link className="link" to="/signin">Sign In</Link></p>
+        <p className="signUp"><Link className="link" to="/signup">Sign Up</Link></p>
         </div>
         <div className="details">
-        <label><p style={{color:"lightgrey"}}>Name</p></label>
+        <label><p style={{color:"lightgrey",marginTop:"5px"}}>Name</p></label>
         <input className="email" value={user.name} type="text" name="name" onChange={handleChange}/>
         <br/>
         <label><p style={{color:"lightgrey"}}>Email</p></label>

@@ -75,7 +75,7 @@ export default function Signin({handle_user_name}){
 
         <div className="signUpLogin">
         <p className="login">Sign In</p>
-        <p className="signUp"><Link to="signup">Sign Up</Link></p>
+        <p className="signUp"><Link className="link" to="signup">Sign Up</Link></p>
         </div>
         <div className="details">
         <label><p style={{color:"lightgrey"}}>Email</p></label>

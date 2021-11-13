@@ -11,6 +11,7 @@
     height:37px;
     display: flex;
     flex-direction: row;
+    margin-top: 2px;
 }
 .barS{
     margin-top: 240px;
@@ -213,3 +214,9 @@ input:hover {
     /* background-color: #FFD5D5; */
      color: #FF656E; 
 } 
+
+.link{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
