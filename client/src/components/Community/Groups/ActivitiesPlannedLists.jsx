@@ -14,13 +14,19 @@ function ActivitiesPlannedLists ()
                 Today
             </div>
             <div className={style.imageContainer}>
-                <img src={ActivitiesPlanned1} alt="ActivitiesPlanned1" />
+                <img onClick={()=>{
+                    alert("contest joined")
+                }} src={ActivitiesPlanned1} alt="ActivitiesPlanned1" />
             </div>
             <div className={style.imageContainer}>
-                <img src={ActivitiesPlanned2} alt="ActivitiesPlanned2" />
+                <img onClick={()=>{
+                    alert("contest joined")
+                }} src={ActivitiesPlanned2} alt="ActivitiesPlanned2" />
                 <img src={ActivitiesPlanned3} className={style.imageFooter} alt="ActivitiesPlanned3" />
             </div>
-            <div className={style.imageContainer}>
+            <div onClick={()=>{
+                    alert("contest joined")
+                }} className={style.imageContainer}>
                 <img src={ActivitiesPlanned4} alt="ActivitiesPlanned4" />
                 <img src={ActivitiesPlanned5} className={style.imageFooter} alt="ActivitiesPlanned5" />
             </div>
