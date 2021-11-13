@@ -4,14 +4,11 @@ import axios from "axios";
 import "./bottom.css"
 import "./top.css";
 
-<<<<<<< HEAD
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 // import Headerrr from "../Header/Header";
-=======
 import "./top.css"
 import { useEffect, useState } from "react";
->>>>>>> baf17ed25bcb2bf698dd25aa3c67fcfe68623663
 
 export function Device(){
 
@@ -24,6 +21,8 @@ export function Device(){
             .then((res)=>{
                 let name = res.data[0].name;
                 name = name.charAt(0).toUpperCase() + name.slice(1);
+                name=name.split(" ")[0]
+
                 setName(name)
                 setFlag(true);
             })
