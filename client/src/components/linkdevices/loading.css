@@ -245,12 +245,17 @@ margin-top: 1rem;
 font-size:larger;
 }
 
-.Linkbottom2>ul>li{
+/* .Linkbottom2>ul>li{
 margin-top: 1rem;
-margin-left:1.5rem;
+margin-left:1rem;
 font-size:smaller;
 line-height: 0%;
-}
+} */
+.Linkbottom2>ul>li{
+  margin-top: 1rem;
+  font-size:smaller;
+  line-height: 0%;
+  }
 
 
 .Linkcancel{
