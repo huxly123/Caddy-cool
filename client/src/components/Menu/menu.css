@@ -1,0 +1,47 @@
+.menu{
+    position: absolute;
+    width: 208px;
+    height: 684px;
+    left: 1px;
+    top: 56px;
+
+    /* background: black; */
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: row;
+
+    background: #FAFAFA;
+}
+
+.img{
+    position: absolute;
+    width: 101px;
+    height: 101px;
+    left: 42px;
+    top: 20px;
+}
+.profile_name{
+    position: absolute;
+    width: 63px;
+    height: 14px;
+    left: 62px;
+    top: 125px;
+    
+}
+#name_akkakkak{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#bio{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 9px;
+}
+

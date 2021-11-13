@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from "react";
 import Pills_front from "./components/Add_pills/Pills_front";
 import { Device } from "./components/Device_connect/main";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
@@ -10,6 +9,7 @@ import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
 import { ActiveGroups } from "./components/Community/Groups/ActiveGroups";
 import { GroupMembers } from "./components/Community/Groups/GroupMembers.jsx";
 import LinkDevice from './components/linkdevices/LinkDevice'
+import { Menu } from "./components/Menu/menu";
 
 import {
 BrowserRouter as Router,
@@ -44,7 +44,12 @@ function App() {
 
         {/* header */}
         <div className={style.headerbody}>
-          <div className={style.div1}><img src={img1} alt="menu"></img></div>
+          <div>
+            <Link to="/Menu">
+              <span className={style.div1}><img src={img1} alt="menu"></img></span>
+            </Link>  
+          </div>
+          {/* <div className={style.div1}><img src={img1} alt="menu"></img></div> */}
           <div>
             <span><img src={img2} alt="bell"></img></span>
 
@@ -68,10 +73,15 @@ function App() {
               <Signup />
             </Route>
 
-            <Route path="/Home" exact>
-              <Device/>
+            <Route path="/Home" exact>   
+              <Device style={{zIndex:"1"}}/>
             </Route>
 
+            <Route path="/Menu" exact>
+              <Device style={{zIndex:"1"}}/>
+              <Menu style={{zIndex:"-1"}}/>
+            </Route>
+            
             <Route path="/PeopleConnect" exact>
               <PeopleConnect />
             </Route>
