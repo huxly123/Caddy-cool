@@ -35,8 +35,10 @@ dataa.map(item=>(
 <p>Pill {item.id}-{item.pill_name} - </p>
 <p>{item.time} {item.when}</p>
 </div>
-<button onClick={()=>{
-    console.log(item.id);
+<button onClick={async ()=>{
+    const ele=item;
+    await axios.delete(`http://localhost:3002/remaining/${item.id}`)
+    await axios.post("http://localhost:3002/taken",ele)
 }}>Take Pill</button>
 </div>
 ))
