@@ -5,12 +5,8 @@
     left: 1px;
     top: 56px;
 
-    /* background: black; */
-    border: 1px solid black;
-
     display: flex;
     flex-direction: row;
-
     background: #FAFAFA;
 }
 
