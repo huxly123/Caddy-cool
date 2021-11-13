@@ -8,15 +8,6 @@
       "id": 3
     },
     {
-      "pill_name": "anaxil",
-      "date": "13-11-21",
-      "time": "09.07",
-      "when": "PM",
-      "id": 5
-    }
-  ],
-  "taken": [
-    {
       "pill_name": "Glycotin",
       "date": "13-11-21",
       "time": "09.55",
@@ -36,6 +27,16 @@
       "time": "04.21",
       "when": "PM",
       "id": 4
+    },
+    {
+      "pill_name": "anaxil",
+      "date": "13-11-21",
+      "time": "09.07",
+      "when": "PM",
+      "id": 5
     }
+  ],
+  "taken": [
+    
   ]
 }
