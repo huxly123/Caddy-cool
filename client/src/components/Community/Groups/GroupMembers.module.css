@@ -1,0 +1,78 @@
+.divBody{
+    background-color: #FFFFFF;
+    /* backdrop-filter: url(); */
+    height: -webkit-fill-available;
+    margin-top: 0px;
+}
+
+.heading{
+    position: absolute;
+    width: 119px;
+    height: 19px;
+    left: 32px;
+    top: 85px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #1A1B41;
+}
+
+.divButtonLayout{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+
+    position: absolute;
+    width: 86px;
+    height: 22px;
+    left: 257px;
+    top: 84px;
+
+    background: #BD00FD;
+    border-radius: 4px;
+}
+
+.divButton{
+    position: static;
+    width: 62px;
+    height: 14px;
+    left: 12px;
+    top: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.memberLists{
+    position: absolute;
+    width: 307px;
+    height: 699px;
+    left: 36px;
+    top: 132px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
