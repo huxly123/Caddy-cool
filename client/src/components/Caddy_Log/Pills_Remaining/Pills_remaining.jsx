@@ -6,16 +6,18 @@ function Pills_remining({setremain}) {
 
    const [dataa,setData]=useState([])
 
+   const [count,setCount]=useState(1)
+
    useEffect(()=>{
 detremain();
 
-   },[])
+   },[count])
 
    const detremain=async ()=>{
 const {data}=await axios.get("http://localhost:3002/remaining");
 setData(data)
    }
-  console.log(dataa);
+  
     return (
         <div className={style.body}>
         <div className={style.flexx}>
@@ -35,8 +37,11 @@ dataa.map(item=>(
 <p>Pill {item.id}-{item.pill_name} - </p>
 <p>{item.time} {item.when}</p>
 </div>
-<button onClick={()=>{
-    console.log(item.id);
+<button onClick={async ()=>{
+    const ele=item;
+    await axios.delete(`http://localhost:3002/remaining/${item.id}`)
+    await axios.post("http://localhost:3002/taken",ele)
+    setCount(count+1)
 }}>Take Pill</button>
 </div>
 ))

@@ -1,18 +1,11 @@
 {
   "remaining": [
     {
-      "pill_name": "Glycotin",
+      "pill_name": "anaxil",
       "date": "13-11-21",
-      "time": "09.55",
+      "time": "09.07",
       "when": "PM",
-      "id": 1
-    },
-    {
-      "pill_name": "Paracetamol",
-      "date": "13-11-21",
-      "time": "08.44",
-      "when": "AM",
-      "id": 2
+      "id": 5
     },
     {
       "pill_name": "Amoxil",
@@ -22,6 +15,13 @@
       "id": 3
     },
     {
+      "pill_name": "Paracetamol",
+      "date": "13-11-21",
+      "time": "08.44",
+      "when": "AM",
+      "id": 2
+    },
+    {
       "pill_name": "Glucophage",
       "date": "13-11-21",
       "time": "04.21",
@@ -29,12 +29,14 @@
       "id": 4
     },
     {
-      "pill_name": "anaxil",
+      "pill_name": "Glycotin",
       "date": "13-11-21",
-      "time": "09.07",
+      "time": "09.55",
       "when": "PM",
-      "id": 5
+      "id": 1
     }
   ],
-  "taken": []
+  "taken": [
+  
+  ]
 }
