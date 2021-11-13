@@ -65,7 +65,7 @@ export default function SignUp(){
 
         <div className="signUpLogin">
         <p className="login"><Link to="/signin">Sign In</Link></p>
-        <p className="signUp">Sign Up</p>
+        <p className="signUp"><Link to="/signup">Sign Up</Link></p>
         </div>
         <div className="details">
         <label><p style={{color:"lightgrey"}}>Name</p></label>
@@ -78,7 +78,7 @@ export default function SignUp(){
         <input className="password"  value={user.password} type="password" name="password" onChange={handleChange}/>
         </div>
         {eState?<div className="errorDivSU"><div className="allErrSU">{error.map((e)=><p key={e}>{e}</p>)}</div> <button onClick={()=>setEstate(false)}>x</button></div>:""}
-        <button className="signinbtn" onClick={submit}>Sign Up</button>
+       <button className="signinbtn" onClick={submit}> Sign Up</button>
         </div>
         
     )

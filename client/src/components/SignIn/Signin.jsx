@@ -74,7 +74,7 @@ export default function Signin(){
 
         <div className="signUpLogin">
         <p className="login">Sign In</p>
-        <p className="signUp">Sign Up</p>
+        <p className="signUp"><Link to="signup">Sign Up</Link></p>
         </div>
         <div className="details">
         <label><p style={{color:"lightgrey"}}>Email</p></label>
@@ -86,7 +86,7 @@ export default function Signin(){
         <p className="forget">Forgot you password?</p>
         {eState?<div className="errorDivSI"><div className="allErrSI">{error.map((e)=><p key={e}>{e}</p>)}</div> <button onClick={()=>setEstate(false)}>x</button></div>:""}
         <button className="signinbtn" onClick={submit}>Sign In</button>
-        <p className="signupreminder">Don't have an account?<button >Sign Up</button></p>
+        <p className="signupreminder">Don't have an account?<button ><Link to="/signup">Sign Up</Link></button></p>
         </div>
         
     )

@@ -1,7 +1,8 @@
 import { Bottom } from "./Bottom";
 import { Top } from "./Top";
 import "./bottom.css"
-import "./top.css"
+import "./top.css";
+
 
 export function Device(){
     return<div style={{height:"684px",backgroundColor:" #FCF2FF",margin:"auto"}}>

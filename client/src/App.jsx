@@ -63,7 +63,7 @@ function App ()
   <Signin/>
 </Route>
 
-<Route path="signup">
+<Route path="/signup">
   <Signup/>
 </Route>
 

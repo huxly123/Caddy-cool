@@ -43,6 +43,13 @@
       "time": "08.45",
       "when": "PM",
       "id": 7
+    },
+    {
+      "pill_name": "Paracetamol",
+      "date": "13-11-21",
+      "time": "08.44",
+      "when": "AM",
+      "id": 6
     }
   ]
 }

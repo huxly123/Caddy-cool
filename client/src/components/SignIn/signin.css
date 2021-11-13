@@ -15,12 +15,12 @@
 .barS{
     margin-top: 240px;
     margin-left: 128px;
-    position: absolute;
+    position: sticky !important;
 }
 .nameS{
     color:red;
     float: right;
-    position: absolute;
+    /* position: absolute; */
     z-index:2;
     margin-top: -75px;
     margin-left: 90%;
@@ -59,7 +59,7 @@
         border-radius: 10px;
 }
 .title{
-    margin-top: 400px;
+    margin-top: 50px !important;
     margin-left: 32px;
 }
 .titlep1{
