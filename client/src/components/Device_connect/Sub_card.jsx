@@ -8,7 +8,7 @@ export function Sub_Card ({styles,imgs,data,handleOnclick,order,index}){
     }} className="sub_card" style={styles}>
         <div className="in_sub" id="display">
             <div>
-                <img src={imgs[data[order].title]}/>
+                <img src={imgs[data[order].title]} />
             </div>
             <div className="">
                 <h6 id="in_sub_head">{title}</h6>

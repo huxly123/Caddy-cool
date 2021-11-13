@@ -6,17 +6,24 @@
 }
 #name{
     position: absolute;
-width: 77px;
-height: 28px;
-left: 32px;
-top: 83px;
+    width: 77px;
+    height: 28px;
+    left: 32px;
+    top: 83px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 28px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
 
+}
+#img{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 301px;
+    top: 84px;
 }
 #para{
     position: absolute;
