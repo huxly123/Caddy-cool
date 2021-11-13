@@ -164,9 +164,13 @@ function App ()
 
             <Switch>
 
-              <Route path="/Main" exact>
+              <Route path="/Home" exact>
                 {/* <Main /> */}
                 <Device />
+              </Route>
+
+              <Route path="/PeopleConnect" exact>
+                <PeopleConnect />
               </Route>
 
               <Route path="/CommunityGroups" exact>
@@ -179,10 +183,6 @@ function App ()
 
               <Route path="/GroupMembers" exact>
                 <GroupMembers />
-              </Route>
-
-              <Route path="/PeopleConnect" exact>
-                <PeopleConnect />
               </Route>
 
               <Route path="/Pills_front" exact>
@@ -208,7 +208,7 @@ function App ()
 
           {/* Footer */}
           <div className={style.footerbody}>
-            <Link to="/Main">
+            <Link to="/Home">
               <div>
                 <img src={homeIconActive} id="homeicon" alt="home"></img>
               </div>

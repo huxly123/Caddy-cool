@@ -14,7 +14,7 @@ function ActiveGroupLists ()
             <div style={{ height: "800px" }}>
 
                 <Link to="/GroupMembers">
-                    <div className={style.divs}>
+                    <div className={style.firstDiv}>
                         <div className={style.divsHead}>
                             <span className={style.divsHeadLeftLayout}>
                                 <span className={style.divsHeadLeftElement}>
@@ -80,7 +80,7 @@ function ActiveGroupLists ()
                 </Link>
 
                 <Link to="/GroupMembers">
-                    <div className={style.divs}>
+                    <div className={style.secondDiv}>
                         <div className={style.divsHead}>
                             <span className={style.divsHeadLeftLayout}>
                                 <span className={style.divsHeadLeftElement}>
@@ -132,7 +132,7 @@ function ActiveGroupLists ()
                 </ Link>
 
                 <Link to="/GroupMembers">
-                    <div className={style.divs}>
+                    <div className={style.thirdDiv}>
                         <div className={style.divsHead}>
                             <span className={style.divsHeadLeftLayout}>
                                 <span className={style.divsHeadLeftElement}>
