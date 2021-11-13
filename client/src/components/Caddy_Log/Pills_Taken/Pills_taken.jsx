@@ -3,11 +3,14 @@ import style from "./pills_taken.module.css"
 
 
 function Pills_taken({settake}) {
+
+
+    
     return (
        <div className={style.body}>
             <div className={style.flexx}>
             <div className={style.pillsfont}>Pills Taken</div>
-            <div><h6 className={style.date}>Date-25/02/98</h6>
+            <div><h6 className={style.date}>Date-13-11-21</h6>
            <button className={style.search} onClick={()=>{
                settake(true)
            }}>Search</button></div>
