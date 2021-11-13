@@ -55,7 +55,7 @@
         width:375px;
         height:812px;
         margin: auto;
-        border: 2px solid grey;
+        /* border: 2px solid grey; */
         border-radius: 10px;
 }
 .title{
@@ -151,7 +151,7 @@ input:focus {
 .signinbtn{
     width:84%;
     margin-left:8%;
-    margin-top: 24%;
+    margin-top: 10%;
     height:48px;
     margin-bottom: 4%;
     background: #BE00FF;
@@ -177,12 +177,12 @@ input:focus {
 }
 
 .errorDivSU{
-    background-color: #FFD5D5;
+    /* background-color: #FFD5D5; */
     width: 311px;
     height: 50px;
     margin-left: 32px;
-    margin-top: 25px;
-    position: absolute;
+    margin-top: 0px;
+    position: sticky;
     z-index: 5;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
@@ -211,6 +211,6 @@ input:focus {
     margin-left: 85%;
     background: none;
     border: none;
-    background-color: #FFD5D5;
+    /* background-color: #FFD5D5; */
      color: #FF656E; 
 } 

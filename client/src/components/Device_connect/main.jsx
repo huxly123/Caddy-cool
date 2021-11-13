@@ -2,13 +2,11 @@ import { Bottom } from "./Bottom";
 import { Top } from "./Top";
 import axios from "axios";
 import "./bottom.css"
-<<<<<<< HEAD
 import "./top.css";
 
-=======
-import "./top.css"
+
 import { useEffect, useState } from "react";
->>>>>>> f371d55d69114823a175335b616435c55cfd7a37
+// import Headerrr from "../Header/Header";
 
 export function Device(){
 
@@ -31,6 +29,7 @@ export function Device(){
     },[])
 
     return<div>
+      
         {
             flag === true ?   <div style={{height:"684px",backgroundColor:" #FCF2FF",margin:"auto"}}>
             <div className="top">

@@ -32,6 +32,7 @@ import homeIconActive from "./components/Footer/homeimgactive.svg";
 import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
 import Render from "./components/Render/Render";
+// import Headerrr from "./components/Header/Header";
 
 
 function App ()
@@ -46,7 +47,7 @@ function App ()
             <div className={style.div1}><img src={img1} alt="menu"></img></div>
             <div>
               <span><img src={img2} alt="bell"></img></span>
-              {/* <span><img src={img3} alt="deviceConnect"></img></span> */}
+           
               <Link to="/linkdevice"><span><img src={img4} alt="deviceConnect"></img></span></Link>
             </div>
           </div>

@@ -83,7 +83,7 @@
     position: absolute;
     z-index:2;
     margin-top: -75px;
-    margin-left: 90%;
+    margin-left: 90% ;
 }
 
 .name2S{
@@ -115,12 +115,12 @@
         width:375px;
         height:812px;
         margin: auto;
-        border: 2px solid grey;
+        /* border: 2px solid grey; */
         border-radius: 10px;
 }
 .title{
     margin-top: 400px;
-    margin-left: 32px;
+    margin-left: 32px ;
 }
 .titlep1{
     font-family:'Roboto', sans-serif;
