@@ -1,5 +1,6 @@
 import "../Menu/menu.css"
-import profile from "../Menu/pic.svg"
+import profile from "../Menu/pic.svg";
+import { Link } from "react-router-dom";
 export function Menu() {
     let name = localStorage.getItem("userName");
     name = name.charAt(0).toUpperCase() + name.slice(1);
@@ -12,7 +13,7 @@ export function Menu() {
                     <h1 id="name_akkakkak">Bio</h1>
                     <p id="bio">Not updated</p>
                     <div>
-                        <button id="name_akkakkak">Sign Out</button>
+                        <button id="name_akkakkak"><Link className="link1" to="/signin">Sign Out</Link></button>
                     </div>
                     <div style={{ marginTop: "10px" }}>
                         <button id="name_akkakkak">Settings</button>
