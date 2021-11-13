@@ -2,6 +2,8 @@ import icon1 from "./linkdevicons/ion_watch-outline 2.png";
 import icon2 from "./linkdevicons/ion_watch-outline.png";
 import icon3 from "./linkdevicons/ion_watch-outline.svg";
 
+import './loading.css'
+
 const ConnectDevice = ({
   Before,
   caddy,
