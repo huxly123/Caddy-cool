@@ -64,7 +64,7 @@ function App ()
   if (comp === "signup")
   {
     return (
-      <Signup changeState={changeState}/>
+      <Signup changeState={changeState} />
     )
   }
   if (comp === "other")
@@ -88,9 +88,12 @@ function App ()
 
             <Switch>
 
-              <Route path="/Main" exact>
-                {/* <Main /> */}
+              <Route path="/Home" exact>
                 <Device />
+              </Route>
+
+              <Route path="/PeopleConnect" exact>
+                <PeopleConnect />
               </Route>
 
               <Route path="/CommunityGroups" exact>
@@ -103,10 +106,6 @@ function App ()
 
               <Route path="/GroupMembers" exact>
                 <GroupMembers />
-              </Route>
-
-              <Route path="/PeopleConnect" exact>
-                <PeopleConnect />
               </Route>
 
               <Route path="/Pills_front" exact>
@@ -132,7 +131,7 @@ function App ()
 
           {/* Footer */}
           <div className={style.footerbody}>
-            <Link to="/Main">
+            <Link to="/Home">
               <div>
                 <img src={homeIconActive} id="homeicon" alt="home"></img>
               </div>
