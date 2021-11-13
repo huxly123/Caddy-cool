@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 import style from "./pills_remaining.module.css";
 import axios from 'axios';
 
-function Pills_remining({setremain}) {
+function Pills_remining({setremain,add}) {
 
    const [dataa,setData]=useState([])
 
    const [count,setCount]=useState(1)
+
+add(count)
 
    useEffect(()=>{
 detremain();
@@ -38,6 +40,9 @@ dataa.map(item=>(
 <p>{item.time} {item.when}</p>
 </div>
 <button onClick={async ()=>{
+    // const Item=await axios.get(`http://localhost:3002/remaining/${item.id}`);
+    // add(Item)
+    
     const ele=item;
     await axios.delete(`http://localhost:3002/remaining/${item.id}`)
     await axios.post("http://localhost:3002/taken",ele)

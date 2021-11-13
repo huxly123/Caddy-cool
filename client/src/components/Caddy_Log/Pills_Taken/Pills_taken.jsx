@@ -3,13 +3,13 @@ import style from "./pills_taken.module.css";
 import axios from 'axios';
 
 
-function Pills_taken({settake}) {
+function Pills_taken({settake,neww}) {
 
     const [remainData,setRemainData]=useState([]);
 
     useEffect(()=>{
 gettaken()
-    },[])
+    },[neww])
 
 const gettaken=async ()=>{
 const {data}=await axios.get("http://localhost:3002/taken");
