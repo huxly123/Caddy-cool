@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import sad from "./Emojis/sadEmoji.svg"
 import smiliEmogi from "./Emojis/smiliEmogi.svg"
 import LikeEmoji from "./Emojis/likeEmoji.svg"
+import LoveEmoji from "./Emojis/loveEmoji.svg"
 
 function ActiveGroupLists ()
 {
@@ -12,21 +13,22 @@ function ActiveGroupLists ()
 
             <div style={{ height: "800px" }}>
 
-                <div className={style.divs}>
-                    <div className={style.divsHead}>
-                        <span className={style.divsHeadLeftLayout}>
-                            <span className={style.divsHeadLeftElement}>
-                                #TheLaughGang
+                <Link to="/GroupMembers">
+                    <div className={style.divs}>
+                        <div className={style.divsHead}>
+                            <span className={style.divsHeadLeftLayout}>
+                                <span className={style.divsHeadLeftElement}>
+                                    #TheLaughGang
+                                </span>
                             </span>
-                        </span>
-                        <span className={style.divsHeadRightLayout}>
-                            <span className={style.divsHeadRightElement}>
-                                Members - 18
+                            <span className={style.divsHeadRightLayout}>
+                                <span className={style.divsHeadRightElement}>
+                                    Members - 18
+                                </span>
                             </span>
-                        </span>
-                    </div>
+                        </div>
 
-                    {/* <div className={style.msgDemoLayout}>
+                        {/* <div className={style.msgDemoLayout}>
                         <div className={style.msgSender}>
                             <div className={style.msgSenderName}>
                                 Jai
@@ -40,141 +42,146 @@ function ActiveGroupLists ()
                             </div>
                         </div>
                     </div> */}
-                    <div className={style.msgDemoLayout}>
-                        <div className={style.msgSender}>
-                            <div className={style.msgSenderName}>
-                                Ragini
+                        <div className={style.msgDemoLayout}>
+                            <div className={style.msgSender}>
+                                <div className={style.msgSenderName}>
+                                    Ragini
+                                </div>
+                            </div>
+
+                            <div className={style.msgContainer}>
+                                <div className={style.msgElement}>
+                                    Let's Do this!
+                                    <img src={smiliEmogi} alt="smile" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className={style.msgDemoLayout}>
+                            <div className={style.msgSender}>
+                                <div className={style.msgSenderName}>
+                                    Dev
+                                </div>
+                            </div>
+
+                            <div className={style.msgContainer, style.test}>
+                                <div className={style.msgElement}>
+                                    I only have the evening free.
+                                    <img src={sad} alt="sad Emoji" />
+                                </div>
                             </div>
                         </div>
 
-                        <div className={style.msgContainer}>
-                            <div className={style.msgElement}>
-                                Let's Do this!
-                                <img src={smiliEmogi} alt="smile" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className={style.msgDemoLayout}>
-                        <div className={style.msgSender}>
-                            <div className={style.msgSenderName}>
-                                Dev
-                            </div>
-                        </div>
-
-                        <div className={style.msgContainer, style.test}>
-                            <div className={style.msgElement}>
-                                I only have the evening free.
-                                <img src={sad} alt="sad Emoji" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={style.joinButton}>
-                        <span>
-                            Join Group
-                        </span>
-                    </div>
-                </div>
-
-                <div className={style.divs}>
-                    <div className={style.divsHead}>
-                        <span className={style.divsHeadLeftLayout}>
-                            <span className={style.divsHeadLeftElement}>
-                                #TheOGs
+                        <div className={style.joinButton}>
+                            <span>
+                                Join Group
                             </span>
-                        </span>
-                        <span className={style.divsHeadRightLayout}>
-                            <span className={style.divsHeadRightElement}>
-                                Members - 18
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to="/GroupMembers">
+                    <div className={style.divs}>
+                        <div className={style.divsHead}>
+                            <span className={style.divsHeadLeftLayout}>
+                                <span className={style.divsHeadLeftElement}>
+                                    #TheOGs
+                                </span>
                             </span>
-                        </span>
-                    </div>
-
-                    <div className={style.msgDemoLayout}>
-                        <div className={style.msgSender}>
-                            <div className={style.msgSenderName}>
-                                Kapila
-                            </div>
-                        </div>
-
-                        <div className={style.msgContainer}>
-                            <div className={style.msgElement}>
-                                Let's Do this!
-                                <img src={LikeEmoji} alt="Like" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className={style.msgDemoLayout}>
-                        <div className={style.msgSender}>
-                            <div className={style.msgSenderName}>
-                                Dev
-                            </div>
-                        </div>
-
-                        <div className={style.msgContainer, style.test}>
-                            <div className={style.msgElement}>
-                                I only have the evening free.
-                                <img src={sad} alt="sad Emoji" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={style.joinButton}>
-                        <span>
-                            Join Group
-                        </span>
-                    </div>
-                </div>
-
-                <div className={style.divs}>
-                    <div className={style.divsHead}>
-                        <span className={style.divsHeadLeftLayout}>
-                            <span className={style.divsHeadLeftElement}>
-                                #F.R.I.E.N.D.S
+                            <span className={style.divsHeadRightLayout}>
+                                <span className={style.divsHeadRightElement}>
+                                    Members - 18
+                                </span>
                             </span>
-                        </span>
-                        <span className={style.divsHeadRightLayout}>
-                            <span className={style.divsHeadRightElement}>
-                                Members - 18
+                        </div>
+
+                        <div className={style.msgDemoLayout}>
+                            <div className={style.msgSender}>
+                                <div className={style.msgSenderName}>
+                                    Kapila
+                                </div>
+                            </div>
+
+                            <div className={style.msgContainer}>
+                                <div className={style.msgElement}>
+                                    Let's Do this!
+                                    <img src={LikeEmoji} alt="Like" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className={style.msgDemoLayout}>
+                            <div className={style.msgSender}>
+                                <div className={style.msgSenderName}>
+                                    Dev
+                                </div>
+                            </div>
+
+                            <div className={style.msgContainer, style.test}>
+                                <div className={style.msgElement}>
+                                    I only have the evening free.
+                                    <img src={sad} alt="sad Emoji" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={style.joinButton}>
+                            <span>
+                                Join Group
                             </span>
-                        </span>
+                        </div>
                     </div>
+                </ Link>
 
-                    <div className={style.msgDemoLayout}>
-                        <div className={style.msgSender}>
-                            <div className={style.msgSenderName}>
-                                Ragini
+                <Link to="/GroupMembers">
+                    <div className={style.divs}>
+                        <div className={style.divsHead}>
+                            <span className={style.divsHeadLeftLayout}>
+                                <span className={style.divsHeadLeftElement}>
+                                    #F.R.I.E.N.D.S
+                                </span>
+                            </span>
+                            <span className={style.divsHeadRightLayout}>
+                                <span className={style.divsHeadRightElement}>
+                                    Members - 18
+                                </span>
+                            </span>
+                        </div>
+
+                        <div className={style.msgDemoLayout}>
+                            <div className={style.msgSender}>
+                                <div className={style.msgSenderName}>
+                                    Ashutosh
+                                </div>
+                            </div>
+
+                            <div className={style.msgContainer}>
+                                <div className={style.msgElement}>
+                                    Let's Do this!
+                                    <img src={LoveEmoji} alt="Love Emoji" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className={style.msgDemoLayout}>
+                            <div className={style.msgSender}>
+                                <div className={style.msgSenderName}>
+                                    Dev
+                                </div>
+                            </div>
+
+                            <div className={style.msgContainer, style.test}>
+                                <div className={style.msgElement}>
+                                    I only have the evening free.
+                                    <img src={sad} alt="sad Emoji" />
+                                </div>
                             </div>
                         </div>
 
-                        <div className={style.msgContainer}>
-                            <div className={style.msgElement}>
-                                Let's Do this!
-                                <img src={smiliEmogi} alt="smile" />
-                            </div>
+                        <div className={style.joinButton}>
+                            <span>
+                                Join Group
+                            </span>
                         </div>
                     </div>
-                    <div className={style.msgDemoLayout}>
-                        <div className={style.msgSender}>
-                            <div className={style.msgSenderName}>
-                                Dev
-                            </div>
-                        </div>
-
-                        <div className={style.msgContainer, style.test}>
-                            <div className={style.msgElement}>
-                                I only have the evening free.
-                                <img src={sad} alt="sad Emoji" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={style.joinButton}>
-                        <span>
-                            Join Group
-                        </span>
-                    </div>
-                </div>
+                </Link>
 
             </div>
         </div>

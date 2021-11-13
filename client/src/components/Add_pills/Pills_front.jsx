@@ -25,3 +25,4 @@ function Pills_front ()
 }
 
 export default Pills_front
+
