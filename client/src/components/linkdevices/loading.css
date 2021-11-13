@@ -147,7 +147,7 @@ margin-top:3.2rem;
 }
 
 .LinkloadingDiv:hover{
-    border:3px solid #BD00FD;
+    /* border:3px solid #BD00FD; */
     background: #FCF2FF;
 }
 
