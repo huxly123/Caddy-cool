@@ -30,50 +30,17 @@ import img4 from "./components/Header/watchinactive.svg"
 import homeIconActive from "./components/Footer/homeimgactive.svg";
 import communityIcon from "./components/Footer/groupimg.svg";
 import caddyIcon from "./components/Footer/VectorTab1.svg";
+import Render from "./components/Render/Render";
 
 
 function App ()
 {
-  useEffect(() =>
-  {
-    setTimeout(() =>
-    {
-      setComp("signin")
-    }, 4000)
-  }, []);
-
-  const [ comp, setComp ] = useState("main")
-  function changeState (info)
-  {
-    setComp(info);
-  }
-
-
-  if (comp === "main")
-  {
-    return (
-      <Main />
-    )
-  }
-  if (comp === "signin")
-  {
-    return (
-      <Signin changeState={changeState} />
-    )
-  }
-  if (comp === "signup")
-  {
-    return (
-      <Signup changeState={changeState} />
-    )
-  }
-  if (comp === "other")
-  {
+ 
     return (
       <Router>
         <div>
 
-          {/* Header */}
+         {/* header */}
           <div className={style.headerbody}>
             <div className={style.div1}><img src={img1} alt="menu"></img></div>
             <div>
@@ -87,6 +54,17 @@ function App ()
           <div className={style.appBody}>
 
             <Switch>
+              <Route path="/" exact>
+                <Render/>
+              </Route>
+
+<Route path="/signin" exact> 
+  <Signin/>
+</Route>
+
+<Route path="signup">
+  <Signup/>
+</Route>
 
               <Route path="/Home" exact>
                 <Device />
@@ -116,9 +94,7 @@ function App ()
                 <Caddy />
               </Route>
 
-              {/* <Route path="/add_pill" exact>
-              <Iframe_addpill />
-            </Route> */}
+              
 
               <Route>
                 {/* 404 not found */}
@@ -151,7 +127,7 @@ function App ()
         </div >
       </Router >
     );
-  }
+ 
 }
 
 export default App;

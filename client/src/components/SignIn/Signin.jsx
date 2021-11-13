@@ -1,8 +1,12 @@
 import SmallLogo from "./SmallLogo"
 import axios from "axios"
 import {useState} from "react";
-import "./signin.css"
-export default function Signin({changeState}){
+import "./signin.css";
+import { Link,useHistory } from "react-router-dom";
+
+export default function Signin(){
+
+    const [auth,setAuth]=useState(false)
     const [user,setUser] = useState({
         email:"",
         password:""
@@ -17,6 +21,18 @@ export default function Signin({changeState}){
     const [eState,setEstate] = useState(false);
 
 
+
+    
+    const history = useHistory();
+    
+        
+        
+      
+      
+
+
+
+
     function submit(){
         try{
           axios.post("http://localhost:3001/login",user)
@@ -27,7 +43,9 @@ export default function Signin({changeState}){
               }
               if(res.data.status===200){
                setError([res.data.message]);
-               changeState("other")
+            //    changeState("other")
+            history.push('/Home');
+            setAuth(true)
                setEstate(true);
            }
            if(res.data.status===500){
@@ -68,7 +86,7 @@ export default function Signin({changeState}){
         <p className="forget">Forgot you password?</p>
         {eState?<div className="errorDivSI"><div className="allErrSI">{error.map((e)=><p key={e}>{e}</p>)}</div> <button onClick={()=>setEstate(false)}>x</button></div>:""}
         <button className="signinbtn" onClick={submit}>Sign In</button>
-        <p className="signupreminder">Don't have an account?<button onClick={()=>changeState("signup")}>Sign Up</button></p>
+        <p className="signupreminder">Don't have an account?<button >Sign Up</button></p>
         </div>
         
     )

@@ -1,8 +1,10 @@
 import SmallLogo from "./SmallLogo"
 import { useState } from "react"
 import axios from "axios";
-import "./signup.css"
-export default function SignUp({changeState}){
+import "./signup.css";
+import { Link } from "react-router-dom";
+
+export default function SignUp(){
     const [user,setUser] = useState({
         name:"",
         email:"",
@@ -32,7 +34,7 @@ export default function SignUp({changeState}){
                 setError([res.data.message]);
                 setEstate(true);
                 setTimeout(()=>{
-                    changeState("signin")
+                    // changeState("signin")
                 },1000)
             }
            })
@@ -62,7 +64,7 @@ export default function SignUp({changeState}){
         </div>
 
         <div className="signUpLogin">
-        <p className="login">Sign In</p>
+        <p className="login"><Link to="/signin">Sign In</Link></p>
         <p className="signUp">Sign Up</p>
         </div>
         <div className="details">
