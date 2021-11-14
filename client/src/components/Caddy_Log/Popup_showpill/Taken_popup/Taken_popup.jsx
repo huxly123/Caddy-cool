@@ -7,7 +7,7 @@ function Taken_popup({takepop,settakepop}) {
         <div className={style.remainbody}>
 <img src={close} onClick={()=>{
     settakepop(false)
-}}></img>
+}} alt="close"></img>
             <div className={style.wrappper}>
             <input className={style.remaininput} placeholder="Enter Date"></input>
 <button className={style.remainbutton} onClick={()=>{

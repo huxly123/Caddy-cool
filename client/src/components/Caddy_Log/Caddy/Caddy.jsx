@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import style from "./caddy.module.css"
 import Pillsremaining from '../Pills_Remaining/Pills_remaining'
 import Pillstaken from '../Pills_Taken/Pills_taken'
-import Popup_addpill from '../Popup_addpill/Popup_addpill'
-import Remain_popup from '../Popup_showpill/Remain_popup/Remain_popup'
-import Taken_popup from '../Popup_showpill/Taken_popup/Taken_popup'
+import Popupaddpill from '../Popup_addpill/Popup_addpill'
+import Remainpopup from '../Popup_showpill/Remain_popup/Remain_popup'
+import Takenpopup from '../Popup_showpill/Taken_popup/Taken_popup'
 
 // import homeIconInactive from "../../Footer/homeimginactive.svg";
 // import groupIconInactive from "../../Footer/groupimginactive.svg";
@@ -55,17 +55,17 @@ setnew(count)
                 </div>
             </div>
             {/* <Footerr /> */}
-            <Popup_addpill setbtn={setbtnpopup} btn={btnpop} >
+            <Popupaddpill setbtn={setbtnpopup} btn={btnpop} >
 
-</Popup_addpill>
+</Popupaddpill>
 
-<Remain_popup remainpop={remainingpop} setremainpop={setremainingpop}>
+<Remainpopup remainpop={remainingpop} setremainpop={setremainingpop}>
 
-</Remain_popup>
+</Remainpopup>
 
-<Taken_popup takepop={takenpop} settakepop={settakenpop}>
+<Takenpopup takepop={takenpop} settakepop={settakenpop}>
 
-</Taken_popup>
+</Takenpopup>
         </div >
 
     )

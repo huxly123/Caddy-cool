@@ -4,7 +4,7 @@ import close from "./close.svg";
 import axios from 'axios';
 
 
-function Popup_addpill({setbtn,btn}) {
+function Popupaddpill({setbtn,btn}) {
 
     
 
@@ -41,7 +41,7 @@ setFormData({
     <h5>Name of the pill</h5>
          <img src={close} onClick={()=>{
              setbtn(false)
-         }}></img>
+         }} alt="close"></img>
 
 </div>
 <form onSubmit={handleSubmit}>
@@ -72,4 +72,4 @@ setFormData({
     ):""
 }
 
-export default Popup_addpill
+export default Popupaddpill

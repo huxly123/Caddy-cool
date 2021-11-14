@@ -7,7 +7,7 @@ function Remain_popup({remainpop,setremainpop}) {
         <div className={style.remainbody}>
 <img src={close} onClick={()=>{
     setremainpop(false)
-}}></img>
+}} alt="close"></img>
             <div className={style.wrappper}>
             <input className={style.remaininput} placeholder="Enter Date"></input>
 <button className={style.remainbutton} onClick={()=>{
