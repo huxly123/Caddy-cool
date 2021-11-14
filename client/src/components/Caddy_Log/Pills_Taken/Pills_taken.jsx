@@ -3,7 +3,7 @@ import style from "./pills_taken.module.css";
 import axios from 'axios';
 
 
-function Pills_taken({settake,neww}) {
+function Pillstaken({settake,neww}) {
 
     const [remainData,setRemainData]=useState([]);
 
@@ -48,4 +48,4 @@ setRemainData(data)
     )
 }
 
-export default Pills_taken
+export default Pillstaken

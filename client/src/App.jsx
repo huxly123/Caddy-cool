@@ -1,8 +1,8 @@
-import Pills_front from "./components/Add_pills/Pills_front";
+import Pillsfront from "./components/Add_pills/Pills_front";
 import { Device } from "./components/Device_connect/main";
 import { Caddy } from "./components/Caddy_Log/Caddy/Caddy";
 import { PeopleConnect } from "./components/Community/PeopleConnect";
-import { Main } from "./components/Home/Main";
+// import { Main } from "./components/Home/Main";
 import Signin from "./components/SignIn/Signin"
 import Signup from "./components/SignUp/Signup";
 import { CommunityGroups } from "./components/Community/Groups/CommunityGroups";
@@ -23,7 +23,7 @@ import style from "./App.module.css";
 // Header Icons
 import img1 from "./components/Header/menu.svg"
 import img2 from "./components/Header/bell.svg"
-import img3 from "./components/Header/watch.svg"
+// import img3 from "./components/Header/watch.svg"
 import img4 from "./components/Header/watchinactive.svg"
 
 // Footer Icons
@@ -99,7 +99,7 @@ function App() {
             </Route>
 
             <Route path="/Pills_front" exact>
-              <Pills_front />
+              <Pillsfront />
             </Route>
 
             <Route path="/Caddy" exact>

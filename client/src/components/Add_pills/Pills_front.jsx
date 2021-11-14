@@ -5,7 +5,7 @@ import homeIconInactive from "../Footer/homeimginactive.svg";
 import groupIconInactive from "../Footer/groupimginactive.svg";
 import caddyIconActive from "../Footer/VectorTab1.svg";
 
-function Pills_front ()
+function Pillsfront ()
 {
 
     document.getElementById("homeicon").src = `${ homeIconInactive }`;
@@ -34,5 +34,5 @@ function Pills_front ()
     )
 }
 
-export default Pills_front
+export default Pillsfront
 

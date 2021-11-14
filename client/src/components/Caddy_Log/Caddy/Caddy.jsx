@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import style from "./caddy.module.css"
-import Pills_remaining from '../Pills_Remaining/Pills_remaining'
-import Pills_taken from '../Pills_Taken/Pills_taken'
+import Pillsremaining from '../Pills_Remaining/Pills_remaining'
+import Pillstaken from '../Pills_Taken/Pills_taken'
 import Popup_addpill from '../Popup_addpill/Popup_addpill'
 import Remain_popup from '../Popup_showpill/Remain_popup/Remain_popup'
 import Taken_popup from '../Popup_showpill/Taken_popup/Taken_popup'
@@ -47,10 +47,10 @@ setnew(count)
 
 
 
-                <Pills_remaining setremain={setremainingpop} add={add} />
+                <Pillsremaining setremain={setremainingpop} add={add} />
             
                 <div className={style.wrapper}>
-                    <Pills_taken settake={settakenpop} neww={neww}/>
+                    <Pillstaken settake={settakenpop} neww={neww}/>
 
                 </div>
             </div>
