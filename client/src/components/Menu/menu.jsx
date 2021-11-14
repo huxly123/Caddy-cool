@@ -7,7 +7,7 @@ export function Menu() {
     return <>
         <div className="menu">
             <div style={{ margin: "auto", marginTop: "20px" }}>
-                <img src={profile} style={{ marginLeft: "5px" }} />
+                <img src={profile} style={{ marginLeft: "5px" }} alt="menu"/>
                 <h1 id="name_akkakkak" style={{ marginLeft: "18px", marginTop: "10px" }}>{name}</h1>
                 <div style={{ marginTop: "30px" }}>
                     <h1 id="name_akkakkak">Bio</h1>

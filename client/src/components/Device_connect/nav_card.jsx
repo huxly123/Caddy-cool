@@ -1,5 +1,5 @@
 import "./nav_card.css"
-export function Nav_Card ({styles,heading,count,sub_head,time}){
+export function NavCard ({styles,heading,count,sub_head,time}){
     return<div className="nav_card" style={styles}>
         <div className="in_nav">
             <div style={{display:"flex",justifyContent:"space-between"}}>

@@ -1,6 +1,6 @@
 import { Bottom } from "./Bottom";
 import { Top } from "./Top";
-import axios from "axios";
+// import axios from "axios";
 import "./bottom.css"
 import "./top.css";
 
@@ -11,7 +11,7 @@ import caddyIconInactive from "../Footer/Vector.svg";
 // import { useEffect, useState } from "react";
 // import Headerrr from "../Header/Header";
 import "./top.css"
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 export function Device() {
 

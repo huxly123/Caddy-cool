@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import "./loading.css";
 
@@ -62,7 +62,7 @@ const LinkDevice = () => {
     <div className="LinkLinkDevice">
       <div className="Linktop1">
         <div className="Linkleft1">
-          <a href="#">Link Devices</a>
+          <a>Link Devices</a>
         </div>
         <div className="Linkright1">My Devices </div>
       </div>
