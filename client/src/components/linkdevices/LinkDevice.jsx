@@ -62,7 +62,7 @@ const LinkDevice = () => {
     <div className="LinkLinkDevice">
       <div className="Linktop1">
         <div className="Linkleft1">
-          <a>Link Devices</a>
+          <div>Link Devices</div>
         </div>
         <div className="Linkright1">My Devices </div>
       </div>
