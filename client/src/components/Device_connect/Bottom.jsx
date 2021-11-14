@@ -1,5 +1,5 @@
-import { Head_Card } from "./Head_card";
-import { Sub_Card } from "./Sub_card";
+import { HeadCard } from "./Head_card";
+import { SubCard } from "./Sub_card";
 import "./bottom.css"
 import sleep from "./sleep.svg"
 import glucose from "./glucose.svg"
@@ -52,11 +52,11 @@ export function Bottom(){
     },[index,order]);
 
     return<div style={{height:"496px"}}>
-        <Head_Card data={device_data} imgs={imgs} logos={mini_logos} order={order[0]} index={"0"}/>
-        <Sub_Card styles={{}} imgs={imgs} data={device_data} order={order[1]} index={"1"} handleOnclick={handleOnclick}/>
-        <Sub_Card styles={{left:"196px"}} imgs={imgs} data={device_data} order={order[2]} index={"2"}
+        <HeadCard data={device_data} imgs={imgs} logos={mini_logos} order={order[0]} index={"0"}/>
+        <SubCard styles={{}} imgs={imgs} data={device_data} order={order[1]} index={"1"} handleOnclick={handleOnclick}/>
+        <SubCard styles={{left:"196px"}} imgs={imgs} data={device_data} order={order[2]} index={"2"}
         handleOnclick={handleOnclick}/>
-        <Sub_Card styles={{top: "635px"}} imgs={imgs} data={device_data} order={order[3]} index={"3"} handleOnclick={handleOnclick}/>
-        <Sub_Card styles={{top: "635px",left:"196px"}} imgs={imgs} data={device_data} order={order[4]} index={"4"} handleOnclick={handleOnclick}/>
+        <SubCard styles={{top: "635px"}} imgs={imgs} data={device_data} order={order[3]} index={"3"} handleOnclick={handleOnclick}/>
+        <SubCard styles={{top: "635px",left:"196px"}} imgs={imgs} data={device_data} order={order[4]} index={"4"} handleOnclick={handleOnclick}/>
     </div>
 }

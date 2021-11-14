@@ -1,5 +1,5 @@
 import "./sub_card.css"
-export function Sub_Card ({styles,imgs,data,handleOnclick,order,index}){
+export function SubCard ({styles,imgs,data,handleOnclick,order,index}){
       
    let title = data[order].title;
    title = title.charAt(0).toUpperCase() + title.slice(1);

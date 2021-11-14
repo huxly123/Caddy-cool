@@ -1,5 +1,5 @@
 import "./head_card.css"
-export function Head_Card ({data,imgs,order,logos}){
+export function HeadCard ({data,imgs,order,logos}){
 
     let title = data[order].title;
    title = title.charAt(0).toUpperCase() + title.slice(1);

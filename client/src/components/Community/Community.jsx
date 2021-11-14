@@ -1,6 +1,6 @@
 import style from "./Community.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from "reactstrap";
+// import { Button } from "reactstrap";
 
 function Community ({ img, heading, body })
 {
