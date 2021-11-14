@@ -63,7 +63,7 @@ function ActiveGroupLists ()
                                 </div>
                             </div>
 
-                            <div className={style.msgContainer, style.test}>
+                            <div className={`${style.msgContainer} ${style.test}`}>
                                 <div className={style.msgElement}>
                                     I only have the evening free.
                                     <img src={sad} alt="sad Emoji" />
@@ -115,7 +115,7 @@ function ActiveGroupLists ()
                                 </div>
                             </div>
 
-                            <div className={style.msgContainer, style.test}>
+                            <div className={`${style.msgContainer} ${style.test}`}>
                                 <div className={style.msgElement}>
                                     I only have the evening free.
                                     <img src={sad} alt="sad Emoji" />
@@ -167,7 +167,7 @@ function ActiveGroupLists ()
                                 </div>
                             </div>
 
-                            <div className={style.msgContainer, style.test}>
+                            <div className={`${style.msgContainer} ${style.test}`}>
                                 <div className={style.msgElement}>
                                     I only have the evening free.
                                     <img src={sad} alt="sad Emoji" />
