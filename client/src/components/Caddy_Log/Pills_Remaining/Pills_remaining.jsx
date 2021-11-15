@@ -46,7 +46,7 @@ dataa.map(item=>(
     // add(Item)
     
     const ele=item;
-    await axios.delete(`http://localhost:3001/remaining/${item.id}`)
+    await axios.delete(`http://localhost:3001/remaining/${item._id}`)
     await axios.post("http://localhost:3001/taken",ele)
     setCount(count+1)
 }}>Take Pill</button>

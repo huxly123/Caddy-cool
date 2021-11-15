@@ -6,9 +6,10 @@ import axios from 'axios';
 
 function Popupaddpill({setbtn,btn}) {
 
-    
+    const [count,setCount]=useState(1)
 
-    const [formData,setFormData]=useState({
+    const [formData, setFormData] = useState({
+        id:count,
         pill_name:"",
         date:"",
         time:"",
@@ -20,7 +21,7 @@ e.preventDefault();
 await axios.post("http://localhost:3001/remaining",formData)
 alert("added successfull");
 setbtn(false)
-
+setCount(count+1)
 }
 
 const handleChange=(e)=>{
