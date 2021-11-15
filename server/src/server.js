@@ -10,7 +10,12 @@ app.post("/register",register)
 app.post("/login",login);
 app.use("/user",userCotroller)
 
+const remainingController = require("./controllers/remaining.controller");
+const takenController = require("./controllers/taken.controller");
 
+app.use("/remaining", remainingController);
+
+app.use("/taken", takenController);
 
 
 app.listen(3001,(req,res)=>{
