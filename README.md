@@ -91,10 +91,7 @@ npm Start
 ```
 
 
-Run json mock server
-```
-json-server --watch db.json --port 3002
-```
+
 Now go to server Directory and run the server
 ```
 npm run server
