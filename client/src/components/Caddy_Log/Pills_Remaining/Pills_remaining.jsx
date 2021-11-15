@@ -18,7 +18,7 @@ detremain();
    },[count])
 
    const detremain=async ()=>{
-const {data}=await axios.get("http://localhost:3002/remaining");
+const {data}=await axios.get("http://localhost:3001/remaining");
 setData(data)
    }
   
@@ -46,8 +46,8 @@ dataa.map(item=>(
     // add(Item)
     
     const ele=item;
-    await axios.delete(`http://localhost:3002/remaining/${item.id}`)
-    await axios.post("http://localhost:3002/taken",ele)
+    await axios.delete(`http://localhost:3001/remaining/${item.id}`)
+    await axios.post("http://localhost:3001/taken",ele)
     setCount(count+1)
 }}>Take Pill</button>
 </div>

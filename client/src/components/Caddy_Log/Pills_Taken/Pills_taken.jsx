@@ -12,7 +12,7 @@ gettaken()
     },[neww])
 
 const gettaken=async ()=>{
-const {data}=await axios.get("http://localhost:3002/taken");
+const {data}=await axios.get("http://localhost:3001/taken");
 setRemainData(data)
 }
 
@@ -30,7 +30,7 @@ setRemainData(data)
         <div className={style.remain}>
             <div className={style.grid}>
 {remainData.map((item)=>(
-<div className={style.gridflex} key={item.id}>
+<div className={style.gridflex} key={item._id}>
     <div>
 <p>Pill {item.id}-{item.pill_name} - </p>
 <p>{item.time} {item.when}</p>

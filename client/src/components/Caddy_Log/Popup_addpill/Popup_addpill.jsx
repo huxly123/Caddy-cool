@@ -17,7 +17,7 @@ function Popupaddpill({setbtn,btn}) {
 
 const handleSubmit=async (e)=>{
 e.preventDefault();
-await axios.post("http://localhost:3002/remaining",formData)
+await axios.post("http://localhost:3001/remaining",formData)
 alert("added successfull");
 setbtn(false)
 
