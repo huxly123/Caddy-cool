@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 const takenSchema = new mongoose.Schema(
   {
+    id: { type: Number, required: true },
     pill_name: { type: String, required: true },
     date: { type: String, required: true },
     time: { type: Number, required: true },
