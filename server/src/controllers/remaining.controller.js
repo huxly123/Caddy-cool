@@ -3,7 +3,7 @@ const express = require("express")
 const router = express.Router();
 
 const Remaining = require("../models/remaining.model");
-const { route } = require("./user.controller");
+
 
 router.get("", async (req, res) => {
     const data = await Remaining.find({});
