@@ -18,7 +18,7 @@ app.use("/remaining", remainingController);
 app.use("/taken", takenController);
 
 
-app.listen(3001,(req,res)=>{
+app.listen(process.env.PORT ||3001,(req,res)=>{
     connect();
     console.log("Server Started on port 3001")
 })
