@@ -1,24 +1,30 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import style from "./pills_remaining.module.css";
 import axios from 'axios';
+import { Appcontext } from '../../../context/Appcontext';
 
-function Pillsremining({setremain,add}) {
+function Pillsremining({setremain}) {
 
-   const [dataa,setData]=useState([])
+    const [dataa, setData] = useState([])
+    
+        const { change, setChange } = useContext(Appcontext);
 
-   const [count,setCount]=useState(1)
 
-add(count)
+//    const [count,setCount]=useState(1)
+
+// add(count)
 
 // sett(setCount)
 
    useEffect(()=>{
 detremain();
 
-   },[count])
+   },[change])
 
    const detremain=async ()=>{
-const {data}=await axios.get("http://localhost:3001/remaining");
+const { data } = await axios.get(
+  "https://polar-peak-58924.herokuapp.com/remaining"
+);
 setData(data)
    }
   
@@ -38,7 +44,7 @@ setremain(true)
 dataa.map(item=>(
 <div className={style.gridflex} key={item.id}>
     <div>
-<p>Pill {item.id}-{item.pill_name} - </p>
+<p>Pill -{item.pill_name} - </p>
 <p>{item.time} {item.when}</p>
 </div>
 <button onClick={async ()=>{
@@ -46,9 +52,12 @@ dataa.map(item=>(
     // add(Item)
     
     const ele=item;
-    await axios.delete(`http://localhost:3001/remaining/${item._id}`)
-    await axios.post("http://localhost:3001/taken",ele)
-    setCount(count+1)
+    await axios.delete(
+      `https://polar-peak-58924.herokuapp.com/remaining/${item._id}`
+    );
+    await axios.post("https://polar-peak-58924.herokuapp.com/taken", ele);
+    // setCount(count+1)
+            setChange(!change)
 }}>Take Pill</button>
 </div>
 ))

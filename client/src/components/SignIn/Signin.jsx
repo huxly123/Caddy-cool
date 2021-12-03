@@ -6,7 +6,7 @@ import { Link,useHistory } from "react-router-dom";
 
 export default function Signin({handle_user_name}){
 
-    const [auth,setAuth]=useState(false)
+    // const [auth,setAuth]=useState(false)
     const [user,setUser] = useState({
         email:"",
         password:""
@@ -35,27 +35,27 @@ export default function Signin({handle_user_name}){
 
     function submit(){
         try{
-          axios.post("http://localhost:3001/login",user)
-          .then((res)=>{
-              if(res.data.status===400){
-                  setError([res.data.message]);
-                  setEstate(true);
+          axios
+            .post("https://polar-peak-58924.herokuapp.com/login", user)
+            .then((res) => {
+              if (res.data.status === 400) {
+                setError([res.data.message]);
+                setEstate(true);
               }
-              if(res.data.status===200){
-               setError([res.data.message]);
-               handle_user_name(res.data.name)
-            //    changeState("other")
-            history.push('/Home');
-            setAuth(true)
-               setEstate(true);
-           }
-           if(res.data.status===500){
-               setError([res.data.message]);
-               setEstate(true);
-           }
-          })
-          .catch((err)=>{
-          })
+              if (res.data.status === 200) {
+                setError([res.data.message]);
+                handle_user_name(res.data.name);
+                //    changeState("other")
+                history.push("/Home");
+                // setAuth(true);
+                setEstate(true);
+              }
+              if (res.data.status === 500) {
+                setError([res.data.message]);
+                setEstate(true);
+              }
+            })
+            .catch((err) => {});
        }catch(err){
        }
           setUser({

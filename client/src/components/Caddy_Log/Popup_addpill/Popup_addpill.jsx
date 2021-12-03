@@ -1,15 +1,19 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import style from "./popup_addpill.module.css"
 import close from "./close.svg";
 import axios from 'axios';
+import { Appcontext } from '../../../context/Appcontext';
 
 
-function Popupaddpill({setbtn,btn}) {
+function Popupaddpill({ setbtn, btn }) {
+    
+    const { change, setChange } = useContext(Appcontext);
 
-    const [count,setCount]=useState(1)
+
+   
 
     const [formData, setFormData] = useState({
-        id:count,
+        id:Date.now(),
         pill_name:"",
         date:"",
         time:"",
@@ -18,10 +22,10 @@ function Popupaddpill({setbtn,btn}) {
 
 const handleSubmit=async (e)=>{
 e.preventDefault();
-await axios.post("http://localhost:3001/remaining",formData)
+await axios.post("https://polar-peak-58924.herokuapp.com/remaining", formData);
 alert("added successfull");
 setbtn(false)
-setCount(count+1)
+setChange(!change)
 }
 
 const handleChange=(e)=>{

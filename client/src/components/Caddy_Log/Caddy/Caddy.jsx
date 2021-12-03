@@ -14,14 +14,14 @@ import Takenpopup from '../Popup_showpill/Taken_popup/Taken_popup'
 function Caddy ()
 {
 
-    const [neww,setnew]=useState(0);
+//     const [neww,setnew]=useState(0);
    
 
    
 
-function add(count){
-setnew(count)
-}
+// function add(count){
+// setnew(count)
+// }
 
     const [btnpop,setbtnpopup]=useState(false)
 
@@ -47,10 +47,10 @@ setnew(count)
 
 
 
-                <Pillsremaining setremain={setremainingpop} add={add} />
+                <Pillsremaining setremain={setremainingpop}  />
             
                 <div className={style.wrapper}>
-                    <Pillstaken settake={settakenpop} neww={neww}/>
+                    <Pillstaken settake={settakenpop} />
 
                 </div>
             </div>

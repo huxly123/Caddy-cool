@@ -19,9 +19,9 @@ import Hydration from "./Main_tile_logos/water.svg"
 
 export function Bottom(){
 
-    const [mini_logos,setMinis] = useState({"Highest":Highest,"Lowest":Lowest,"Average":Average,"CaloriesBurned":CaloriesBurned,
+    const [mini_logos] = useState({"Highest":Highest,"Lowest":Lowest,"Average":Average,"CaloriesBurned":CaloriesBurned,
     "DistanceCovered":DistanceCovered,"Hydration":Hydration,"Alcohol":glucose,"Range":Highest,"REM":sleep,"Deep":sleep})
-    const [imgs,setImgs] = useState({"sleep":sleep,"glucose":glucose,"pulse":pulse,"spo2":spo2,"steps":steps})    
+    const [imgs] = useState({"sleep":sleep,"glucose":glucose,"pulse":pulse,"spo2":spo2,"steps":steps})    
     const [order,setOrder] =  useState([0,1,2,3,4]);
 
     const [index,setIndex] = useState(null);
@@ -49,7 +49,7 @@ export function Bottom(){
         }
         
        
-    },[index,order]);
+    },[index,order,flag]);
 
     return<div style={{height:"496px"}}>
         <HeadCard data={device_data} imgs={imgs} logos={mini_logos} order={order[0]} index={"0"}/>

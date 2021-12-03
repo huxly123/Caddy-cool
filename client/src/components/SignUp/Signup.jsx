@@ -22,25 +22,27 @@ export default function SignUp(){
 
      function submit(){
          try{
-           axios.post("http://localhost:3001/register",user)
-           .then((res)=>{
-               if(res.data.status===400){
-                   setError([res.data.message]);
-                   setEstate(true);
-               }if(res.data.status===422){
-                setError(res.data.error);
-                setEstate(true);
-            }else{
-                setError([res.data.message]);
-                setEstate(true);
-                setTimeout(()=>{
-                    // changeState("signin")
-                },1000)
-            }
-           })
-           .catch((err)=>{
-               console.log(err)
-           })
+           axios
+             .post("https://polar-peak-58924.herokuapp.com/register", user)
+             .then((res) => {
+               if (res.data.status === 400) {
+                 setError([res.data.message]);
+                 setEstate(true);
+               }
+               if (res.data.status === 422) {
+                 setError(res.data.error);
+                 setEstate(true);
+               } else {
+                 setError([res.data.message]);
+                 setEstate(true);
+                 setTimeout(() => {
+                   // changeState("signin")
+                 }, 1000);
+               }
+             })
+             .catch((err) => {
+               console.log(err);
+             });
         }catch(err){
             console.log(err);
         }

@@ -7,6 +7,7 @@ const takenSchema = new mongoose.Schema(
     date: { type: String, required: true },
     time: { type: Number, required: true },
     when: { type: String, required: true },
+    
   },
   {
     timestamps: true,
