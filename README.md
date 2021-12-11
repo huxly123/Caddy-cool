@@ -1,5 +1,7 @@
-# Caddy Cool <br /> (An app for diabetes management)
+# Caddy Cool (Mobile website) <br /> An app for diabetes management
 Through this app you can connect with different devices that will keep track of your pulses, sleep, glucose level etc. <br /> It will also keep track on medicine you took and missed. <br /> Also you can connect to the caddy community groups, can chat with them.
+
+## https://caddycool.vercel.app/
 ## Tech stack :
 ### Design :
 - Figma
